@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Accessible drag & drop sortable list</title>
+        <meta name="viewport" content="width=device-width, initial-scale=0.0">
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="starter-template.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body style="margin-top: -80px;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img class="d-inline-block align-top" src="media/leaf.png" alt="" width="30" height="30"/>&nbsp;GROWTH
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler16" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler16">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href=".">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="AnalysisDashboard.html">Analysis<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop1" data-toggle="dropdown">Workshop</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Home</a>
+                            <a class="dropdown-item" href="#">Book workshop</a>
+                            <a class="dropdown-item" href="#">Manage workshop</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop2" data-toggle="dropdown">
+            Feedback </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Module feedback</a>
+                            <a class="dropdown-item" href="#">Send invitation</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active"> </li>
+                    <li class="nav-item"> </li>
+                    <li class="nav-item"> </li>
+                    <li class="nav-item dropdown">
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop3" data-toggle="dropdown">
+            Free rider </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Home</a>
+                            <a class="dropdown-item" href="#">Create new report</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <ol class="breadcrumb float-right" style="margin-top: 11px;">
+                        <li class="breadcrumb-item">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="#">Feedback</a>
+                        </li>
+                        <li class="breadcrumb-item active">IS110</li>
+                    </ol>
+                    <a class="btn btn-outline-primary" href="." style="margin-left: 16px; margin-top: -3px;">Logout</a>
+                </form>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="starter-template">
+                <h1 style="float: left;">Intra-Peer Evaluation</h1>
+                <p class="lead"></p>
+            </div>
+            <form id="sort-it">
+                <ol class="olclass">
+                    <li class="liclass">
+                        <table style="width:100%">
+                            <tr>
+                                <th width="13%">
+                                    <span style='font-size: 15pt;'>Group #1<br></span>
+                                    <label class="lilabel" for="custom-number-1">New order:</label>
+                                    <input class="liinput" id="custom-number-1" name="custom-number-1" type="number" min="1">
+                                </th>
+                                <th width="75%">
+                                    <textarea id="text1" style="width:100%;" rows="1" name="Comments:" disabled>Comments:</textarea>
+                                </th>
+                            </tr>                             
+                        </table>
+                    </li>
+                    <li class="liclass">Group #2
+                        <label class="lilabel" for="custom-number-2">New order:</label>
+                        <input class="liinput" id="custom-number-2" name="custom-number-2" type="number" min="1">
+                    </li>
+                    <li class="liclass">Group #3 
+                        <label class="lilabel" for="custom-number-3">New order:</label>
+                        <input class="liinput" id="custom-number-3" name="custom-number-3" type="number" min="1">
+                    </li>
+                    <li class="liclass">Group #4
+                        <label class="lilabel" for="custom-number-4">New order:</label>
+                        <input class="liinput" id="custom-number-4" name="custom-number-4" type="number" min="1">
+                    </li>
+                    <li class="liclass">Group #5
+                        <label class="lilabel" for="custom-number-5">New order:</label>
+                        <input class="liinput" id="custom-number-5" name="custom-number-5" type="number" min="1">
+                    </li>
+                    <li class="liclass">Group #6
+                        <label class="lilabel" for="custom-number-6">New order:</label>
+                        <input class="liinput" id="custom-number-6" name="custom-number-6" type="number" min="1">
+                    </li>
+                    <li class="liclass">Group #7
+                        <label class="lilabel" for="custom-number-7">New order:</label>
+                        <input class="liinput" id="custom-number-7" name="custom-number-7" type="number" min="1">
+                    </li>
+                </ol>
+            </form>
+        </div>
+        <nav style="background-color:rgba(0, 0, 0, 0);" class="navbar navbar-expand-md fixed-bottom">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+</button>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault2">
+</div>
+            <form class="form-inline my-2 my-lg-0 mt-4 mt-lg-0 mb-lg-5 mr-lg-5">
+                <button class="btn btn-success float-right" type="submit" style="margin-right: 20px;">Submit</button>
+                <button type="button" class="btn btn-secondary bg-warning float-right">Save as draft</button>
+            </form>
+        </nav>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+        <script src='https://johnny.github.io/jquery-sortable/js/jquery-sortable-min.js'></script>
+        <script src="js/index.js"></script>
+        <script>
+         $('#text1').click(function(){
+             event.preventDefault();
+   			$(this).prop("disabled", false);
+        });
+        </script>
+    </body>
+</html>

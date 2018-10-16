@@ -1,0 +1,1405 @@
+<html class=" js generatedcontent js generatedcontent" style="">
+    <script src="https://js-agent.newrelic.com/nr-1099.min.js"></script>
+    <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/api2/v1538980283511/recaptcha__en.js"></script>
+    <script async="" src="//www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script>
+    <head>
+        <style type="text/css">@charset "UTF-8";
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak,
+.ng-hide:not(.ng-hide-animate) {
+    display: none !important;
+}
+
+ng\:form {
+    display: block;
+}
+
+.ng-animate-shim {
+    visibility: hidden;
+}
+
+.ng-anchor {
+    position: absolute;
+}</style>
+        <script src="https://js-agent.newrelic.com/nr-1099.min.js"></script>
+        <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/api2/v1538980283511/recaptcha__en.js"></script>
+        <script id="facebook-jssdk" src="http://connect.facebook.net/en_US/sdk.js"></script>
+        <script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script>
+        <style type="text/css">@charset "UTF-8";
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak,
+.ng-hide:not(.ng-hide-animate) {
+    display: none !important;
+}
+
+ng\:form {
+    display: block;
+}
+
+.ng-animate-shim {
+    visibility: hidden;
+}
+
+.ng-anchor {
+    position: absolute;
+}</style>
+        <title>YouGov | 
+            Account
+</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+        <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"licenseKey":"28418fab15","queueTime":0,"applicationID":"15124352","applicationTime":276,"agent":"","transactionName":"YVFaZEdTWkZRBhBYC1gbfkVbUUBcXwtLUhFbQVRFRhxVVlMKEV8QRRpOWVBFRw9ZCwBUHA==","beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net"}</script>
+        <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+        <script>if(document.documentMode)document.documentElement.className+=' ie ie'+document.documentMode</script>
+        <meta name="google-play-app" content="app-id=com.yougov.mobile.online">
+        <meta name="apple-itunes-app" content="app-id=1154082222">
+        <meta property="og:site_name" content="YouGov: What the world thinks">
+        <link rel="stylesheet" href="http://d1rq7cuzerol8r.cloudfront.net/unified/global/2bf00396/common.bundle.css">
+        <link rel="stylesheet" href="http://d1rq7cuzerol8r.cloudfront.net/unified/global/2bf00396/cumulus.bundle.css">
+        <link href="http://d1rq7cuzerol8r.cloudfront.net/unified/global/2bf00396/unified-svg.css" rel="stylesheet">
+        <link href="http://d1rq7cuzerol8r.cloudfront.net/unified/global/2bf00396/unified-png.css" rel="stylesheet">
+        <link rel="apple-touch-icon" href="http://d1rq7cuzerol8r.cloudfront.net/unified/global/2bf00396/images/png/src/apple-touch-icon.png">
+        <link rel="shortcut icon" href="http://d1rq7cuzerol8r.cloudfront.net/unified/cu/img/favicon.ico">
+        <link href="" rel="alternate" type="applicaton/atom+xml">
+        <link href="https://yg-public.s3.amazonaws.com/r/1/notifications.css" rel="stylesheet" type="text/css">
+        <script src="http://d1rq7cuzerol8r.cloudfront.net/unified/cu/js/modernizr.custom.js" charset="utf-8"></script>
+        <script src="http://app-lon03.marketo.com/js/forms2/js/forms2.min.js"></script>
+        <!-- Start of yougov Zendesk Widget script -->
+        <script src="//odr.mookie1.com/t/v2?tagid=V2_443798&amp;src.visitorid=34TJ5IWBUNLBAFMKDXKBZSGYOE&amp;redirect_url=sg.yougov.com/_partner/partnerpersonid/tJXzDhPXRicTJuOOwOWG/${cookie_visitor_id}" type="text/javascript"></script>
+        <script src="https://ps.eyeota.net/match?bid=ioh51m1&amp;r=https://sg.yougov.com/_partner/partnerpersonid/YUwHMbaskGtqtZYXouqO/{UUID_ioh51m1}" type="text/javascript"></script>
+        <script src="//tracker.yougov.com/id?var_name=yyrUyjZMRvSqntNYqkRN&amp;callback_url=https%3A%2F%2Fsg.yougov.com%2F_partner%2Fsuccess" type="text/javascript"></script>
+        <style></style>
+    </head>
+    <body ng-strict-di="" class="unified cumulus lang-sg sg account ng-scope" ng-app="cumulusApp" id="cumulusApp">
+        <iframe src="javascript:false" title="" style="display: none;"></iframe>
+        <!-- End of yougov Zendesk Widget script -->
+        <style></style>
+        <script src="http://odr.mookie1.com/t/v2?tagid=V2_443798&amp;src.visitorid=34TJ5IWBUNLBAFMKDXKBZSGYOE&amp;redirect_url=sg.yougov.com/_partner/partnerpersonid/hxhfSkryrTkuIkwBgHsz/${cookie_visitor_id}" type="text/javascript"></script>
+        <script src="https://ps.eyeota.net/match?bid=ioh51m1&amp;r=https://sg.yougov.com/_partner/partnerpersonid/bGFqzTkMNaCQerSnnqrs/{UUID_ioh51m1}" type="text/javascript"></script>
+        <script src="http://tracker.yougov.com/id?var_name=dLwlJNvzvxHkeyjhGLBT&amp;callback_url=https%3A%2F%2Fsg.yougov.com%2F_partner%2Fsuccess" type="text/javascript"></script>
+        <!--
+Start of DoubleClick Floodlight Tag: Please do not remove
+Activity name of this tag: YG - All Pages
+URL of the webpage where the tag is expected to be placed: https://yougov.co.uk/
+This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
+Creation Date: 05/15/2017
+-->
+        <script type="text/javascript">
+var axel = Math.random() + "";
+var a = axel * 10000000000000;
+document.write('<iframe src="https://6930709.fls.doubleclick.net/activityi;src=6930709;type=remarket;cat=yg-al0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+</script>
+        <iframe src="https://6930709.fls.doubleclick.net/activityi;src=6930709;type=remarket;cat=yg-al0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=5780894950107.531?" width="1" height="1" frameborder="0" style="display:none"></iframe>
+        <iframe src="https://6930709.fls.doubleclick.net/activityi;src=6930709;type=remarket;cat=yg-al0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=9649072482573.76?" width="1" height="1" frameborder="0" style="display:none"></iframe>
+        <noscript>
+            <iframe src="https://6930709.fls.doubleclick.net/activityi;src=6930709;type=remarket;cat=yg-al0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>
+        </noscript>
+        <!-- End of DoubleClick Floodlight Tag: Please do not remove -->
+        <div id="fb-root">
+            <script>
+                        window.fbAsyncInit = function() {
+                            FB.init({
+                                appId: '273247149353565',
+                                status: true,
+                                cookie: true,
+                                xfbml: true,
+                                oauth: true,
+                                version: 'v2.8'
+                            });
+
+                            fbApiInit = true; //init flag
+
+                            FB.AppEvents.logPageView();
+                        };
+
+                        (function(d, s, id){
+                            var js, fjs = d.getElementsByTagName(s)[0];
+                            if (d.getElementById(id)) {return;}
+                            js = d.createElement(s); js.id = id;
+                            js.src = "//connect.facebook.net/en_US/sdk.js";
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));
+
+                        if (typeof(fbEnsureInit) === 'undefined') {
+                            // Use this when you need to do a FB call contingent on the FB object loading.
+                            function fbEnsureInit(callback) {
+                                if(!window.fbApiInit) {
+                                    setTimeout(function() {fbEnsureInit(callback);}, 50);
+                                } else {
+                                    if(callback) {
+                                        callback();
+                                    }
+                                }
+                            };
+                        }
+                    </script>
+        </div>
+        <div class="off-canvas-wrapper ng-scope" ng-class="{'off-canvas-opened' : offCanvas.isNavOpened}" ng-controller="offCanvasController">
+            <div class="content-wrapper">
+                <script>
+                        window.mobileAndTabletcheck = function() {
+                            var check = false;
+                            (function(a){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino|android|ipad|playbook|silk/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4))) check = true;})(navigator.userAgent||navigator.vendor||window.opera);
+                                return check;
+                        };
+
+                        if (typeof zE === 'function' && window.mobileAndTabletcheck()) {
+                            zE(function () {
+                                zE.hide();
+                            });
+                        }
+                    </script>
+                <div class="unified-header" style="display: none;">
+                    <nav id="user_logged_in">
+                        <a href="#" class="left-off-canvas-toggle-phone nav-icon" target="_pg_blank"><span class="stripes"></span><span mobile-notifications-badge=""></span></a>
+                        <div class="logo" style="">
+                            <a href="/en-sg/?stay" class="svgi icon-yougov-logo ng-isolate-scope" save-current-page="" reset-current-page-selection="1" target="_pg_blank"></a>
+                            <span site-chooser="" class="ng-isolate-scope"><div class="site-chooser-container">
+                                    <button class="btn btn-xs lang" ng-click="chooser.showSelector()">
+                                        <!-- ngIf: !withFlag -->
+                                        <span ng-if="!withFlag" class="ng-binding ng-scope">SG</span>
+                                        <!-- end ngIf: !withFlag -->
+                                        <!-- ngIf: withFlag -->
+                                    </button>
+                                    <!-- ngIf: chooser.languages -->
+                                    <div class="language-selector ng-scope ng-isolate-scope" ng-if="chooser.languages" language-selector="">
+                                        <button class="btn btn-xs lang" ng-click="vm.toggleLSTooltip($event)">
+                                            <span class="language-name ng-binding">English</span>
+                                            <span class="language-short-name ng-binding">EN</span>
+                                        </button>
+                                        <div class="ls-tooltip" ng-mouseleave="vm.closeLSTooltip()" style="left: -120px;">
+                                            <div class="tip"></div>
+                                            <div class="ls-header ng-binding">
+                                                Choose language
+</div>
+                                            <div class="ls-inner-content">
+                                                <div class="ls-language-list">
+                                                    <!-- ngRepeat: language in vm.appData.languages track by $index -->
+                                                    <a ng-repeat="language in vm.appData.languages track by $index" ng-href="https://sg.yougov.com/en-sg/" class="ng-binding ng-scope" href="https://sg.yougov.com/en-sg/">English</a>
+                                                    <!-- end ngRepeat: language in vm.appData.languages track by $index -->
+                                                    <a ng-repeat="language in vm.appData.languages track by $index" ng-href="https://sg.yougov.com/ms-sg/" class="ng-binding ng-scope" href="https://sg.yougov.com/ms-sg/">Bahasa Melayu</a>
+                                                    <!-- end ngRepeat: language in vm.appData.languages track by $index -->
+                                                    <a ng-repeat="language in vm.appData.languages track by $index" ng-href="https://sg.yougov.com/zh-sg/" class="ng-binding ng-scope" href="https://sg.yougov.com/zh-sg/">简体中文</a>
+                                                    <!-- end ngRepeat: language in vm.appData.languages track by $index -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end ngIf: chooser.languages -->
+                                </div></span>
+                        </div>
+                        <ul class="page-nav">
+                            <li class="visible-xs home">
+                                <a href="/en-sg/?stay" class="icon-mobile" target="_pg_blank"><span class="svgi icon-yg-mobile"></span><span class="home-text">Home</span></a>
+                            </li>
+                            <li class="take-part active ">
+                                <a href="/en-sg/account/" class="active ng-isolate-scope" save-current-page="/en-sg/account/" style="" target="_pg_blank"> <span class="svgi icon-take-part" style=""></span> <span class="nav-text" style="">Take Part</span> <span class="alternate-nav-text">Take Part</span> </a>
+                            </li>
+                            <li class="results hidden-xs">
+                                <a href="/en-sg/results/" save-current-page="/en-sg/results/" class="ng-isolate-scope" style="" target="_pg_blank"> <span class="svgi icon-results"></span> <span class="nav-text">See Results</span> <span class="alternate-nav-text">See Results</span> </a>
+                            </li>
+                            <li class="find-solutions hidden-xs">
+                                <a href="/en-sg/find-solutions/" save-current-page="/en-sg/find-solutions/" class="ng-isolate-scope" style="" target="_pg_blank"> <span class="svgi icon-find-solutions"></span> <span class="nav-text" style="">Find Solutions</span> <span class="alternate-nav-text">Solutions</span> </a>
+                            </li>
+                        </ul>
+                        <div class="login-box ng-scope horizontal login-box" ng-class="{'horizontal':enableHorizontalLoginRegisterButtons}" login-box="">
+                            <div ng-hide="appCtx.isLoggedIn" class="login-box-unauthenticated ng-hide">
+                                <div class="login-btn-wrapper">
+                                    <a ng-href="/en-sg/account/login/" ng-click="toggleLoginTooltip($event)" class="btn btn-secondary ng-binding" href="/en-sg/account/login/">Login</a>
+                                    <div class="login-tooltip ng-hide" ng-hide="appCtx.device.isMobile" style="">
+                                        <div class="login-tooltip-container">
+                                            <div class="tip"></div>
+                                            <div class="login-question ng-isolate-scope" login-question="" captcha-id="login-box-captcha" standalone="login" version="login-tooltip" callback-done="exitCallback()">
+                                                <div class="forgotten-password-question" forgotten-password-question="">
+                                                    <div ng-hide="hasReminderSucceed" class="forgotten-password-form question-content question-inner-content">
+                                                        <div class="login-question-sub-header ng-binding">
+                                                            Forgotten your password?
+</div>
+                                                        <div class="enter-email ng-binding">
+                                                            Enter your e-mail address below, and we'll e-mail instructions for setting a new one.
+</div>
+                                                        <form class="ng-pristine ng-valid">
+                                                            <input type="text" name="email" ng-model="user.email" on-return-key="resetPassword()" ng-class="{'data-error': resetInvalidEmail}" placeholder="Email" class="ng-pristine ng-untouched ng-valid ng-empty">
+                                                            <button class="btn btn-primary btn-reset-password standalone ng-binding" ng-disabled="resetButtonDisabled" ng-click="resetPassword()">Reset my password</button>
+                                                        </form>
+                                                        <div class="login-captcha login-box-captcha-reset" ng-class="captchaId + '-reset'"></div>
+                                                        <!-- ngIf: resetErrorMessage -->
+                                                    </div>
+                                                    <div ng-show="hasReminderSucceed" class="password-reset-confirmation question-content question-inner-content fade-in ng-hide">
+                                                        <div class="login-question-sub-header ng-binding">
+                                                            Forgotten your password?
+</div>
+                                                        <p class="login-question-paragraph ng-binding">
+            We've sent you an email with a link to reset your password. </p>
+                                                        <div class="confirm-wrapper clearfix">
+                                                            <button class="btn btn-primary ng-binding" ng-click="finishResetPassword()">Ok</button>
+                                                        </div>
+                                                    </div>
+                                                    <div ng-hide="hasReminderSucceed || resetPasswordMode" class="footer-switch question-inner-content">
+                                                        <button class="btn btn-link switch-btn ng-binding" ng-click="switchQuestion('login')">I remember my password. log me in</button>
+                                                    </div>
+                                                </div>
+                                                <div class="login-question-form" login-question-form="" style="display: block;">
+                                                    <!-- ngIf: version === 'compact' || version === 'login-tooltip' -->
+                                                    <div ng-if="version === 'compact' || version === 'login-tooltip'" class="ng-scope">
+                                                        <div ng-hide="successMessage" class="question-content question-inner-content" style="opacity: 1;">
+                                                            <div class="login-question-sub-header ng-binding">
+                                                                Sign into your account...
+</div>
+                                                            <div class="form-container">
+                                                                <form class="ng-pristine ng-valid">
+                                                                    <div class="email-signin">
+                                                                        <input type="text" name="email" class="input-email ng-pristine ng-untouched ng-valid ng-empty" ng-model="user.email" on-return-key="signIn()" ng-class="{'data-error': loginInvalidEmail}" placeholder="Email">
+                                                                        <input type="password" name="password" class="input-password ng-pristine ng-untouched ng-valid ng-empty" ng-model="user.password" on-return-key="signIn()" ng-class="{'data-error': loginInvalidPassword}" placeholder="Password">
+                                                                        <div class="login-links">
+                                                                            <div class="tick-wrapper">
+                                                                                <label>
+                                                                                    <span class="tick-box svgi icon-tick" ng-class="{'icon-tick': user.remember}"></span>
+                                                                                    <input class="tick-checkbox ng-pristine ng-untouched ng-valid ng-not-empty" ng-model="user.remember" type="checkbox" name="loginRemember">
+                                                                                    <p class="ng-binding">Keep me signed in</p>
+                                                                                </label>
+                                                                            </div>
+                                                                            <button ng-click="switchQuestion('password')" class="btn btn-link ng-binding">Forgot your password?</button>
+                                                                        </div>
+                                                                        <div class="two-buttons clearfix">
+                                                                            <button class="btn btn-primary btn-left standalone" ng-click="signIn()" ng-disabled="loginButtonDisabled" ng-class="{standalone: standalone}">
+                                                                                <span class="ng-binding">Login</span>
+                                                                            </button>
+                                                                            <!-- ngIf: !standalone -->
+                                                                        </div>
+                                                                        <!-- ngIf: appData.showSocialMediaIcons -->
+                                                                        <button ng-if="appData.showSocialMediaIcons" type="submit" ng-click="facebookSignIn()" class="facebook-connect ng-scope">
+                                                                            <div>
+                                                                                <span class="svgi icon-facebook-app"></span>
+                                                                                <span class="button-label ng-binding">Connect</span>
+                                                                            </div>
+                                                                        </button>
+                                                                        <!-- end ngIf: appData.showSocialMediaIcons -->
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                            <div class="login-captcha login-box-captcha" ng-class="captchaId"></div>
+                                                            <!-- ngIf: loginErrorMessage -->
+                                                        </div>
+                                                        <!-- ngIf: displayFooter || !standalone -->
+                                                    </div>
+                                                    <!-- end ngIf: version === 'compact' || version === 'login-tooltip' -->
+                                                    <!-- ngIf: version !== 'compact' && version !== 'login-tooltip' -->
+                                                </div>
+                                                <div class="register-question-form" register-question-form="">
+                                                    <!-- ngIf: version === 'compact' -->
+                                                    <!-- ngIf: version === 'onboarding' -->
+                                                    <!-- ngIf: version !== 'compact' && version !== 'onboarding' -->
+                                                    <div ng-if="version !== 'compact' &amp;&amp; version !== 'onboarding'" class="ng-scope">
+                                                        <div ng-hide="hasRegistrationSucceed" class="register-form question-content question-inner-content">
+                                                            <div class="login-question-sub-header ng-binding">
+                                                                Join YouGov to take part in interesting surveys and earn points and rewards!
+</div>
+                                                            <div class="form-container">
+                                                                <form name="emailSignup" ng-submit="emailSignup.$valid &amp;&amp; registerNow()" novalidate="" class="ng-pristine ng-invalid ng-invalid-required ng-valid-pattern ng-valid-minlength">
+                                                                    <div class="email-signup">
+                                                                        <input type="text" name="email" ng-model="user.email" on-return-key="registerNow()" ng-class="{'data-error': emailSignup.$submitted &amp;&amp; emailSignup.email.$error}" ng-pattern="/^[a-zA-Z0-9.!#$%&amp;'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/" required="" placeholder="Enter your email address" class="ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-pattern">
+                                                                        <ng-messages for="emailSignup.$submitted &amp;&amp; emailSignup.email.$error" class="ng-inactive">
+                                                                            <!-- ngMessage: -->
+                                                                            <!-- ngMessage: -->
+                                                                        </ng-messages>
+                                                                        <input type="password" name="password" ng-model="user.password" on-return-key="registerNow()" ng-minlength="6" required="" ng-class="{'data-error': emailSignup.$submitted &amp;&amp; emailSignup.password.$error}" placeholder="Choose a password" class="ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-minlength">
+                                                                        <ng-messages for="emailSignup.$submitted &amp;&amp; emailSignup.password.$error" class="ng-inactive">
+                                                                            <!-- ngMessage: -->
+                                                                            <!-- ngMessage: -->
+                                                                        </ng-messages>
+                                                                        <yg-accept-terms main-form="emailSignup" on-accept-change="setAcceptTerms({term})" class="ng-isolate-scope">
+                                                                            <ng-form name="$ctrl.acceptTermsForm" class="ng-pristine ng-invalid ng-invalid-required">
+                                                                                <div ng-switch="::$ctrl.appData.registrationAcceptTermsType">
+                                                                                    <!-- ngSwitchWhen: registrationWithoutAcceptTerms -->
+                                                                                    <!-- ngSwitchWhen: registrationWithAcceptPolicyAndAgreement -->
+                                                                                    <!-- ngSwitchDefault: -->
+                                                                                    <div ng-switch-default="" class="clearfix accept-terms-box ng-scope">
+                                                                                        <div class="tick-wrapper" ng-class="{error: $ctrl.mainForm.$submitted &amp;&amp; $ctrl.acceptTermsForm.acceptTerms.$error.required}">
+                                                                                            <label>
+                                                                                                <span class="tick-box svgi" ng-class="{'icon-tick': $ctrl.acceptTerms.value}"></span>
+                                                                                                <input class="tick-checkbox ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" ng-model="$ctrl.acceptTerms.value" type="checkbox" name="acceptTerms" ng-change="$ctrl.onAcceptChange({term: $ctrl.acceptTerms.value})" required="">
+                                                                                                <p class="ng-binding">
+                        I agree to the <a ng-href="/en-sg/about/privacy" class="ng-binding" href="/en-sg/about/privacy">Privacy Policy</a>
+                        and <a ng-href="/en-sg/about/terms-conditions" class="ng-binding" href="/en-sg/about/terms-conditions">Terms and Conditions</a> </p>
+                                                                                            </label>
+                                                                                        </div>
+                                                                                        <!-- ngIf: $ctrl.mainForm.$submitted -->
+                                                                                    </div>
+                                                                                    <!-- end ngSwitchWhen: -->
+                                                                                </div>
+                                                                            </ng-form>
+                                                                        </yg-accept-terms>
+                                                                        <div class="two-buttons clearfix">
+                                                                            <button type="submit" class="btn btn-primary btn-left standalone" ng-disabled="registerButtonDisabled" ng-class="{standalone: standalone}">
+                                                                                <span class="ng-binding">Sign up with e-mail</span>
+                                                                            </button>
+                                                                            <!-- ngIf: !standalone -->
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="login-captcha login-box-captcha-register" ng-class="captchaId + '-register'"></div>
+                                                                    <!-- ngIf: registrationErrorMessage -->
+                                                                </form>
+                                                                <!-- ngIf: appData.showSocialMediaIcons -->
+                                                                <div ng-if="appData.showSocialMediaIcons" class="ng-scope">
+                                                                    <p class="register-separator ng-binding">or</p>
+                                                                    <yg-facebook-register class="ng-isolate-scope">
+                                                                        <form name="$ctrl.facebookRegisterForm" ng-submit="$ctrl.resetValidityAndRegister()" novalidate="" class="ng-pristine ng-invalid ng-invalid-required">
+                                                                            <yg-accept-terms main-form="$ctrl.facebookRegisterForm" on-accept-change="$ctrl.updateFbTermsCookie({term})" accept-terms-value="$ctrl.acceptTermsValue" class="ng-isolate-scope">
+                                                                                <ng-form name="$ctrl.acceptTermsForm" class="ng-pristine ng-invalid ng-invalid-required">
+                                                                                    <div ng-switch="::$ctrl.appData.registrationAcceptTermsType">
+                                                                                        <!-- ngSwitchWhen: registrationWithoutAcceptTerms -->
+                                                                                        <!-- ngSwitchWhen: registrationWithAcceptPolicyAndAgreement -->
+                                                                                        <!-- ngSwitchDefault: -->
+                                                                                        <div ng-switch-default="" class="clearfix accept-terms-box ng-scope">
+                                                                                            <div class="tick-wrapper" ng-class="{error: $ctrl.mainForm.$submitted &amp;&amp; $ctrl.acceptTermsForm.acceptTerms.$error.required}">
+                                                                                                <label>
+                                                                                                    <span class="tick-box svgi" ng-class="{'icon-tick': $ctrl.acceptTerms.value}"></span>
+                                                                                                    <input class="tick-checkbox ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" ng-model="$ctrl.acceptTerms.value" type="checkbox" name="acceptTerms" ng-change="$ctrl.onAcceptChange({term: $ctrl.acceptTerms.value})" required="">
+                                                                                                    <p class="ng-binding">
+                        I agree to the <a ng-href="/en-sg/about/privacy" class="ng-binding" href="/en-sg/about/privacy">Privacy Policy</a>
+                        and <a ng-href="/en-sg/about/terms-conditions" class="ng-binding" href="/en-sg/about/terms-conditions">Terms and Conditions</a> </p>
+                                                                                                </label>
+                                                                                            </div>
+                                                                                            <!-- ngIf: $ctrl.mainForm.$submitted -->
+                                                                                        </div>
+                                                                                        <!-- end ngSwitchWhen: -->
+                                                                                    </div>
+                                                                                </ng-form>
+                                                                            </yg-accept-terms>
+                                                                            <button type="submit" class="btn btn-link facebook-connect">
+                                                                                <div>
+                                                                                    <span class="svgi icon-facebook-app"></span>
+                                                                                    <span class="button-label ng-binding">Sign up with Facebook</span>
+                                                                                </div>
+                                                                            </button>
+                                                                            <!-- ngIf: registrationErrorMessage -->
+                                                                        </form>
+                                                                    </yg-facebook-register>
+                                                                </div>
+                                                                <!-- end ngIf: appData.showSocialMediaIcons -->
+                                                            </div>
+                                                        </div>
+                                                        <div ng-show="hasRegistrationSucceed" class="register-confirmation fade-in question-content question-inner-content ng-hide">
+                                                            <div class="login-question-sub-header ng-binding">
+                                                                Thanks for registering!
+</div>
+                                                            <p class="login-question-paragraph ng-binding">
+        You’ll now receive an email from us containing a link that you’ll need to click on for us to authenticate you. </p>
+                                                            <p class="login-question-paragraph ng-binding">
+        Click on the link and your registration will be complete and you’ll be able to login into the site and create your own profile. </p>
+                                                            <!-- ngIf: !standalone -->
+                                                        </div>
+                                                        <div ng-hide="!displayFooter &amp;&amp; standalone || hasRegistrationSucceed" class="footer-switch question-inner-content ng-hide">
+                                                            <button class="btn btn-link switch-btn ng-binding" ng-click="switchQuestion('login')">I’m already a member of YouGov, log me in</button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- end ngIf: version !== 'compact' && version !== 'onboarding' -->
+                                                </div>
+                                                <div class="login-question-switch widget-content" login-question-switch="">
+                                                    <div class="clearfix question-content question-inner-content">
+                                                        <div class="login-question-sub-header ng-binding">Are you already a member of YouGov?</div>
+                                                        <div class="answer-option" ng-class="{active: login.getIsMember() === true}" ng-click="switchQuestion('login')">
+                                                            <span class="pseudo-checkbox"></span>
+                                                            <span class="answer-label ng-binding">Yes</span>
+                                                        </div>
+                                                        <div class="answer-option" ng-class="{active: login.getIsMember() === false}" ng-click="switchQuestion('register')">
+                                                            <span class="pseudo-checkbox"></span>
+                                                            <span class="answer-label ng-binding">No</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="exit-possibilities" exit-possibilities="">
+                                                    <div class="clearfix question-content question-inner-content">
+                                                        <div class="login-question-sub-header ng-binding">
+                                                            <!-- ngIf: appCtx.isLoggedIn -->
+                                                            <div ng-if="appCtx.isLoggedIn" class="ng-binding ng-scope">Thanks for signing in!</div>
+                                                            <!-- end ngIf: appCtx.isLoggedIn -->
+                                                            What would you like to do next?
+                                                        </div>
+                                                        <div class="answer-option" ng-click="continueSequence()">
+                                                            <span class="pseudo-checkbox"></span>
+                                                            <span class="answer-label ng-binding">Stay here and carry on answering questions</span>
+                                                        </div>
+                                                        <!-- ngIf: appCtx.isLoggedIn -->
+                                                        <a ng-if="appCtx.isLoggedIn" class="answer-option ng-scope" ng-href=""> <span class="pseudo-checkbox"></span> <span class="answer-label ng-binding">Take me to the members area</span> </a>
+                                                        <!-- end ngIf: appCtx.isLoggedIn -->
+                                                        <a class="answer-option" ng-href=""> <span class="pseudo-checkbox"></span> <span class="answer-label ng-binding">Show me latest news and polling data</span> </a>
+                                                        <a class="answer-option" ng-href=""> <span class="pseudo-checkbox"></span> <span class="answer-label ng-binding">View YouGov’s professional services</span> </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a ng-href="/en-sg/account/register/" class="btn btn-primary ng-binding" href="/en-sg/account/register/">+ Join</a>
+                            </div>
+                            <div ng-show="appCtx.isLoggedIn" class="login-box-authenticated">
+                                <!-- ngIf: appCtx.user.avatar -->
+                                <a href="/en-sg/account/" class="svgi icon-notifications-people hidden-xs hidden-sm">
+                                    <!-- ngIf: appCtx.user.notifications.unread -->
+                                </a>
+                                <a ng-href="/en-sg/account/" class="logins-box-points hidden-xs hidden-sm ng-binding" href="/en-sg/account/"></a>
+                                <a ng-href="/en-sg/account/logout/" class="logins-box-logout ng-binding" href="/en-sg/account/logout/">Logout</a>
+                            </div>
+                            <div ng-show="appCtx.isLoggedIn" class="login-box-authenticated new">
+                                <a ng-href="/en-sg/account/" href="/en-sg/account/">
+                                    <!-- ngIf: appCtx.user.avatar -->
+                                    <!-- ngIf: !appCtx.user.avatar -->
+                                    <span ng-if="!appCtx.user.avatar" class="icon ng-scope"> <svg width="16" height="16" viewbox="0 0 24 24">
+                                            <path d="M12 14a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-3a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM3 22.5V24H0v-1.5c0-3.268 5.466-7 12.008-7 6.553 0 11.992 3.711 11.992 7V24h-3v-1.5c0-.006-.109-.26-.355-.59-.363-.491-.91-1.008-1.598-1.477-1.766-1.204-4.16-1.933-7.039-1.933-2.876 0-5.273.733-7.046 1.944-.69.47-1.24.99-1.607 1.48-.246.33-.355.58-.355.576z"></path>
+                                        </svg> </span>
+                                    <!-- end ngIf: !appCtx.user.avatar -->
+                                </a>
+                                <!-- ngIf: appCtx.user.points >= 0 -->
+                                <!-- ngIf: opigramEnabled -->
+                                <a ng-href="/en-sg/account/logout/" class="element" href="/en-sg/account/logout/">
+                                    <div class="items-container">
+                                        <span class="icon"> <svg width="16" height="16" viewbox="0 0 16 16">
+                                                <path fill-rule="nonzero" d="M12.067 7.658l.435.435-4.796 4.796-1.414-1.415L8.767 9H0V7h8.584L6.412 4.829l1.415-1.414 4.241 4.241-.001.002zM4.999 0H16v16H4.999v-1.915h9.083V2H5V0z"></path>
+                                            </svg> </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <a href="#" class="magnifier-glass left-off-canvas-toggle-phone" target="_pg_blank"><span class="svgi icon-magnifier-white"></span></a>
+                    </nav>
+                </div>
+                <div class="no-overflow" style="outline-offset: -4px;">
+                    <div class="layout-2-5-2 layout-2-5-2-merge" style="">
+                        <div class="new-row" style="">
+                            <aside class="col-1" style="">
+                                <div>
+                                    <div class="nav-wrapper" ng-class="{'open' : offCanvas.isNavOpened}">
+                                        <a href="#" ng-click="hideCanvas($event)" class="close-menu"> <span>Close menu</span> <span class="times">×</span> </a>
+                                        <div class="user-info clearfix ng-scope ng-hide" ng-controller="userInfoCtrl as user" ng-show="user.data.user_id">
+                                            <div class="avatar pull-left">
+                                                <img>
+                                            </div>
+                                            <div class="pull-left">
+                                                <div class="user-id ng-binding"> </div>
+                                                <a href="/en-sg/account/logout/" class="logins-box-logout link-dark">Logout</a>
+                                            </div>
+                                        </div>
+                                        <div class="main-search ng-isolate-scope" main-search="" placeholder-text="Search..." overlayed-area-selector=".search-overtake" style="display: none;">
+                                            <input ng-model="search.term" on-return-key="handleEnter()" type="text" placeholder="Search..." class="ng-pristine ng-untouched ng-valid ng-empty">
+                                            <button ng-hide="isLoading || search.term !== '' &amp;&amp; appData.opigramEnabled &amp;&amp; enableSuggestions" ng-click="handleMagnifierClick()" class="btn btn-link svgi icon-magnifier"></button>
+                                            <button ng-hide="isLoading || search.term === '' || !enableSuggestions" ng-click="clearTerm()" class="btn btn-link svgi icon-x-close ng-hide"></button>
+                                            <opi-spinner ng-show="isLoading" ng-class="{'stop-animate': !isLoading}" class="ng-isolate-scope ng-hide stop-animate">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 78 78">
+                                                    <circle fill="none" stroke="#555" stroke-width="6" stroke-linecap="round" cx="39" cy="39" r="30"></circle>
+                                                </svg>
+                                            </opi-spinner>
+                                            <div class="search-results clearfix">
+                                                <!-- ngRepeat: thing in results.things -->
+                                                <!-- ngIf: appContextSrv.isLoggedIn && results -->
+                                            </div>
+                                        </div>
+                                        <div class="search-overtake">
+                                            <div class="left-nav" style="display: none;">
+                                                <ul class="nav home-nav level-1 visible-xs">
+                                                    <li>
+                                                        <a href="/?stay" target="_parent"> <span class="nav-item-title">Home</span> <span class="svgi icon-menu-arrow"></span> </a>
+                                                    </li>
+                                                </ul>
+                                                <div class="nav-header hidden take-part active">
+                                                    <div class="header-name">
+                                                        <a href="/en-sg/account/"><span class="svgi icon-take-part"></span>Take Part</a>
+                                                    </div>
+                                                </div>
+                                                <ul class="nav level-1 active">
+                                                    <li class="active">
+                                                        <a href="/en-sg/account" target="_parent" style=""> <span class="nav-item-title" style="">
+                    My Account  </span> <span class="svgi icon-menu-arrow"></span> </a>
+                                                    </li>
+                                                </ul>
+                                                <ul class="nav level-1 active">
+                                                    <li>
+                                                        <a href="/en-sg/account/faq" target="_parent" style=""> <span class="nav-item-title">
+                    FAQ  </span> <span class="svgi icon-menu-arrow"></span> </a>
+                                                    </li>
+                                                </ul>
+                                                <div class="nav-header hidden results">
+                                                    <div class="header-name">
+                                                        <a href="/en-sg/results/"><span class="svgi icon-results"></span>See Results</a>
+                                                    </div>
+                                                </div>
+                                                <ul class="nav level-1 hidden">
+                                                    <li>
+                                                        <a href="/en-sg/results/" target="_parent"> <span class="nav-item-title">
+                    Results Home  </span> <span class="svgi icon-menu-arrow"></span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/en-sg/news/categories/life/" target="_parent"> <span class="nav-item-title">
+                    Life  </span> <span class="svgi icon-menu-arrow"></span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/en-sg/news/categories/sport/" target="_parent"> <span class="nav-item-title">
+                    Sport  </span> <span class="svgi icon-menu-arrow"></span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/en-sg/news/categories/local/" target="_parent"> <span class="nav-item-title">
+                    Local  </span> <span class="svgi icon-menu-arrow"></span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/en-sg/news/categories/international/" target="_parent"> <span class="nav-item-title">
+                    International  </span> <span class="svgi icon-menu-arrow"></span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/en-sg/news/categories/environment/" target="_parent"> <span class="nav-item-title">
+                    Environment  </span> <span class="svgi icon-menu-arrow"></span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/en-sg/news/categories/financial/" target="_parent"> <span class="nav-item-title">
+                    Financial  </span> <span class="svgi icon-menu-arrow"></span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/en-sg/news/categories/brandindex/" target="_parent"> <span class="nav-item-title">
+                    BrandIndex News  </span> <span class="svgi icon-menu-arrow"></span> </a>
+                                                    </li>
+                                                </ul>
+                                                <div class="nav-header hidden find-solutions">
+                                                    <div class="header-name">
+                                                        <a href="/en-sg/find-solutions/"><span class="svgi icon-find-solutions"></span>Find Solutions</a>
+                                                    </div>
+                                                </div>
+                                                <ul class="nav level-1 hidden">
+                                                    <li class="brandindex">
+                                                        <a href="/en-sg/find-solutions/brandindex/" target="_parent"> <span class="nav-item-title">
+                    BrandIndex  </span> <span class="svgi icon-menu-arrow"></span> </a>
+                                                    </li>
+                                                    <li class="omnibus">
+                                                        <a href="/en-sg/find-solutions/omnibus/" target="_parent"> <span class="nav-item-title">
+                    Omnibus  </span> <span class="svgi icon-menu-arrow"></span> </a>
+                                                    </li>
+                                                    <li class="profiles">
+                                                        <a href="/en-sg/find-solutions/profiles/" target="_parent"> <span class="nav-item-title">
+                    Profiles  </span> <span class="svgi icon-menu-arrow"></span> </a>
+                                                    </li>
+                                                    <li class="reel">
+                                                        <a href="/en-sg/find-solutions/reel/" target="_parent"> <span class="nav-item-title">
+                    Reel  </span> <span class="svgi icon-menu-arrow"></span> </a>
+                                                    </li>
+                                                    <li class="reports">
+                                                        <a href="/en-sg/find-solutions/reports/" target="_parent"> <span class="nav-item-title">
+                    Reports  </span> <span class="svgi icon-menu-arrow"></span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/en-sg/find-solutions/events/" target="_parent"> <span class="nav-item-title">
+                    Events  </span> <span class="svgi icon-menu-arrow"></span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/en-sg/about/about/" target="_parent"> <span class="nav-item-title">
+                    ABOUT  </span> <span class="svgi icon-menu-arrow"></span> </a>
+                                                    </li>
+                                                </ul>
+                                                <div class="nav-header hidden hidden-xs">
+                                                    <div class="header-name">
+                                                        <a href="/en-sg/about/"><span class="svgi icon-hidden-xs"></span>ABOUT</a>
+                                                    </div>
+                                                </div>
+                                                <ul class="nav level-1 hidden">
+                                                    <li class="about">
+                                                        <a href="/en-sg/about/about/" target="_parent"> <span class="nav-item-title">
+                    About YouGov  </span> <span class="svgi icon-menu-arrow"></span> </a>
+                                                    </li>
+                                                    <li class="contact-us">
+                                                        <a href="/en-sg/about/contact-us/" target="_parent"> <span class="nav-item-title">
+                    Contact Us  </span> <span class="svgi icon-menu-arrow"></span> </a>
+                                                    </li>
+                                                    <li class="investors">
+                                                        <a href="/en-sg/about/investors/" target="_parent"> <span class="nav-item-title">
+                    Investor Relations  </span> <span class="svgi icon-menu-arrow"></span> </a>
+                                                    </li>
+                                                    <li class="privacy">
+                                                        <a href="/en-sg/about/privacy/" target="_parent"> <span class="nav-item-title">
+                    Privacy  </span> <span class="svgi icon-menu-arrow"></span> </a>
+                                                    </li>
+                                                    <li class="terms-conditions">
+                                                        <a href="/en-sg/about/terms-conditions/" target="_parent"> <span class="nav-item-title">
+                    Terms &amp; Conditions  </span> <span class="svgi icon-menu-arrow"></span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/en-sg/about/cookies/" target="_parent"> <span class="nav-item-title">
+                    Cookies  </span> <span class="svgi icon-menu-arrow"></span> </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="footer-nav">
+                                                <ul class="links">
+                                                    <li>
+                                                        <a href="/en-sg/about/" class="pull-left None" target="_self" rel="noopener"> <span class="nav-item-title">About YouGov</span> <span class="svgi icon-menu-arrow visible-xs"></span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/en-sg/about/contact-us/" class="pull-left None" target="_self" rel="noopener"> <span class="nav-item-title">Contact Us</span> <span class="svgi icon-menu-arrow visible-xs"></span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/en-sg/about/investors/" class="pull-left None" target="_self" rel="noopener"> <span class="nav-item-title">Investor relations</span> <span class="svgi icon-menu-arrow visible-xs"></span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/en-sg/about/privacy/" class="pull-left None" target="_self" rel="noopener"> <span class="nav-item-title">Privacy</span> <span class="svgi icon-menu-arrow visible-xs"></span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/en-sg/about/terms-conditions/" class="pull-left None" target="_self" rel="noopener"> <span class="nav-item-title">Terms and Conditions</span> <span class="svgi icon-menu-arrow visible-xs"></span> </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/en-sg/about/cookies/" class="pull-left None" target="_self" rel="noopener"> <span class="nav-item-title">Cookies</span> <span class="svgi icon-menu-arrow visible-xs"></span> </a>
+                                                    </li>
+                                                </ul>
+                                                <ul class="social-bookmarks">
+                                                    <li>
+                                                        <a href="https://www.facebook.com/YouGov" class="pull-left facebook" target="_blank" rel="noopener"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://twitter.com/YouGov" class="pull-left twitter" target="_blank" rel="noopener"></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/news/feeds/latest/" class="pull-left rss" target="_blank" rel="noopener"></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </aside>
+                            <aside class="col-3" style="display: none;">
+                                <h1 class="visible-xs visible-sm">My Account</h1>
+                                <div class="available-surveys box-component box-component-small ng-isolate-scope ng-hide" ng-show="!availableSurveys.appContextSrv.device.isMobile || availableSurveys.appContextSrv.device.isMobile &amp;&amp; availableSurveys.data.length > 0" available-surveys="" style="">
+                                    <div class="box-heading ng-binding">
+                                        <strong class="ng-binding"></strong> Available Surveys
+                                    </div>
+                                    <div class="box-content">
+                                        <!-- ngRepeat: survey in availableSurveys.data -->
+                                        <div class="mini-loader ng-hide" ng-show="availableSurveys.displayLoader" style=""></div>
+                                        <!-- ngIf: availableSurveys.data.length === 0 -->
+                                        <div class="no-surveys ng-scope" ng-if="availableSurveys.data.length === 0" style="">
+                                            <strong class="ng-binding">We don't have a full length survey for you right now. Won't be long!</strong>
+                                            <p class="ng-binding">In the meantime, why not fill in your profile by responding to the questions in your Feed...</p>
+                                        </div>
+                                        <!-- end ngIf: availableSurveys.data.length === 0 -->
+                                    </div>
+                                    <!-- ngIf: availableSurveys.displayMore -->
+                                </div>
+                                <div class="countdown box-component box-component-small ng-show-fade-in ng-isolate-scope ng-hide" ng-show="countdown.data.id" countdown="" initial-points="370">
+                                    <div class="box-heading ng-binding">Countdown to </div>
+                                    <div class="box-content">
+                                        <!-- ngIf: countdown.data.pointsLeft > 0 -->
+                                        <!-- ngIf: countdown.data.pointsLeft == 0 -->
+                                        <div class="graph-container"> 
+                                            <div class="outer-points-graph">
+                                                <div class="inner-points-graph ng-binding"></div>
+                                            </div>
+                                            <div class="outer-points-graph-cover">
+                                                <div class="inner-points-graph-cover">
+                                                    <div class="points-value ng-binding"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="footer ng-binding">Take more surveys to earn more points...</p>
+                                    </div>
+                                </div>
+                                <div class="user-settings box-component box-component-small ng-scope" ng-class="{edit: isEditMode}" ng-controller="userSettingsCtrl">
+                                    <div class="box-heading">My details 
+                                        <span class="edit" ng-click="enableEdit()" ng-show="!isEditMode"><span>Edit</span><span class="svgi icon-pencil-grey"></span></span>
+                                        <span class="edit ng-hide" ng-click="cancelEdit()" ng-show="isEditMode"><span>Cancel</span><span class="svgi icon-x-close"></span></span>
+                                    </div>
+                                    <div class="box-content" style="display: none;">
+                                        <p class="message ng-binding ng-hide" ng-show="message" ng-class="{'bg-success' : success, 'bg-danger' : error}" style="display: block;"></p>
+                                        <form method="post" class="ng-pristine ng-valid">
+                                            <input type="hidden" name="csrfmiddlewaretoken" value="rR3fTNJH2yRoCsfMw30q0grBJdIuacIS" autocomplete="off" disabled="disabled">
+                                            <input type="hidden" name="identity" value="1" autocomplete="off" disabled="disabled">
+                                            <div class="form-group">
+                                                <label for="id_pii_name_first">Firstname</label>
+                                                <input class="form-control" id="id_pii_name_first" name="pii_name_first" required="required" type="text" value="Ang" disabled="disabled">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="id_pii_name_last">Lastname</label>
+                                                <input class="form-control" id="id_pii_name_last" name="pii_name_last" required="required" type="text" value="Yang Lin" disabled="disabled">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="id_pii_address_street">Street</label>
+                                                <textarea class="form-control" cols="40" id="id_pii_address_street" name="pii_address_street" required="required" rows="5">Blk 501 Jelepang Rd #11-422</textarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="id_pii_address_city">City</label>
+                                                <input class="form-control" id="id_pii_address_city" name="pii_address_city" required="required" type="text" value="Singapore" disabled="disabled">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="id_pii_address_region">Country</label>
+                                                <input class="form-control" id="id_pii_address_region" name="pii_address_region" type="text" value="Singapore" disabled="disabled">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="id_pii_address_postcode">Postcode</label>
+                                                <input class="form-control" id="id_pii_address_postcode" name="pii_address_postcode" required="required" type="text" value="670501" disabled="disabled">
+                                            </div>
+                                            <div class="btn-group">
+                                                <button class="btn btn-secondary" ng-click="saveForm()">Save changes</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="user-settings box-component box-component-small ng-scope" ng-class="{edit: isEditMode}" ng-controller="userSettingsCtrl">
+                                    <div class="box-heading" style="display: none;">My settings 
+                                        <span class="edit" ng-click="enableEdit()" ng-show="!isEditMode"><span>Edit</span><span class="svgi icon-pencil-grey"></span></span>
+                                        <span class="edit ng-hide" ng-click="cancelEdit()" ng-show="isEditMode"><span>Cancel</span><span class="svgi icon-x-close"></span></span>
+                                    </div>
+                                    <div class="box-content" style="">
+                                        <p class="message ng-binding ng-hide" ng-show="message" ng-class="{'bg-success' : success, 'bg-danger' : error}" style="display: block;"></p>
+                                        <form method="post" class="ng-pristine ng-valid">
+                                            <input type="hidden" name="csrfmiddlewaretoken" value="rR3fTNJH2yRoCsfMw30q0grBJdIuacIS" autocomplete="off" disabled="disabled">
+                                            <input type="hidden" name="settings" value="1" autocomplete="off" disabled="disabled">
+                                            <div class="form-group">
+                                                <label for="id_email">Email</label>
+                                                <input class="text form-control" id="id_email" maxlength="200" name="email" required="required" type="text" value="ang_yanglin@hotmail.com" disabled="disabled">
+                                                <span class="helpText">If you change your email address you'll need to confirm it before receiving further survey invites.</span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="id_password1">Password</label>
+                                                <input class="text form-control" id="id_password1" maxlength="64" name="password1" required="required" type="password" value="UNCHANGED" disabled="disabled" style="cursor: auto; background-size: 20px 20px !important; background-position: 98% 50% !important; background-repeat: no-repeat !important; background-image: url(&quot;chrome-extension://ehpbfbahieociaeckccnklpdcmfaeegd/Icon-20.png&quot;) !important;">
+                                                <span class="helpText">Leave this field unchanged if you do not wish to change your password.</span>
+                                            </div>
+                                            <div class="form-group" style="display: none;">
+                                                <label for="id_password2">Confirm Password</label>
+                                                <input class="text form-control" id="id_password2" maxlength="64" name="password2" required="required" type="password" value="UNCHANGED" disabled="disabled">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="id_survey_frequency">Survey Frequency</label>
+                                                <div class="custom-dropdown">
+                                                    <div class="form-control settings-preview hidden">As often as possible</div>
+                                                    <select class="form-control" id="id_survey_frequency" name="survey_frequency">
+                                                        <option value="0">-</option>
+                                                        <option value="1" selected="selected">As often as possible</option>
+                                                        <option value="2">Weekly</option>
+                                                        <option value="3">Twice monthly</option>
+                                                        <option value="4">Monthly</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="id_language_choices">Languages</label>
+                                                <div class="dropdown_multiple" id="id_language_choices">
+                                                    <div class="custom-dropdown">
+                                                        <div class="form-control settings-preview hidden">English</div>
+                                                        <select class="dropdown_select form-control" name="language_choices">
+                                                            <option value="">-</option>
+                                                            <option value="en" selected="selected">English</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="custom-dropdown">
+                                                        <div class="form-control settings-preview hidden">-</div>
+                                                        <select class="dropdown_select form-control" name="language_choices">
+                                                            <option value="">-</option>
+                                                            <option value="en">English</option>
+                                                        </select>
+                                                    </div>
+                                                    <script>
+    window.onload = function() {
+
+        $('div#id_language_choices select.dropdown_select').change(function(){
+
+            var pattern = 'div#id_language_choices>.custom-dropdown>select.dropdown_select';
+            var last_item = $(pattern+':last');
+
+            if (last_item.val()) {
+                last_item.parent().clone(true).appendTo($('div#id_language_choices'));
+                $('div#id_language_choices').append(' ');
+            };
+
+            var values = [];
+            for (var i=$(pattern).length-1; i>=0; i--) {
+                if (values.indexOf($($(pattern).get(i)).val()) >= 0) {
+                    $($(pattern).get(i)).parent().remove();
+                } else {
+                    values.push($($(pattern).get(i)).val());
+                }
+            };
+        });
+    }
+</script>
+                                                </div>
+                                                <span class="helpText">Select the languages you would prefer to complete surveys on and position from most to least preferred.</span>
+                                            </div>
+                                            <div class="btn-group">
+                                                <button class="btn btn-secondary" ng-click="saveForm()">Save changes</button>
+                                            </div>
+                                        </form>
+                                        <div class="facebook-connect" ng-hide="isEditMode">
+                                            <script>
+                        function facebookLogin() {
+                            function handleResponse(response) {
+                                parent.location = '/en-sg/account/connect/create/';
+                            }
+                            FB.login(handleResponse, {scope: 'email'});
+                        }
+                    </script>
+                                            <button class="facebookLogin" onclick="facebookLogin();return false;">
+                                                <img src="http://d1rq7cuzerol8r.cloudfront.net/unified/cu/img/facebook_connect_lrg_278x44.png" alt="Facebook">
+                                            </button>
+                                        </div>
+                                        <div class="privacy" ng-hide="isEditMode">
+                                            <a href="/about/privacy/" class="btn btn-link">Privacy Policy</a>
+                                            <a href="/en-sg/account/unsubscribe/" class="btn btn-secondary">Unsubscribe</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user-info ng-scope ng-hide" ng-controller="userInfoCtrl as user" ng-show="user.data.user_id">
+                                    <div class="avatar">
+                                        <img>
+                                    </div>
+                                    <div class="user-id ng-binding"> </div>
+                                    <a ng-href="/opi/profile/" class="ng-binding" href="/opi/profile/">See my profile</a>
+                                </div>
+                            </aside>
+                            <div class="col-2" style="">
+                                <h1 class="hidden-xs hidden-sm" style="display: none;">My Account</h1>
+                                <div class="box-component rewards-container ng-isolate-scope">
+                                    <div class="box-heading ng-binding" style="">Rewards</div>
+                                    <div style="outline-offset: -4px;" class="text-center">
+                                        <div class="points ng-binding" style="">You have 
+                                            <strong>5180</strong> points!
+                                        </div>
+                                        <div style=""> 
+                                            <table class="table" align="center"> 
+                                                <thead> 
+                                                    <tr> 
+                                                        <th width="33.33%" class="text-center">UNICEF<br>Donation</th> 
+                                                        <th width="33.33%" class="text-center">SG$25 Paypal <br>cash-out</th> 
+                                                        <th width="33.33%" class="text-center">SG$25 Mobile <br>Credit Topup</th> 
+                                                    </tr>                                                     
+                                                </thead>                                                 
+                                                <tbody> 
+                                                    <tr> 
+                                                        <th scope="row" class="text-center">
+                                                            <img src="https://d18lkz4dllo6v2.cloudfront.net/cumulus_uploads/redemptionitem/315/unicef.png?w=115&amp;h=70" class="ml-4">
+                                                        </th>                                                         
+                                                        <td scope="row" class="text-center">
+                                                            <img src="https://d18lkz4dllo6v2.cloudfront.net/cumulus_uploads/redemptionitem/313/paypal.png?w=115&amp;h=70">
+                                                        </td>                                                         
+                                                        <td scope="row" class="text-center">
+                                                            <img src="https://d18lkz4dllo6v2.cloudfront.net/cumulus_uploads/redemptionitem/2017-08-09/mobilecredittopup.png?w=115&amp;h=70">
+                                                        </td>                                                         
+                                                    </tr>                                                     
+                                                    <tr> 
+                                                        <th scope="row" class="text-center">
+                                                            <button type="button" class="btn btn-danger">5,000 Points</button>
+                                                        </th>                                                         
+                                                        <td scope="row" class="text-center">
+                                                            <button type="button" class="btn btn-danger">5,000 Points</button>
+                                                        </td>                                                         
+                                                        <td scope="row" class="text-center">
+                                                            <button type="button" class="btn btn-danger">5,000 Points</button>
+                                                        </td>                                                         
+                                                    </tr>                                                     
+                                                </tbody>                                                 
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-component refer-friend">
+                                    <div class="box-heading" style="display: none;">Refer a friend</div>
+                                    <div style="display: none;">
+                                        <p class="refer-friend-label">Refer a friend and <span class="emphasized-light" style="">earn points</span>!</p>
+                                        <div class="share-tiles">
+                                            <div class="share-tile">
+                                                <a href="http://www.facebook.com/sharer.php?s=100&amp;p[url]=https://sg.yougov.com/en-sg/refer/tm0FOW3gqsPMvy6xhVEGtQ/&amp;p[title]=" share-button="{'width': 600, height: 285, 'service': 'Facebook', 'isSurveyPopup' : '', 'isReferralPage' : '', 'isEntry': '' }"> <span class="svgi icon-facebook"></span> </a>
+                                            </div>
+                                            <div class="share-tile">
+                                                <a href="https://twitter.com/share?url=https://sg.yougov.com/en-sg/refer/tm0FOW3gqsPMvy6xhVEGtQ/&amp;text=" share-button="{'width': 600, height: 255, 'service': 'Twitter', 'isSurveyPopup' : '', 'isReferralPage' : '', 'isEntry': '' }"> <span class="svgi icon-twitter"></span> </a>
+                                            </div>
+                                        </div>
+                                        <div class="highlight">
+                                            For every person that joins YouGov via your unique referral link and completes 6 surveys, you will receive 400 points!
+</div>
+                                        <p>Share your unique referral URL below to gain the extra points.</p>
+                                        <div class="refer-friend-copypaste">
+                                            <input type="text" class="form-control" spellcheck="false" value="https://sg.yougov.com/en-sg/refer/tm0FOW3gqsPMvy6xhVEGtQ/" onclick="this.select()">
+                                        </div>
+                                        <a href="/account/referral" class="more-info btn btn-link"><span class="svgi icon-caret"></span>More about how this works </a>
+                                    </div>
+                                </div>
+                                <div class="box-component account-history">
+                                    <div class="box-heading" style="">My Account history</div>
+                                    <div class="box-content">
+                                        <div id="feed_content">
+                                            <div class="history-item feed_event redemption" style="">
+                                                <span class="pngi icon-redemption"></span>
+                                                <span class="history-description"> You redeemed 5000 points for <strong>SG$25 Pay Pal Cash-out</strong>. </span>
+                                                <span class="event-date">Wed October 17 2018, 7:45 p.m. +08</span>
+                                            </div>
+                                            <div class="history-item feed_event survey_completed" style="">
+                                                <span class="pngi icon-survey-completed"></span>
+                                                <span class="history-description">You earned 180 points for <strong>Streaming survey</strong>. </span>
+                                                <span class="event-date">Wed October 17 2018, 7:41 p.m. +08</span>
+                                            </div>
+                                            <div class="history-item feed_event survey_completed" style="">
+                                                <span class="pngi icon-survey-completed"></span>
+                                                <span class="history-description">You earned 60 points for <strong>backstop survey</strong>. </span>
+                                                <span class="event-date">Thu October 11 2018, 10:56 p.m. +08</span>
+                                            </div>
+                                            <div class="history-item feed_event survey_completed" style="">
+                                                <span class="pngi icon-survey-completed"></span>
+                                                <span class="history-description">You earned 240 points for <strong>Brandindex SG</strong>. </span>
+                                                <span class="event-date">Thu October 4 2018, 3:53 a.m. +08</span>
+                                            </div>
+                                            <div class="history-item feed_event survey_completed" style="">
+                                                <span class="pngi icon-survey-completed"></span>
+                                                <span class="history-description">You earned 180 points for <strong>Engagement Survey</strong>. </span>
+                                                <span class="event-date">Sat September 15 2018, 7:46 p.m. +08</span>
+                                            </div>
+                                            <div class="history-item feed_event survey_completed" style="">
+                                                <span class="pngi icon-survey-completed"></span>
+                                                <span class="history-description">You earned 120 points for <strong>CSR study</strong>. </span>
+                                                <span class="event-date">Wed September 12 2018, 2:35 p.m. +08</span>
+                                            </div>
+                                            <div class="history-item feed_event survey_completed" style="">
+                                                <span class="pngi icon-survey-completed"></span>
+                                                <span class="history-description">You earned 180 points for <strong>OM</strong>. </span>
+                                                <span class="event-date">Wed September 12 2018, 12:15 a.m. +08</span>
+                                            </div>
+                                            <div class="history-item feed_event survey_completed" style="">
+                                                <span class="pngi icon-survey-completed"></span>
+                                                <span class="history-description">You earned 240 points for <strong>Brandindex SG</strong>. </span>
+                                                <span class="event-date">Fri September 7 2018, 7:46 a.m. +08</span>
+                                            </div>
+                                            <div class="history-item feed_event survey_completed" style="">
+                                                <span class="pngi icon-survey-completed"></span>
+                                                <span class="history-description">You earned 240 points for <strong>Festival</strong>. </span>
+                                                <span class="event-date">Sat August 25 2018, 9:44 p.m. +08</span>
+                                            </div>
+                                            <div class="history-item feed_event survey_completed" style="">
+                                                <span class="pngi icon-survey-completed"></span>
+                                                <span class="history-description">You earned 120 points for <strong>social media</strong>. </span>
+                                                <span class="event-date">Fri August 24 2018, 11 a.m. +08</span>
+                                            </div>
+                                        </div>
+                                        <div class="more-acitvity active">
+                                            Show more activity
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="exit-off-canvas left-off-canvas-toggle-phone hidden" target="_pg_blank"></a>
+        <yg-marketo-email-check class="ng-isolate-scope"></yg-marketo-email-check>
+        <div class="ng-isolate-scope" cookie-confirm="">
+            <!-- ngIf: cookieConfirm.displayConfirm -->
+        </div>
+        <script src="https://www.google.com/recaptcha/api.js?render=explicit" async="" defer=""></script>
+        <script>
+                    window.angular_data = {};
+                    window.angular_data.opigramEnabled = false;
+
+                    
+                        angular_data.registration_accept_terms_type = "registrationWithAcceptTerms";
+                    
+
+                    
+                        angular_data.recaptcha_site_key = "6LdWgF8UAAAAANbaAxdOQU3NY1thw6hMbg1B1l1R";
+                    
+
+                    
+                        angular_data.public_api_prefix = "/_pubapis/v4/";
+                    
+
+                    
+                        angular_data.public_api_region = "sg-en";
+                    
+
+                    
+                        angular_data.hyperwallet_api_prefix = "https://api.sandbox.hyperwallet.com";
+                    
+
+                    
+                        angular_data.mobile_ad_display_frequency = 100;
+                    
+
+                    angular_data.new_page = false;
+
+                    window.angular_data.mobile_app_ids = {
+                        ios: "1154082222",
+                        android: "com.yougov.mobile.online",
+                    };
+
+                    window.angular_data.i18n = {"login": {"logout": "Logout", "join": "+ Join", "header": "Login"}, "permissions": {"spd": {"dataAbout": {"union": "", "health": "", "religion": "", "sex": "", "race": "", "politics": ""}, "privacyNotice": "", "description": "", "title": "", "selectAll": ""}, "saveChanges": "", "unsubscribeFromPanel": "", "anonymousUse": {"title": ""}, "giveConsent": {"union": "", "health": "", "religion": "", "sex": "", "race": "", "politics": ""}, "marketing": {"yes": "", "description": "", "title": "", "no": ""}, "description": "", "title": ""}, "todaysAgenda": {"header": "Todays agenda"}, "reportToYougov": {"success_message": "Opinion reported", "question_text": "Are you sure?", "error_message": "Sorry, try again"}, "home": {"loginRegisterWidget": {"alreadyMember": "I\u2019m already a member, log me in", "joinThePanel": "Join the Panel"}, "whatTopicNext": "What topic would you like to go to next?", "header": {"whatIsYougov": "What is YouGov?", "whatWouldYouLike": "What would you like to do?", "welcomeToYougov": "Welcome to YouGov Singapore.", "takePoll": "Take today's poll on", "latest": "Latest"}}, "searchFilters": {"filters": "Filters", "day": "Past 24 hour", "week": "Past week", "articles": "Web Pages", "topics": "Topics", "dateRange": "Date range", "month": "Past month", "year": "Past year", "pdfs": "PDFs", "all": "All"}, "flyouts": {"seeFullResults": "See full results"}, "marketo": {"popup": {"contact": "", "title": "", "header": ""}, "businessEmailError": "", "pleaseWait": ""}, "cookie_confirm": {"cookie_confirm_more": "More...", "cookie_confirm_text": "YouGov uses cookies to give you the best experience on our site. By continuing to browse, you are agreeing to our use of cookies.", "cookie_confirm_accept": "Accept"}, "rewards": {"youHave": "You have", "seeMoreItems": "See more items", "youHaveEnoughPoints": "You have enough points for any of the following items in red. Click to redeem...", "header": "Rewards", "redeem": "Redeem", "points": "points"}, "electionsProjectionsPlot": {"tooltip": {"high": "", "low": "", "est": ""}}, "joinYougovButton": {"joinYougovNow": ""}, "surveysIntro": {"moreQuestions": "", "checkPoints": "Check your points balance", "thanks": "Thank you. You have completed the survey and banked your points!", "nextAction": ""}, "latestArticles": {"header": "Latest Results"}, "searchCube": {"hotTopicsHeader": "Hot Topics", "header": "Search the YouGov Cube", "learnMoreAboutCube": "Learn more about the YouGov Cube", "typeHere": "Type here...", "moreSuggestions": "More suggestions", "resultsHeader": "Results"}, "ratings": {"notFound": "", "addMoreRatings": "Add more ratings"}, "prizeDraw": {"receiveEntries": "Receive %s entries  into our monthly prize draw where you can win one of our range of exciting prizes.", "header": "Prize draw", "confirmEntries": "Are you sure you want to enter %s points for %s Prize Draw Entries?", "enterPoints": "Enter %s points", "youveEntered": "You\u2019ve now entered %s points for %s Prize Draw Entries.", "goodLuck": "Good luck!"}, "loginRegister": {"login_remember_label": "Keep me signed in", "register_thanks_onboarding": "", "register_privacy_policy": "Privacy Policy", "members_area": "Take me to the members area", "register_enter_email_onboarding": "", "okTryOut": "OK then, I\u2019ll try it out", "login_member_yes": "Yes", "login_forgot_password": "Forgot your password?", "invalid_email": "Oops: your email format isn\u2019t right", "onBoardingHeader": "", "enter_details_below": "Enter your details below", "forgotten_your_password": "Forgotten your password?", "want_you": "We want <span>you</span>!", "invalid_password": "Oops: you need to enter a password at least 6 characters long.", "register_ok": "Ok", "agree_terms_onboarding": "", "register_choose_password_onboarding": "Password", "ticking_square_on_the_left": "by ticking the square on the left", "login_label": "Login", "already_yougov_member": "Already a member of YouGov.", "email_sign_in": "Sign in with e-mail", "register_choose_password": "Choose a password", "register_click_emailed_link": "Click on the link and your registration will be complete and you\u2019ll be able to login into the site and create your own profile.", "alreadyHaveAccount": "", "register_not_now": "Not now", "join_to_take_part": "Join YouGov today to take part in influential surveys on the big issues of the day.", "login_here": "Login here", "terms_and_conditions": "Terms and Conditions", "login_email_placeholder": "Email", "register_enter_email_info_onboarding": "", "terms_of_service_onboarding": "", "enter_your_email": "Enter your e-mail address below, and we'll e-mail instructions for setting a new one.", "already_member_register": "I\u2019m not a member of YouGov, register me", "or_register_with": "or register with", "register_you_receive_email": "You\u2019ll now receive an email from us containing a link that you\u2019ll need to click on for us to authenticate you.", "sign_in_info": "You need to be signed in as a YouGov member to add your opinion...", "joinWithFacebook": "", "login_password_placeholder": "Password", "opinion_on_issues": "Do you have an opinion on issues like", "and_onboarding": "", "reset_my_password": "Reset my password", "professional_services": "View YouGov\u2019s professional services", "or": "or", "register_enter_email": "Enter your email address", "register_join_yougov": "Join YouGov to take part in interesting surveys and earn points and rewards!", "wouldYouTryYougov": "Would you like to try out being a YouGov member? It\u2019s the most influential opinion community in the country, where you take part in interesting surveys, earn points and cash", "facebook_join": "", "dont_ask_me_again": "Don't ask me again", "earn_cash_and_prizes": "(And guess what, you earn cash and prizes along the way!)", "reset_password_success": "Forgotten your password?", "thanks_for_signing_in": "Thanks for signing in!", "register_label": "+ Join", "login_member_no": "No", "register_thanks": "Thanks for registering!", "carry_on_answering_questions": "Stay here and carry on answering questions", "agree_terms": "I agree to the", "email_sign_up_onboarding": "", "email_sign_up": "Sign up with e-mail", "invalid_email_and_password": "Oops: your email format isn\u2019t right and you need to enter a password.", "facebook_sign_in": "Sign in with Facebook", "data_privacy_rules": "data privacy rules", "logIn": "", "login_whats_next": "What would you like to do next?", "forgotten_password_enter_email": "Email", "connect": "Connect", "no_thanks": "No Thanks", "sign_into_your_account": "Sign into your account...", "as_well_as_into_the": "as well as into the", "general_users_agreement": "general user's agreement of the YouGov Online Panel", "join_yougov_today": "Join YouGov today to make your opinion count!", "login_are_you_member": "Are you already a member of YouGov?", "reset_password_success_message": "We've sent you an email with a link to reset your password.", "show_me_latest_news": "Show me latest news and polling data", "consent_use_data": "If you want to sign up, you have to consent to the use of your personal data as described in our", "facebook_sign_up": "Sign up with Facebook", "error_occured_try_again": "Error occurred, please try again", "already_member_login": "I\u2019m already a member of YouGov, log me in", "password_remember": "I remember my password. log me in", "or_sign_in_with": "or sign in with", "register_by_joining_agree": "By joining, you agree to the"}, "surveys": {"answers": {"opneText": {"placeholder": ""}, "validation": {"max": "", "range": "", "generic": "", "required": "", "maxLength": "", "min": "", "pattern": {"int": "", "post_code": ""}}}, "live": "", "scoresError": "", "notHeardOf": "", "next": "Next", "live_notice_short": "", "live_poll": "", "scoresErrorClickHereToSkip": "", "back": "", "live_notice": "", "scoresHeader": ""}, "correlations": {"correlation": "Correlation", "correlatedWith": "Correlated with"}, "chapters": {"redeem": "Redeem %s", "email": "", "completed": "", "titleCompleted": "", "congratulations": "", "description": "", "title": ""}, "siteChooser": {"languagesHeader": "Choose language", "currentSite": {"uk": "United Kingdom", "sg": "Singapore", "hk": "HongKong", "se": "Sweden", "fi": "Finland", "fr": "France", "no": "Norway", "na": "", "us": "United States", "asia_pacific": "Asia Pacific", "dk": "Denmark", "mena": "Middle East & North Africa", "de": "Germany", "th": "Thailand", "in": "", "lev": "", "my": "Malaysia", "id": "Indonesia", "pl": "", "pk": "", "ph": "Philippines", "it": "", "tw": "", "vn": "", "ir": "", "au": "Australia", "gcc": "", "es": "", "cn": "China"}, "header": "YouGov Global Sites", "countries": {"uk": "UK", "china": "China", "se": "Sweden", "fi": "Finland", "es": "", "tw": "", "dk": "Denmark", "fr": "France", "mena": "Middle East &<br /> North Africa", "south_asia": "", "no": "Norway", "it": "", "us": "United States", "pl": "", "asia_pacific": "Asia Pacific", "de": ""}}, "dailyEmailSubscribe": {"incorrectEmail": "", "subscribe": "", "emailRequired": "", "subscribeError": "", "subscribeSuccess": "", "enterEmail": ""}, "opinionsMap": {"tipHeader": "Do you agree or disagree?"}, "general": {"addNew": "Add new", "reallyDontLike": "Really don't like", "responses": "Responses", "no": "No", "topInterests": "Top interests", "previous": "Previous", "member": "Member", "noThanks": "No thanks", "since": "since", "commonLikes": "Common rarest likes", "skip": "Skip", "stronglyAgree": "Strongly agree", "done": "Done", "and": "and", "stronglyDisagree": "Strongly disagree", "report": "Report", "by": "by", "ratings": "Ratings", "mildlyDisagree": "Mildly disagree", "reviews": "Reviews", "strongInterests": "Strong interests", "type": "Type", "results": "Results", "like": "Like", "surveys": "Surveys", "enter": "Enter", "noResults": "No results", "in": "in", "dontLike": "Don't like", "more": "More", "ok": "OK", "attitudes": "Attitudes", "return": "Return", "total": "Total", "facts": "Facts", "opinions": "Opinions", "respond": "Respond", "yes": "Yes", "cancel": "Cancel", "otherInterests": "Other interests", "next": "Next", "change": "Change", "loadMore": "Load more", "reallyLike": "Really like", "savedSuccessfully": "", "commonDislikes": "Common rarest dislikes", "close": "Close", "mildlyAgree": "Mildly agree", "typeHere": "Type here..."}, "smartBanner": {"storeAndroid": "", "free": "", "title": "", "storeIos": "", "view": ""}, "available_surveys": {"currency": "\u00a3\u00a3\u00a3", "take_the_survey": "Take the Survey", "no_surveys_description": "In the meantime, why not fill in your profile by responding to the questions in your Feed...", "header": "Available Surveys", "more": "More", "live_since": "Live since", "no_surveys_message": "We don't have a full length survey for you right now. Won't be long!"}, "hyperWallet": {"city": "", "submit": "", "personalDetails": "", "address": "", "postalCode": "", "required": "", "stateProvince": "", "transferMethods": "", "firstName": "", "lastName": ""}, "lightbox": {"changeAvatar": "Change avatar", "opinionReport": "Opinion report"}, "pushNotifications": {"getNotifications": "", "dontSubscribe": "", "yesPlease": ""}, "opinions": {"swearError": "", "typeResponseHere": "Type your response here...", "latestOpinionOn": "Latest opinion on...", "myOpinionFeed": "My opinion feed"}, "search": {"suggested_topics": "Suggested Topics:", "pages": "PAGES:", "relatedArticles": "Related articles", "suggestedPages": "Suggested YouGov topic pages:", "topics": "TOPICS:", "goToPage": "Go to page", "seeMore": "See more", "tryDiffTerm": "Try typing a different term...", "topHits": "Top hits:", "of": "of", "relatedPdfs": "Related PDFs"}, "twitterFollow": {"message": "Follow %s on twitter and stay up to date with the latest news and results", "follow": "Follow"}, "opiSet": {"addResponse": "Add a response", "joinDiscussionOn": "Join the discussion on...", "addNewOpinion": "Add a new opinion"}, "userInfo": {"memberSince": "Member since", "seeMyProfile": "See my profile"}, "yougovDailyAd": {"content": "", "header": "", "signUp": ""}, "live_survey_results": {"rhs_sideabar": {"header": "Contact"}, "contact_info": {"press_office_header": "Press Office"}, "social_bookmarks": {"header_extended": "this survey", "header": "Share"}, "surveys_list": {"header": "Latest Live Survey Results"}, "social_share": {"page_title": "YouGov | Live Survey Results", "title": "Live Survey Results"}, "see_more_on": {"header": "See more on..."}, "question_results": {"total": "Total", "seeResults": "See Results"}, "surveys_results": {"interim_survey_results_date": "- survey closes at %survey_date% with final results available shortly after", "back_to_list": "See full archive", "interim_survey_results": "Interim survey results (unweighted)", "back_to_list_mobile": "Archive", "end_date": "on %survey_date%", "header": "survey results", "results": "%s <span class=\"survey-results\"> results</span>", "description": "%total% UK adults were questioned%survey_date%.<br/>Results are weighted to be representative of the GB population."}}, "previewPopups": {"thingsBothDislike": "Things you both dislike", "memberPreview": "Member preview", "visitFullProfile": "Visit full profile", "thingsBothLike": "Things you both like"}, "welcome": {"facebook": "", "email": "", "header": "", "startSurvey": ""}, "suggestions": {"suggest_new": "", "confirm": "", "select_subtypes": "", "just_checking": "", "select_type_info": "", "type_to_search_placeholder": "", "suggest_new_item": "", "suggestions_source": {"yougov": "", "wiki": ""}, "go_back": "", "suggest_sth_new": "", "clear_text_field": "", "wiki_search_info": "", "redirecting_to_page": "", "item_already_present": "", "creating_page": ""}, "countdown": {"subheader": "You still need %s points to redeem %s.", "footer": "Take more surveys to earn more points...", "redeem_success_header": "Congratulations!", "reddem_success_thank_you_message": "Thank you for your continued participation in YouGov!", "lightbox_header": "Countdown to %s", "header": "Countdown to %s", "redeem_success_message": "You have now successfully redeemed your points for %s. We are processing your request, and we will send you your reward within 4 weeks.", "close": "Close", "redeem_message": "Click here to redeem %s now!"}, "redeem": {"success_message": "You redeemed %s points for %s", "confirm": "Redeem", "disclaimer": "Please take care when entering your account details.  YouGov will not be responsible for any incorrect details entered and any subsequent non-payment.", "for": "for", "lightbox_header": "Redeem %s", "error_message": "Error while redeeming points", "points": "points!", "confirm_question": "Are you sure you want to redeem %s points for %s?"}, "acceptTerms": {"validation": {"errors": {"required": "Please accept the terms to continue."}}}, "mobileAd": {"downloadApp": "Download the new <strong>YouGov app</strong>", "additionalInfo": "to get notifications for paid surveys and take your next survey on your smartphone!"}, "profilesLiteBanner": {"contentText": "", "search": "", "profiles": ""}}
+
+                    
+                </script>
+        <script src="http://d1rq7cuzerol8r.cloudfront.net/unified/global/2bf00396/polyfills.bundle.js"></script>
+        <script src="http://d1rq7cuzerol8r.cloudfront.net/unified/global/2bf00396/vendor-1.bundle.js"></script>
+        <script src="http://d1rq7cuzerol8r.cloudfront.net/unified/global/2bf00396/vendor-2.bundle.js"></script>
+        <script src="http://d1rq7cuzerol8r.cloudfront.net/unified/global/2bf00396/common.bundle.js"></script>
+        <script src="http://d1rq7cuzerol8r.cloudfront.net/unified/global/2bf00396/cumulus.bundle.js"></script>
+        <script>
+        window.angular_data = window.angular_data || {};
+        window.angular_data = angular.extend(window.angular_data, {"response_buttons": {"-1": {"level": -1, "css_class": "disagree-mildly"}, "-2": {"level": -2, "css_class": "disagree"}, "2": {"level": 2, "css_class": "agree"}, "1": {"level": 1, "css_class": "agree-mildly"}}, "available_surveys": {"more_url": "/account/"}, "loginRegister": {"privacy_policy_link": "/en-sg/about/privacy", "terms_and_conditions_link": "/en-sg/about/terms-conditions", "data_privacy_rules_link": "/en-sg/about/data-privacy-rules"}});
+        window.angular_data.rtl =  false ;
+        window.angular_data.show_social_media_icons =  true ;
+
+        window.angular_data.languages = [{"shortName": "EN", "url": "https://sg.yougov.com/en-sg/", "name": "English"}, {"shortName": "MS", "url": "https://sg.yougov.com/ms-sg/", "name": "Bahasa Melayu"}, {"shortName": "ZH", "url": "https://sg.yougov.com/zh-sg/", "name": "\u7b80\u4f53\u4e2d\u6587"}];
+        window.angular_data.site_language =  "en-sg" ;
+
+        window.appConfig = {
+            user: {
+                isLoggedIn: true,
+                panelistId: 52477496
+            }
+        };
+
+        
+            angular_data.initial_user_logged_in = true;
+        
+        angular_data.enableLocalStorage = true;
+        angular_data.siteId = 81;
+    </script>
+        <script src="http://d1rq7cuzerol8r.cloudfront.net/unified/cu/js/jquery-ui.1.8.13.min.js" charset="utf-8"></script>
+        <script src="http://d1rq7cuzerol8r.cloudfront.net/unified/cu/js/jquery.scrollTo.js" charset="utf-8"></script>
+        <script src="http://d1rq7cuzerol8r.cloudfront.net/unified/cu/js/mediaqueries.js" charset="utf-8"></script>
+        <script src="http://d1rq7cuzerol8r.cloudfront.net/unified/cu/js/cumulus-notifications.js" charset="utf-8"></script>
+        <script src="http://d1rq7cuzerol8r.cloudfront.net/unified/cu/js/cumulus-core.js" charset="utf-8"></script>
+        <script src="http://d1rq7cuzerol8r.cloudfront.net/unified/cu/js/goatee.js"></script>
+        <script>
+jQuery(document).ready(function() {
+    if(!$.goatee) {
+        loadScript('https://yg-public.s3.amazonaws.com/r/1/goatee.js', function(){});
+    }
+});
+</script>
+        <script id="point_grant_template" type="text/html">
+	<div class="history-item feed_event survey_completed" style="display: none;">
+	    <span class="pngi icon-survey-completed"></span>
+	    <span class="history-description">
+             You earned <% points %> points. 
+        </span>
+        <span class="event-date"><% date %></span>
+	</div>
+</script>
+        <script id="point_grant_with_desc_template" type="text/html">
+	<div class="history-item feed_event survey_completed" style="display: none;">
+	    <span class="pngi icon-survey-completed"></span>
+	    <span class="history-description">
+             You earned <% points %> points for <strong><% desc %></strong>. 
+        </span>
+        <span class="event-date"><% date %></span>
+	</div>
+</script>
+        <script id="ticket_with_survey_complete_template" type="text/html">
+	<div class="history-item feed_event survey_completed" style="display: none;">
+	    <span class="pngi icon-survey-completed"></span>
+	    <span class="history-description">You earned <% tickets %> Prize Draw Entries for <strong><% desc %></strong>. </span>
+        <span class="event-date"><% date %></span>
+	</div>
+</script>
+        <script id="ticket_grant_template" type="text/html">
+    <div class="history-item feed_event survey_completed" style="display: none;">
+        <span class="pngi icon-survey-completed"></span>
+        <span class="history-description"> You earned <% tickets %> Prize Draw Entries.</span>
+	    <span class="event-date"><% date %></span>
+    </div>
+</script>
+        <script id="redemption_template" type="text/html">
+    <div class="history-item feed_event <% type %>" style="display: none;">
+        <span class="pngi icon-redemption"></span>
+        <span class="history-description"> You redeemed <% points %> points for <strong><% desc %></strong>. </span>
+        <span class="event-date"><% date %></span>
+    </div>
+</script>
+        <script id="survey_completed_template" type="text/html">
+    
+	<div class="history-item feed_event <% type %>" style="display: none;">
+        <span class="pngi icon-survey-completed"></span>
+        <span class="history-description">You earned <% points %> points for <strong><% desc %></strong>. </span>
+        <span class="event-date"><% date %></span>
+	</div>
+    
+</script>
+        <script id="survey_completed_zero_template" type="text/html">
+    <div class="history-item feed_event <% type %>" style="display: none;">
+	<span class="pngi icon-survey-completed"></span>
+	<span class="history-description">You completed <strong><% desc %></strong>. </span>
+	<span class="event-date"><% date %></span>
+    </div>
+</script>
+        <script id="survey_available_template" type="text/html">
+    <div class="clearfix available-survey <% type %>">
+        <div class="pngi icon-available-survey pull-left"></div>
+        <div class="available-survey-info pull-left">
+            <a href="http://start.yougov.com/a/<% visa %>"><% desc %>:</a>
+            <span class="event-date">Live since <% date %></span>
+            <div class="take-survey"><a href="http://start.yougov.com/a/<% visa %>">Take the Survey</a></div>
+        </div>
+    </div>
+</script>
+        <script id="referral_template" type="text/html">
+    <div class="history-item feed_event <% type %>" style="display: none;">
+        <span class="img <% css_class %>"></span>
+	
+	    <span class="history-description">You earned <% points %> points for <% desc %>. </span>
+	
+        <span class="event-date"><% date %></span>
+    </div>
+</script>
+        <script id="error_template" type="text/html">
+    <div class="history-item feed_event <% type %>" style="display: none;">
+        <span class="img <% css_class %>"></span>
+        <span class="history-description">Oops.  Something went wrong. </span>
+		<span class="event-date"><% date %></span>
+    </div>
+</script>
+        <script id="empty_template" type="text/html">
+	<div class="history-item feed_event empty" style="display: none;">
+	    <span class="history-description">
+            
+            
+                
+                You have no surveys or redemptions yet. When a survey becomes available, it will show in this space. When you've completed surveys or redeemed points for <a href="/en-sg/account/rewards/">rewards</a>, those events will show here too.
+            
+	    </span>
+	    <span class="event-date"><% date %></span>
+	</div>
+    </script>
+        <script id="no_survey_available_template" type="text/html">
+    <div class="history-item feed_event empty" style="display: none;">
+        <span class="history-description">
+            You have no surveys to take right now. When a survey becomes available, it will show in this space.
+        </span>
+    </div>
+</script>
+        <script id="no_survey_completed_template" type="text/html">
+    <div class="history-item feed_event empty" style="display: none;">
+        <span class="history-description">
+            You have not completed any surveys.  When you have, they will show in this space.
+        </span>
+    </div>
+</script>
+        <script id="no_redemption_template" type="text/html">
+    <div class="history-item feed_event empty" style="display: none;">
+        <span class="history-description">
+            You have not redeemed points for any items yet.  When you have, they will show here. Visit the <a href="/en-sg/account/rewards/">rewards</a> page.
+        </span>
+    </div>
+</script>
+        <script id="no_referral_template" type="text/html">
+    <div class="history-item feed_event empty" style="display: none;">
+        <span class="history-description">
+            You have not received any referral bonuses yet. Visit the <a href="/en-sg/account/referral/">Refer a Friend</a> page to invite your friends and learn how to earn points when they complete surveys.
+        </span>
+    </div>
+</script>
+        <script>
+$(document).ready(function() {
+var feed_url = "/en-sg/account/feed_data/";
+
+var YGFeed = {
+    clickedMore: false,
+
+    getData: function(url, clear, type) {
+        $.ajax({
+            url: url,
+            dataType: 'json',
+            cache: false,
+            success: function(feed) {
+                if (type === 0) {
+                    YGFeed.fillAvailableSurveys(feed, clear)
+                } else {
+                    YGFeed.fillFeed(feed, clear);
+                }
+            },
+            error: function(xhr, text, error) {
+                if (type === 0) {
+                    var item = {'type': 'error'};
+                    var output = $.goatee($("#error_template").html(), item);
+                    $("#feed_content").append(output);
+                    $('.mini-loader').hide();
+                    YGFeed.showNext();
+                }
+
+            }
+        })
+    },
+
+    types: {
+        '0': 'survey_available',
+        '1': 'survey_completed',
+        '2': 'redemption',
+        '3': 'referral',
+	    '4': 'ticket_grant',
+        '5': 'ticket_with_survey_complete',
+        '6': 'point_grant'
+    },
+
+    fillAvailableSurveys: function(feed) {
+        var item = null,
+            template = null;
+
+        if (feed.events.length > 0) {
+            for (var event in feed.events) {
+                item = feed.events[event];
+                template = $("#" + item.type + "_template").html();
+
+                if(template != null){
+                    var output = $.goatee(template, item)
+                    $(".available-surveys > .box-content").append(output);
+                }
+            }
+
+            $('.available-surveys ').fadeIn();
+        }
+    },
+
+    fillFeed: function(feed, clear) {
+        //callback executed after getData.
+        if (clear === true) {
+            //clear the slate, if requested
+            $('#feed_content').text('');
+        }
+
+        if (feed && feed.events && feed.events.length > 0) {
+            for (var x in feed.events) {  //fill it up again
+                var item = feed.events[x];
+                var template = $("#" + item.type + "_template").html();
+                
+                if (item.type === 'point_grant' && item.desc) {
+                    template = $("#" + item.type + "_with_desc_template").html();
+                }
+                
+		
+		    // Use a different template when the completed survey has no points
+		    if(item.type == 'survey_completed' && (typeof item.points === 'undefined' || item.points == 0)){
+			 template = $("#" + item.type + "_zero_template").html();
+		    }
+		
+
+                if(template != null){
+                    var output = $.goatee(template, item)
+                    item.points = Math.abs(item.points);
+                    $("#feed_content").append(output);
+                }
+
+            }
+            //set the "More" link's visibility based on whether the view
+            //has told us there's more to see.
+            if (feed.more === true ) {
+                $('.more-acitvity').addClass('active');
+            } else {
+                $('.more-acitvity').removeClass('active');
+            }
+            YGFeed.showNext();
+        } else {
+            $('.account-history').hide();
+        }
+    },
+
+    showNext: function() {
+        // find the first feed event that's hidden and slide it in.  Pass in
+        // self as callback
+        div = $(".feed_event:hidden:first");
+        //only act if we found one
+        if (div.length > 0) {
+            div.slideDown('fast', YGFeed.showNext);
+            if (YGFeed.clickedMore === true) {
+                //scroll to the bottom of the page as things are added
+                $('html, body').animate({
+                    //arbitrary number
+                    scrollTop: $(window).scrollTop()  + $(window).height()
+                }, 'fast');
+            }
+        }
+    }
+};
+
+//populate the feed on page load
+YGFeed.getData(feed_url, true);
+
+//bind filter buttons to getData func
+$(".feed_filter").click(function() {
+    //clear 'current' class from all filter links
+    $('.feed_filter').removeClass('current');
+
+    //set current class on what was just clicked.
+    $(this).addClass('current');
+    YGFeed.clickedMore = false;
+    YGFeed.getData(feed_url + "?type=" + this.rel, true);
+});
+
+// bind "more" button to request more feed items, based on current feed size
+// and filter type.
+$(".more-acitvity").click( function() {
+    var url = feed_url + "?start=" + $('#feed_content > .feed_event').length;
+    //url += "&type=" + $('#feed_filters .current')[0].rel;
+    YGFeed.clickedMore = true;
+    YGFeed.getData(url, false);
+});
+});
+</script>
+        <script src="http://munchkin.marketo.net/munchkin.js" type="text/javascript"></script>
+        <script>
+    Munchkin.init('060-QFD-941', {"wsInfo": "&#39;&#39;"});
+</script>
+        <!-- Google Code for Survey Conversion Page -->
+        <script type="text/javascript">
+            if(window.location.pathname.match('/en-hk/account/login/')){
+                if(document.referrer.indexOf('g4-emea.yougov.com')>-1){
+                  (new(Image)).src="//www.googleadservices.com/pagead/conversion/928890637/?label=JEicCPWP5WQQjf72ugM&guid=ON&script=0";
+                }
+            }
+        </script>
+        <script src="http://sg.yougov.com/_partner/request.js" type="text/javascript"></script>
+        <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-3409854-88', 'auto');
+    ga('require', 'linkid', 'linkid.js');
+    ga('set', 'anonymizeIp', true);
+
+    
+
+    
+        ga('set', 'dimension1', 'panelist');
+        ga('set', 'metric1', 1);
+    
+
+    
+        ga('send', 'pageview');
+    
+</script>
+        <iframe data-product="web_widget" title="" src="about:blank" style="width: 0px; height: 0px; border: 0px; position: absolute; top: -9999px;"></iframe>
+        <div>
+            <iframe title="Opens a widget where you can find more information" id="launcher" tabindex="0" class="zEWidget-launcher zEWidget-launcher--active" style="border: none; background: transparent; z-index: 999998; transform: translateZ(0px); position: fixed; transition: opacity 250ms cubic-bezier(0.645, 0.045, 0.355, 1) 0s, top, bottom; opacity: 1; width: 5px; height: 50px; max-height: 551px; min-height: 50px; margin: 10px 20px; left: 0px; bottom: 0px; display: none;"></iframe>
+        </div>
+        <div>
+            <iframe title="Find more information here" id="webWidget" tabindex="-1" class="zEWidget-webWidget " style="border: none; background: transparent; z-index: 999999; transform: translateZ(0px); position: fixed; transition: opacity 250ms cubic-bezier(0.645, 0.045, 0.355, 1) 0s, top, bottom; opacity: 0; width: 357px; height: 100%; max-height: 565px; min-height: 150px; margin-left: 8px; margin-right: 8px; top: -9999px;"></iframe>
+        </div>
+        <div id="ctre_help_window" style="position: fixed; left: 0px; top: 0px; width: 260px; padding: 12px; background-color: rgba(240, 238, 237, 0.9); font-family: Arial, sans-serif; font-size: 10px; text-align: left; line-height: 1.2; border-radius: 0px 0px 8px; border-bottom: 1px solid rgba(200, 198, 197, 0.9); border-right: 1px solid rgba(200, 198, 197, 0.9); color: rgb(102, 102, 102); z-index: 2147483647; display: none;">
+            <b style="font-size: 12px;">Click to remove element</b> v1.0.5 &nbsp;&nbsp;&nbsp; 
+            <span style="color: #888; font-family:  monospace;">Ctrl+Shift+X</span>
+            <div style="margin-top: 6px;"></div>
+            <span style="font-family: monospace;">Ctrl+Z</span> undo, 
+            <span style="font-family: monospace;">ESC</span> exit
+            <br>
+            <span style="font-family: monospace;">Q/W</span> go down/up one level. Currently up 
+            <span id="transpose" style="font-weight: bold;">0</span> level
+            <span id="transpose_plural" style="display: inline;">s</span>.
+            <div style="margin-top: 6px;"></div>                                                                                                                                                                            Like this extension? 
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=NUVLGGXDAXDTJ&amp;lc=SK&amp;item_name=CTRE%20Chrome%20extension&amp;item_number=CTRE&amp;currency_code=EUR&amp;bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted" target="_blank" style="color: #888; text-decoration: underline; font-weight: normal; border: 0;">Please consider donating</a>.
+        </div>
+    </body>
+</html>
