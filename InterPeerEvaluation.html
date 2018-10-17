@@ -269,10 +269,10 @@
             							 "border-style":"solid"});
 					});
                     $('#save').on('click', function() {
-                        window.peereval = "draft";
+                        sessionStorage.setItem("peereval" , "draft");
                     });
                     $('#submit').on('click', function() {
-                        window.peereval = "submitted";
+                        sessionStorage.setItem("peereval" , "submitted");
                     });
                     
                     window.htmlsetup = true;

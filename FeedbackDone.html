@@ -220,10 +220,15 @@
         <script src="assets/js/popper.js"></script>         
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <script>
-        	window.groupeval = "submitted";
-            window.peereval = "na";
-            window.assign1 = "submitted";
-            window.quizfeed = "draft";
+			if (sessionStorage.getItem("peereval") == "submitted"){
+                $('#peerevalbutton').removeClass("bg-warning");
+                $('#peerevalbutton').addClass("bg-success");
+                $('#peerevalbutton').html("View");
+                $('#peerevalstatus').html("Submitted");
+            }
+			if (sessionStorage.getItem("peereval") == "draft"){
+                $('#peerevalstatus').html("Draft");
+            }			
         </script>
     </body>     
 </html>
