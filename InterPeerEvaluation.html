@@ -158,13 +158,12 @@
                     </li>                     
                 </ul>                 
                 <form class="form-inline my-2 my-lg-0"> 
-                    <a href="https://lameo.github.io/IDP-HIFI/FeedbackDone.html">
-                        <button id="save" type="button" class="btn btn-primary">Save</button>
-                    </a>                                                                                                                                                                                                                                                                                                                                                                                                                                    &nbsp;
+                    <button id="save" type="button" class="btn btn-primary">Save</button>                                                                                                                                                                                                                                                                                                                                                                                            &nbsp;
                     <button id="submit" type="button" class="btn btn-primary bg-success">Submit</button>                     
-                </form>                 
+                </form>               
             </div>             
-        </nav>         
+        </nav>    
+                                
         <!-- /.container -->         
         <!-- Bootstrap core JavaScript
     ================================================== -->         
@@ -274,6 +273,7 @@
             							 "border-style":"solid"});
 					});
                     $('#save').on('click', function() {
+                        alert("you evaluation has been saved!");
                         sessionStorage.setItem("peereval" , "draft");
                     });
                     $('#submit').on('click', function() {
@@ -281,7 +281,7 @@
                            var isconfirm = confirm("Please fill up all questions");
                         } else {
                             sessionStorage.setItem("peereval" , "submitted");
-                        	$(location).attr('href', 'https://lameo.github.io/IDP-HIFI/FeedbackDone.html');
+                        	$(location).attr('href', 'FeedbackDone.html');
                         }
                     });
                     
