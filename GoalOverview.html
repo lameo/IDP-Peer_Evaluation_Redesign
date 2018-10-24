@@ -103,7 +103,7 @@
                         </tr>                         
                     </thead>                     
                     <tbody> 
-                        <tr> 
+                        <tr id="row1"> 
                             <td name="id">1</td> 
                             <td name="skill">Research</td> 
                             <td name="rank">Intermediate</td> 
@@ -111,7 +111,7 @@
                             <td>In progress</td> 
                             <td style="text-align: center;"> 
                                 <button type="button" class="btn btn-secondary pl-sm-null bg-warning ml-1 " data-toggle="modal" data-target="#edit">Edit</button>                                 
-                                <button type="button" class="btn btn-secondary pl-sm-null bg-danger ml-1 ">Cancel</button>                                 
+                                <button type="button" id='cancel1' class="btn btn-secondary pl-sm-null bg-danger ml-1 ">Cancel</button>                                 
                             </td>                             
                         </tr>                         
                         <tr></tr>                         
@@ -294,7 +294,7 @@
                  
                  
                  var test= '<tr> <td>' + i + '</td> <td>' + skillset + '</td> <td>'+ targetrank + '</td><td>' + deadline + '</td> <td>In progress</td> <td style=\"text-align: center;\"> <button type=\"button\" class=\"btn btn-secondary pl-sm-null bg-warning ml-1 \" data-toggle=\"modal\" data-target=\"#pop\">Edit</button> <button type=\"button\" class=\"btn btn-secondary pl-sm-null bg-danger ml-1 \">Cancel</button> </td>  </tr> <tr></tr>';
-        $('#goallist').find('tbody:last').append(test);
+             $('#goallist').find('tbody:last').append(test);
                  
                  
              });
@@ -311,7 +311,24 @@
                  
              });
            
-            
+             $('#cancel1').click(function(){
+               var isconfirm = confirm("Are you want to cancel?");
+                if (isconfirm){
+                    $('#row1').remove();
+                }
+            });
+            $('#cancel2').click(function(){
+               var isconfirm = confirm("Are you want to cancel?");
+                if (isconfirm){
+                    $('#row1').remove();
+                }
+            });
+            $('#cancel3').click(function(){
+               var isconfirm = confirm("Are you want to cancel?");
+                if (isconfirm){
+                    $('#row1').remove();
+                }
+            });
 
         </script>         
     </body>     
