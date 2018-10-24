@@ -176,7 +176,52 @@
                         <tr></tr>                         
                     </tbody>                     
                 </table>                 
-            </div>                                       
+            </div>    
+            <h1 class="display-4" style="margin-bottom: 20px; text-align: left;">View others feedback</h1> 
+            <div class="table-responsive"> 
+                <table class="table table-striped table-sm"> 
+                    <thead> 
+                        <tr> 
+                            <th>Title</th> 
+                            <th colspan="3">Date</th> 
+                            <th>Status</th> 
+                            <th style="text-align: center;">Action</th> 
+                        </tr>                         
+                    </thead>                     
+                    <tbody> 
+                        <tr> 
+                            <td>Group Evaluation</td> 
+                            <td style="text-align: center;">9 Oct 18<br>10:00</td> 
+                            <td>-</td> 
+                            <td style="text-align: center;"> <p>9 Oct 18<br>23:59</p> </td> 
+                            <td>Received</td> 
+                            <td style="text-align: center;"> 
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <a href="viewFeedback.html">
+                                    <button type="button" class="btn btn-secondary bg-success">View</button>  
+                                    </a>                                   
+                                </div>                                 
+                            </td>                             
+                        </tr>                         
+                        <tr></tr>                         
+                        <tr> 
+                            <td>Peer Evaluation</td> 
+                            <td style="text-align: center;">15 Nov 18<br>12:00</td> 
+                            <td>-</td> 
+                            <td style="text-align: center;"> <p>30 Nov 18<br>23:59</p> </td> 
+                            <td id="peerevalstatus">In progress&nbsp;</td> 
+                            <td style="text-align: center;"> 
+                                <div class="btn-group" role="group" aria-label="Basic example"> 
+                                    <a href="InterPeerEvaluation.html"> 
+                                        <button id="peerevalbutton" disabled type="button" class="btn btn-secondary pl-sm-null ml-1">View</button>
+                                    </a>                                     
+                                </div>                                 
+                            </td>                             
+                        </tr>                         
+                        <tr></tr>                         
+                    </tbody>                     
+                </table>                 
+            </div>                                          
         </div>         
         <script src="assets/js/jquery.min.js"></script>         
         <script src="assets/js/popper.js"></script>         
