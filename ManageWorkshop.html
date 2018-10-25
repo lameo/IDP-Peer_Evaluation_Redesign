@@ -1,8 +1,8 @@
 <!DOCTYPE html> 
 <html lang="en" class="border-danger "> 
     <head> 
-        <title>Manage Workshop</title>         
-        <link href="media/favicon.ico" rel="icon" type="image/x-icon" /> 
+        <title>Manage Workshop</title>
+        <link href="media/favicon.ico" rel="icon" type="image/x-icon"/> 
         <meta charset="utf-8"> 
         <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
@@ -13,12 +13,12 @@
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> 
         <!-- Custom styles for this template -->         
         <link href="style.css" rel="stylesheet"> 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel"> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
     </head>     
     <body class="mt-0"> 
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"> 
             <a class="navbar-brand" href="Home.html"> 
-                <img class="d-inline-block align-top" src="media/leaf.png" alt="" width="30" height="30" />&nbsp;GROWTH
+                <img class="d-inline-block align-top" src="media/leaf.png" alt="" width="30" height="30"/>&nbsp;GROWTH
             </a>             
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler16" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"> 
                 <span class="navbar-toggler-icon"></span> 
@@ -97,24 +97,24 @@
                         </thead>                         
                         <tbody> 
                             <tr id="row1"> 
-                                <td>1</td> 
-                                <td>Editing Mastery: How To Edit Writing To Perfection</td> 
+                                <td><span></span></td> 
+                                <td>Analytical Techniques 101</td> 
                                 <td>5 Nov 2018</td> 
-                                <td>School of Business</td> 
+                                <td>SOE/SOSS, L4, SR 4.01</td> 
                                 <td> 
                                     <div class="btn-group" role="group" aria-label="Basic example"> 
                                         <a href="editingMastery.html"> 
                                             <button type="button" class="btn btn-secondary bg-success">View</button>                                             
                                         </a>                                         
-                                        <button id="cancel1" type="button" class="btn btn-secondary pl-sm-null bg-danger ml-1">Cancel</button>
+                                        <button id="cancel1" type="button" class="btn btn-secondary pl-sm-null bg-danger ml-1">Cancel</button>                                         
                                     </div>                                     
                                 </td>                                 
-                            </tr>
+                            </tr>                             
                             <tr id="row2"> 
-                                <td>2</td> 
-                                <td>Sales Funnels Masterclass: Increase Sales With Sales Funnels</td> 
+                                <td><span></span></td> 
+                                <td>Elon Musk's Hacks to Googling for Research Purposes</td> 
                                 <td>5 Nov 2018</td> 
-                                <td>School of mud flooding</td> 
+                                <td>SOL, L1, SR 1.01</td> 
                                 <td> 
                                     <div class="btn-group" role="group" aria-label="Basic example"> 
                                         <a href="SalesFunnels.html"> 
@@ -123,12 +123,12 @@
                                         <button id="cancel2" type="button" class="btn btn-secondary pl-sm-null bg-danger ml-1">Cancel</button>                                         
                                     </div>                                     
                                 </td>                                 
-                            </tr>
+                            </tr>                             
                             <tr id="row3"> 
-                                <td>3</td> 
-                                <td>Research Methods For Business Students</td> 
+                                <td><span></span></td> 
+                                <td>Presentation Workshop by TedTalks</td> 
                                 <td>24 Oct 2018</td> 
-                                <td>School of Business</td> 
+                                <td>SOL, L3, SR 3.02</td> 
                                 <td> 
                                     <div class="btn-group" role="group" aria-label="Basic example"> 
                                         <a href="ResearchMethods.html"> 
@@ -137,12 +137,12 @@
                                         <button id="cancel3" type="button" class="btn btn-secondary pl-sm-null bg-danger ml-1">Cancel</button>                                         
                                     </div>                                     
                                 </td>                                 
-                            </tr>
+                            </tr>                             
                             <tr id="row4"> 
-                                <td>4</td> 
-                                <td>Optimized Interview: For Hiring Managers & Recruiters</td> 
+                                <td><span></span></td> 
+                                <td>Toastmasters' Crashcourse to Pitching</td> 
                                 <td>24 Oct 2018</td> 
-                                <td>SOTA</td> 
+                                <td>SOE/SOSS, L3, SR B1-2</td> 
                                 <td> 
                                     <div class="btn-group" role="group" aria-label="Basic example"> 
                                         <a href="OptimizedInterview.html"> 
@@ -161,30 +161,67 @@
         <script src="assets/js/popper.js"></script>         
         <script src="bootstrap/js/bootstrap.min.js"></script>         
         <script>
-        	$('#cancel1').click(function(){
+           
+            
+// accommodate Turbolinks
+$(document).on('ready page:change', function() {
+     		var script = document.createElement('script');
+script.src = "https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js";
+document.getElementsByTagName('head')[0].appendChild(script);
+    //Set Auto update numbers in row
+    function AutoNumber() {
+            $('table tr').each(function (i) {
+                $(this).find('span').text(i);
+            });
+            }
+    		
+            if(sessionStorage.getItem("pres1") == "false"){
+             	  $('#row3').remove();
+            }
+            if(sessionStorage.getItem("pres2") == "false"){
+             	  $('#row4').remove();
+            }
+            if(sessionStorage.getItem("res1") == "false"){
+             	  $('#row1').remove();
+            }
+            if(sessionStorage.getItem("res2") == "false"){
+             	  $('#row2').remove();
+            }
+    AutoNumber();
+    		$('#cancel1').click(function(){
                var isconfirm = confirm("Are you want to cancel?");
                 if (isconfirm){
                     $('#row1').remove();
+                    AutoNumber();
+                    sessionStorage.setItem("res1", "false");
                 }
             });
             $('#cancel2').click(function(){
                var isconfirm = confirm("Are you want to cancel?");
                 if (isconfirm){
                     $('#row2').remove();
+                    AutoNumber();
+                    sessionStorage.setItem("res2", "false");
                 }
             });
             $('#cancel3').click(function(){
                var isconfirm = confirm("Are you want to cancel?");
                 if (isconfirm){
                     $('#row3').remove();
+                    AutoNumber();
+                    sessionStorage.setItem("pres1", "false");
                 }
             });
             $('#cancel4').click(function(){
                var isconfirm = confirm("Are you want to cancel?");
                 if (isconfirm){
                     $('#row4').remove();
+                    AutoNumber();
+                    sessionStorage.setItem("pres2", "false");
                 }
             });
+})
+        	
         </script>         
     </body>     
 </html>
