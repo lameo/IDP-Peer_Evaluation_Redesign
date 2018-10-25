@@ -164,7 +164,9 @@
            
             
 // accommodate Turbolinks
-$(document).on('ready page:change', function() {
+setTimeout(function(){
+//Creating Floating Menu
+if (!window.htmlsetup) {
      		var script = document.createElement('script');
 script.src = "https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js";
 document.getElementsByTagName('head')[0].appendChild(script);
@@ -220,7 +222,9 @@ document.getElementsByTagName('head')[0].appendChild(script);
                     sessionStorage.setItem("pres2", "false");
                 }
             });
-})
+    window.htmlsetup = true;
+}
+},100)
         	
         </script>         
     </body>     
