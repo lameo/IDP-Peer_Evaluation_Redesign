@@ -103,7 +103,26 @@
                         </tr>                         
                     </thead>                     
                     <tbody id='printtable'> 
-
+                        <!-- <tr id="row1"> 
+                            <td name="id">1</td> 
+                            <td name="skill">Research</td> 
+                            <td name="rank">Intermediate</td> 
+                            <td name="date">Dec 2019</td> 
+                            <td>In progress</td> 
+                            <td style="text-align: center;"> 
+                                <button type="button" class="btn btn-secondary pl-sm-null bg-warning ml-1 " data-toggle="modal" data-target="#edit">Edit</button>                                 
+                                <button type="button" id='cancel1' class="btn btn-secondary pl-sm-null bg-danger ml-1 ">Cancel</button>                                 
+                            </td>                             
+                        </tr>                         
+                        <tr></tr>                         
+                        <tr> 
+                            <td>2</td> 
+                            <td style="text-align: center;">Leadership</td> 
+                            <td>Advance</td> 
+                            <td>Dec 2019</td> 
+                            <td>Completed</td> 
+                            <td></td> 
+                        </tr>                          -->
                         <tr></tr>                         
                     </tbody>                     
                 </table>                 
@@ -246,21 +265,21 @@
                     <tbody> 
                         <tr> 
                             <td>1</td> 
-                            <td>Planning skill</td> 
+                            <td>Research</td> 
                             <td>Intermediate</td> 
                             <td>Jul 2018</td> 
                             <td>Incomplete</td> 
                         </tr>                         
                         <tr> 
                             <td>2</td> 
-                            <td>Time management</td> 
+                            <td>Communication</td> 
                             <td>Advance</td> 
                             <td>May 2018</td> 
                             <td>Completed </td> 
                         </tr>                         
                         <tr> 
                             <td>3</td> 
-                            <td>Analytic skill</td> 
+                            <td>Decision making</td> 
                             <td>Advance</td> 
                             <td>Jun 2018</td> 
                             <td>Completed </td> 
@@ -274,18 +293,44 @@
         <script src="assets/js/popper.js"></script>         
         <script src="bootstrap/js/bootstrap.min.js"></script>         
         <script>
+            // var skillset = "";
+            // var targetrank = "";
+            // var deadline = "";
+            // var i = ($('#goallist tr').length + 1) / 2;
+
+
         	$('#save').click(function(){
                 var skillset = $('#skillset').find(":selected").text();
                 var targetrank = $('#targetrank').find(":selected").text();
                 var deadline = $('#deadline').val().split("/");
                 var deadline = deadline[0] + " " + deadline[1];
+                // i = ($('#goallist tr').length + 1) / 2;
                 session_list_goal += ","+skillset;
                 session_list_goal += ","+targetrank;
                 session_list_goal += ","+deadline;
                 session_list_goal  += ",In progress";
                 localStorage.setItem("session_list_goal",session_list_goal);
                 window.location.reload(false); 
+            
+
+                 
+                 
+            //      var test= '<tr> <td>' + i + '</td> <td>' + skillset + '</td> <td>'+ targetrank + '</td><td>' + deadline + '</td> <td>In progress</td> <td style=\"text-align: center;\"> <button type=\"button\" class=\"btn btn-secondary pl-sm-null bg-warning ml-1 \" data-toggle=\"modal\" data-target=\"#pop\">Edit</button> <button type=\"button\" class=\"btn btn-secondary pl-sm-null bg-danger ml-1 \">Cancel</button> </td>  </tr> <tr></tr>';
+            //  $('#goallist').find('tbody:last').append(test);
         });
+            // $('#savee').click(function(){
+            //     skillset = $('#skillsete').find(":selected").text();
+            //     targetrank = $('#targetranke').find(":selected").text();
+            //     deadline = $('#deadlinee').val().split("/");
+            //     deadline = deadline[0] + " " + deadline[1];
+                
+            //     $("[name*='skill']").html(skillset);
+            //     $("[name*='rank']").html(targetrank);
+            //     $("[name='date']").html(deadline);
+                 
+            //  });
+           
+
         </script>      
         <script>
 
@@ -394,7 +439,14 @@
                 window.location.reload(false);
                 }
         });
-
+        $('#cancel11').click(function(){
+            var isconfirm = confirm("Are you want to cancel?");
+            if (isconfirm){
+                list_goal.splice(0,4);
+                localStorage.setItem("session_list_goal",list_goal);
+                window.location.reload(false);
+                }
+        });
         </script>  
     </body>     
 </html>
