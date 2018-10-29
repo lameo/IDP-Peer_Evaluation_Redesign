@@ -81,17 +81,18 @@
                 </form>                 
             </div>             
         </nav>         
-        <div class="container"> 
+        <div class="container" style='z-index:1;position:fixed;margin-left:70px;background: rgb(255, 255, 255);' > 
             <div class="starter-template"> 
-                <h1 class="display-4" style="float: left;">Peer Evaluation</h1> 
+                <h1 style="float: left;">Peer Evaluation</h1> 
                 <p class="lead"></p> 
             </div>             
             <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups"> 
                 <div class="btn-group mr-2" role="group" aria-label="First group"> </div>                 
                 <div class="btn-group mr-2" role="group" aria-label="Second group"> </div>                 
                 <div class="btn-group" role="group" aria-label="Third group"> </div>                 
-            </div>             
-            <table class="table"> 
+            </div>    
+            <div class="container" >
+            <table class="table" > 
                 <thead> 
                     <tr> 
                         <th id="prog1" width="25%" style="text-align: center;"> 
@@ -113,7 +114,11 @@
                     <tr> </tr>                     
                     <tr> </tr>                     
                 </tbody>                 
-            </table>             
+            </table> 
+            </div>    
+        </div>       
+        <div class="container" style="margin-top: 180px;" > 
+ 
             <div class="card border-info mb-3"> 
                 <div class="card-header">Q1. How would you rate the student?</div>                 
                 <div class="card-body text-info"> 
@@ -138,7 +143,8 @@
                     <textarea id="q4" class="form-control" rows="3"></textarea>                     
                 </div>                 
             </div>             
-        </div>         
+        </div>  
+          
         <nav style="background-color:rgba(0, 0, 0, 0);" class="navbar navbar-expand-md fixed-bottom"> 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"> 
                 <span class="navbar-toggler-icon"></span> 

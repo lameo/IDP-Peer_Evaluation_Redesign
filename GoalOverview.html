@@ -169,11 +169,11 @@
                     </div>
                 </div>
             </div>
-            <div class="modal pg-show-modal fade" id='edit' tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal pg-show-modal fade" id='edit' tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">             
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel1">Edit</h5>
+                            <h5 class="modal-title" id="edit" >Edit</h5>
                             <button id="editclose" type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">×</span>
                             </button>
@@ -223,7 +223,7 @@
                         </table>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button id="savee" type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Savee</button>
+                            <button id="savee" type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Save</button>
                         </div>
                     </div>
                 </div>
@@ -296,7 +296,7 @@
                 else if(i%4 == 3){
                     print_table+= "<td>"+list_goal[i]+"</td>";
                     if(list_goal[i] != "Completed"){
-                        print_table+= "<td style='text-align:center;'><button type='button' class='btn btn-secondary pl-sm-null bg-warning ml-1' data-toggle='modal' data-target='#edit'>Edit</button><button type='button' id='cancel"+row_count+"' class='btn btn-secondary pl-sm-null bg-danger ml-1'>Cancel</button></td></tr>";
+                        print_table+= "<td style='text-align:center;'><button type='button' id='cancel"+row_count+"' class='btn btn-secondary pl-sm-null bg-danger ml-1'>Cancel</button></td></tr>";//<button type='button' class='btn btn-secondary pl-sm-null bg-warning ml-1' data-toggle='modal' data-target='#edit'>Edit</button>
                     }
                     else{
                         print_table += "<td></td></tr>";
@@ -320,7 +320,7 @@
             $('#cancel2').click(function(){
                 var isconfirm = confirm("Are you want to cancel?");
                 if (isconfirm){
-                    list_goal.splice(0,4);
+                    list_goal.splice(4,4);
                     localStorage.setItem("session_list_goal",list_goal);
                     window.location.reload(false);
                     }
@@ -328,7 +328,7 @@
             $('#cancel3').click(function(){
                 var isconfirm = confirm("Are you want to cancel?");
                 if (isconfirm){
-                    list_goal.splice(0,4);
+                    list_goal.splice(8,4);
                     localStorage.setItem("session_list_goal",list_goal);
                     window.location.reload(false);
                     }
@@ -336,7 +336,7 @@
             $('#cancel4').click(function(){
                 var isconfirm = confirm("Are you want to cancel?");
                 if (isconfirm){
-                    list_goal.splice(0,4);
+                    list_goal.splice(12,4);
                     localStorage.setItem("session_list_goal",list_goal);
                     window.location.reload(false);
                     }
@@ -344,7 +344,7 @@
             $('#cancel5').click(function(){
                 var isconfirm = confirm("Are you want to cancel?");
                 if (isconfirm){
-                    list_goal.splice(0,4);
+                    list_goal.splice(16,4);
                     localStorage.setItem("session_list_goal",list_goal);
                     window.location.reload(false);
                     }
@@ -352,7 +352,7 @@
             $('#cancel6').click(function(){
                 var isconfirm = confirm("Are you want to cancel?");
                 if (isconfirm){
-                    list_goal.splice(0,4);
+                    list_goal.splice(20,4);
                     localStorage.setItem("session_list_goal",list_goal);
                     window.location.reload(false);
                     }
@@ -360,7 +360,7 @@
             $('#cancel7').click(function(){
                 var isconfirm = confirm("Are you want to cancel?");
                 if (isconfirm){
-                    list_goal.splice(0,4);
+                    list_goal.splice(24,4);
                     localStorage.setItem("session_list_goal",list_goal);
                     window.location.reload(false);
                     }
@@ -368,7 +368,7 @@
             $('#cancel8').click(function(){
                 var isconfirm = confirm("Are you want to cancel?");
                 if (isconfirm){
-                    list_goal.splice(0,4);
+                    list_goal.splice(28,4);
                     localStorage.setItem("session_list_goal",list_goal);
                     window.location.reload(false);
                     }
@@ -376,7 +376,7 @@
             $('#cancel9').click(function(){
                 var isconfirm = confirm("Are you want to cancel?");
                 if (isconfirm){
-                    list_goal.splice(0,4);
+                    list_goal.splice(32,4);
                     localStorage.setItem("session_list_goal",list_goal);
                     window.location.reload(false);
                     }
@@ -385,7 +385,7 @@
             $('#cancel10').click(function(){
                 var isconfirm = confirm("Are you want to cancel?");
                 if (isconfirm){
-                    list_goal.splice(0,4);
+                    list_goal.splice(36,4);
                     localStorage.setItem("session_list_goal",list_goal);
                     window.location.reload(false);
                     }
