@@ -91,8 +91,8 @@
                                 <th>Status</th> 
                             </tr>                             
                         </thead>                         
-                        <tbody> 
-                            <tr id="row1"> 
+                        <thead id='printtable'> 
+                            <!-- <tr id="row1"> 
                                 <td><span></span></td> 
                                 <td>Analytical Techniques 101</td> 
                                 <td>5 Nov 2018</td> 
@@ -147,8 +147,8 @@
                                         <button id="cancel4" type="button" class="btn btn-secondary pl-sm-null bg-danger ml-1">Cancel</button>                                         
                                     </div>                                     
                                 </td>                                 
-                            </tr>                             
-                        </tbody>                         
+                            </tr>                              -->
+                        </thead>                         
                     </table>                     
                 </div>                 
             </div>   
@@ -163,68 +163,121 @@
            
             
 // accommodate Turbolinks
-setTimeout(function(){
-//Creating Floating Menu
-if (!window.htmlsetup) {
-     		var script = document.createElement('script');
-script.src = "https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js";
-document.getElementsByTagName('head')[0].appendChild(script);
-    //Set Auto update numbers in row
-    function AutoNumber() {
-            $('table tr').each(function (i) {
-                $(this).find('span').text(i);
-            });
-            }
+// setTimeout(function(){
+// //Creating Floating Menu
+// if (!window.htmlsetup) {
+//      		var script = document.createElement('script');
+// script.src = "https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js";
+// document.getElementsByTagName('head')[0].appendChild(script);
+//     //Set Auto update numbers in row
+//     function AutoNumber() {
+//             $('table tr').each(function (i) {
+//                 $(this).find('span').text(i);
+//             });
+//             }
     		
-            if(sessionStorage.getItem("pres1") == "false"){
-             	  $('#row3').remove();
-            }
-            if(sessionStorage.getItem("pres2") == "false"){
-             	  $('#row4').remove();
-            }
-            if(sessionStorage.getItem("res1") == "false"){
-             	  $('#row1').remove();
-            }
-            if(sessionStorage.getItem("res2") == "false"){
-             	  $('#row2').remove();
-            }
-    AutoNumber();
-    		$('#cancel1').click(function(){
-               var isconfirm = confirm("Are you want to cancel?");
-                if (isconfirm){
-                    $('#row1').remove();
-                    AutoNumber();
-                    sessionStorage.setItem("res1", "false");
+//             if(sessionStorage.getItem("pres1") == "false"){
+//              	  $('#row3').remove();
+//             }
+//             if(sessionStorage.getItem("pres2") == "false"){
+//              	  $('#row4').remove();
+//             }
+//             if(sessionStorage.getItem("res1") == "false"){
+//              	  $('#row1').remove();
+//             }
+//             if(sessionStorage.getItem("res2") == "false"){
+//              	  $('#row2').remove();
+//             }
+//     AutoNumber();
+//     		$('#cancel1').click(function(){
+//                var isconfirm = confirm("Are you want to cancel?");
+//                 if (isconfirm){
+//                     $('#row1').remove();
+//                     AutoNumber();
+//                     sessionStorage.setItem("res1", "false");
+//                 }
+//             });
+//             $('#cancel2').click(function(){
+//                var isconfirm = confirm("Are you want to cancel?");
+//                 if (isconfirm){
+//                     $('#row2').remove();
+//                     AutoNumber();
+//                     sessionStorage.setItem("res2", "false");
+//                 }
+//             });
+//             $('#cancel3').click(function(){
+//                var isconfirm = confirm("Are you want to cancel?");
+//                 if (isconfirm){
+//                     $('#row3').remove();
+//                     AutoNumber();
+//                     sessionStorage.setItem("pres1", "false");
+//                 }
+//             });
+//             $('#cancel4').click(function(){
+//                var isconfirm = confirm("Are you want to cancel?");
+//                 if (isconfirm){
+//                     $('#row4').remove();
+//                     AutoNumber();
+//                     sessionStorage.setItem("pres2", "false");
+//                 }
+//             });
+//     window.htmlsetup = true;
+// }
+// },100)
+        	
+        </script>    
+        <script>
+            var workshop_string = localStorage.getItem('list_workshop');
+            var list_of_workshop = workshop_string.split(",");
+            var print_table = "";
+            var row_count = 1;
+            for(var i = 0;i<list_of_workshop.length;i++){
+                if(i%3 == 0){
+                    print_table+= "<tr id='row"+row_count+"'><td>"+row_count+"</td><td>"+list_of_workshop[i]+"</td>";
                 }
+                else if(i%3 == 2){
+                    print_table+= "<td>"+list_of_workshop[i]+"</td>";
+                    print_table+= "<td style='text-align:center;'><button type='button' id='cancel"+row_count+"' class='btn btn-secondary pl-sm-null bg-danger ml-1'>Cancel</button></td></tr>";
+                    row_count++;
+                }
+                else{
+                    print_table+= "<td>"+list_of_workshop[i]+"</td>";
+                }
+            }
+            document.getElementById("printtable").innerHTML = print_table;
+
+            $('#cancel1').click(function(){
+                var isconfirm = confirm("Are you want to cancel?");
+                if (isconfirm){
+                    list_of_workshop.splice(0,3);
+                    localStorage.setItem("list_workshop",list_of_workshop);
+                    window.location.reload(false);
+                    }
             });
             $('#cancel2').click(function(){
-               var isconfirm = confirm("Are you want to cancel?");
+                var isconfirm = confirm("Are you want to cancel?");
                 if (isconfirm){
-                    $('#row2').remove();
-                    AutoNumber();
-                    sessionStorage.setItem("res2", "false");
-                }
+                    list_of_workshop.splice(3,3);
+                    localStorage.setItem("list_workshop",list_of_workshop);
+                    window.location.reload(false);
+                    }
             });
             $('#cancel3').click(function(){
-               var isconfirm = confirm("Are you want to cancel?");
+                var isconfirm = confirm("Are you want to cancel?");
                 if (isconfirm){
-                    $('#row3').remove();
-                    AutoNumber();
-                    sessionStorage.setItem("pres1", "false");
-                }
+                    list_of_workshop.splice(6,3);
+                    localStorage.setItem("list_workshop",list_of_workshop);
+                    window.location.reload(false);
+                    }
             });
             $('#cancel4').click(function(){
-               var isconfirm = confirm("Are you want to cancel?");
+                var isconfirm = confirm("Are you want to cancel?");
                 if (isconfirm){
-                    $('#row4').remove();
-                    AutoNumber();
-                    sessionStorage.setItem("pres2", "false");
-                }
+                    list_of_workshop.splice(9,3);
+                    localStorage.setItem("list_workshop",list_of_workshop);
+                    window.location.reload(false);
+                    }
             });
-    window.htmlsetup = true;
-}
-},100)
-        	
-        </script>         
+        </script>     
     </body>     
 </html>
