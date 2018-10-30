@@ -1777,7 +1777,7 @@ ng\:form {
                             <h3 class="mb-1">Presentation & Delivery Workshops</h3> 
                         </div>                         
                     </a>                     
-                    <a class="list-group-item list-group-item-action flex-column align-items-start" href ="researchmethods.html" target=”_blank”> 
+                    <a class="list-group-item list-group-item-action flex-column align-items-start" target=”_blank”> 
                         <div class="d-flex w-100 justify-content-between"> 
                             <h5 class="mb-1">Presentation Workshop by TedTalks</h5> 
                             <small class="text-muted">2 days from now</small> 
@@ -1787,11 +1787,15 @@ ng\:form {
                         <small class="text-muted">SG TedTalks, Friday 5pm</small> 
                         <br> 
                         <small>School of Law, L3, SR3.02</small> 
+                        <br>
+                        <br>
+                        <button type='button'  class='btn btn-secondary pl-sm-null bg-info ml-1' onclick="location.href='researchmethods.html'">More Details..</button>
+
                         <input id="prescancel1" onclick="cancelpres1()" class="btn btn-primary bg-danger ml-1" type="submit" value="Cancel" style="float: right;"/> 
                         <input id="presbut1" onclick="pres1()" class="btn btn-primary" type="submit" value="RSVP" style="float: right;"/>
                         <input disabled id="presconfirm1" class="btn btn-primary bg-white border-light text-primary list-group-item-secondary" type="submit" value="Confirmed" style="float: right;"/>
                     </a>                     
-                    <a class="list-group-item list-group-item-action flex-column align-items-start" href ="optimizedinterview.html" target=”_blank”> 
+                    <a class="list-group-item list-group-item-action flex-column align-items-start" target=”_blank”> 
                         <div class="d-flex w-100 justify-content-between"> 
                             <h5 class="mb-1">ToastMasters' Crashcourse to Pitching</h5> 
                             <small class="text-muted">7 days from now</small> 
@@ -1800,6 +1804,10 @@ ng\:form {
                         <small class="text-muted">SMU ToastMasters, Wed 9pm</small> 
                         <br> 
                         <small class="text-muted">School of Economics, L3, SR B1-2</small> 
+                        <br>
+                        <br>
+                        <button type='button'  class='btn btn-secondary pl-sm-null bg-info ml-1' onclick="location.href='optimizedinterview.html'">More Details..</button>
+
                         <input id="prescancel2" onclick="cancelpres2()" class="btn btn-primary bg-danger ml-1" type="submit" value="Cancel" style="float: right;"/> 
                         <input id="presbut2" onclick="pres2()" class="btn btn-primary" type="submit" value="RSVP" style="float: right;"/>
                         <input disabled id="presconfirm2" class="btn btn-primary bg-white border-light text-primary list-group-item-secondary" type="submit" value="Confirmed" style="float: right;"/> 
@@ -1815,7 +1823,7 @@ ng\:form {
                             <h3 class="mb-1">Research Depth Workshops</h3> 
                         </div>                         
                     </a>                     
-                    <a class="list-group-item list-group-item-action flex-column align-items-start" href ="editingMastery.html" target=”_blank”> 
+                    <a class="list-group-item list-group-item-action flex-column align-items-start" target=”_blank”> 
                         <div class="d-flex w-100 justify-content-between"> 
                             <h5 class="mb-1">Analytical Techniques 101</h5> 
                             <small class="text-muted">2 days from now</small> 
@@ -1826,11 +1834,16 @@ ng\:form {
                         <small class="text-muted">School of Information Systems, L2 SR2-1</small> 
                         <br> 
                         <small class="text-muted">School of Economics, L4, SR4.01</small>
+                        <br>
+                        <br>
+                        <button type='button'  class='btn btn-secondary pl-sm-null bg-info ml-1' onclick="location.href='editingMastery.html'">More Details..</button>
+        
+
                         <input id="rescancel1" onclick="cancelres1()" class="btn btn-primary bg-danger ml-1" type="submit" value="Cancel" style="float: right;"/> 
                         <input id="resbut1" onclick="res1()" class="btn btn-primary" type="submit" value="RSVP" style="float: right;"/>
                         <input disabled id="resconfirm1" class="btn btn-primary bg-white border-light text-primary list-group-item-secondary" type="submit" value="Confirmed" style="float: right;"/> 
                     </a>                     
-                    <a class="list-group-item list-group-item-action flex-column align-items-start" href ="salesfunnels.html" target=”_blank”> 
+                    <a class="list-group-item list-group-item-action flex-column align-items-start"  target=”_blank”> 
                         <div class="d-flex w-100 justify-content-between"> 
                             <h5 class="mb-1">Elon Musk Hacks to Googling for Research Purposes</h5> 
                             <small class="text-muted">3 days from now</small> 
@@ -1839,6 +1852,11 @@ ng\:form {
                         <small class="text-muted">Prof Tang.</small> 
                         <br> 
                         <small class="text-muted">School of Law, L1, SR1.01</small> 
+                        <br>
+                        <br>
+                        <button type='button'  class='btn btn-secondary pl-sm-null bg-info ml-1' onclick="location.href='salesfunnels.html'">More Details..</button>
+                
+
                         <input id="rescancel2" onclick="cancelres2()" class="btn btn-primary bg-danger ml-1" type="submit" value="Cancel" style="float: right;"/> 
                         <input id="resbut2" onclick="res2()" class="btn btn-primary" type="submit" value="RSVP" style="float: right;"/>
                         <input disabled id="resconfirm2" class="btn btn-primary bg-white border-light text-primary list-group-item-secondary" type="submit" value="Confirmed" style="float: right;"/> 
@@ -2010,6 +2028,38 @@ ng\:form {
             }
         </script>    
         <script>
+            var workshop_string = localStorage.getItem('list_workshop');
+            var list_of_workshop = workshop_string.split(",");
+
+            $('#presbut1').click(function(){
+                list_of_workshop.push("Presentation Workshop by TedTalks");
+                list_of_workshop.push("15 Nov 2018");
+                list_of_workshop.push("SOL L3 SR3.02");
+                localStorage.setItem("list_workshop",list_of_workshop);
+            
+            });
+            $('#presbut2').click(function(){
+                list_of_workshop.push("ToastMasters' Crashcourse to Pitching");
+                list_of_workshop.push("30 Nov 2018");
+                list_of_workshop.push("SOE L3 SR B1-2");
+                localStorage.setItem("list_workshop",list_of_workshop);
+            
+            });
+            $('#resbut1').click(function(){
+                list_of_workshop.push("Analytical Techniques 101");
+                list_of_workshop.push("5 Nov 2018	");
+                list_of_workshop.push("SOE/SOSS L4 SR 4.01");
+                localStorage.setItem("list_workshop",list_of_workshop);
+            
+            });
+
+            $('#resbut2').click(function(){
+                list_of_workshop.push("Elon Musk's Hacks to Googling for Research Purposes");
+                list_of_workshop.push("5 Nov 2018");
+                list_of_workshop.push("SOL L1 SR 1.01");
+                localStorage.setItem("list_workshop",list_of_workshop);
+            
+            });
 
 
         </script>     
