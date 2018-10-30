@@ -2082,6 +2082,9 @@ ng\:form {
         <script>
             var workshop_string = localStorage.getItem('list_workshop');
             var list_of_workshop = workshop_string.split(",");
+            if(list_of_workshop.length < 2){
+                list_of_workshop = [];
+            }
 
             $('#presbut1').click(function(){
                 list_of_workshop.push("Presentation Workshop by TedTalks");
