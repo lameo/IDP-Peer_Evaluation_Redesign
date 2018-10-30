@@ -1237,24 +1237,22 @@
             var print_table = "";
             var row_count = 1;
             var display_length = list_goal.length;
-            if(display_length>8){
-                display_length = 8;
+            if(display_length>10){
+                display_length = 10;
             }
             for(var i = 0;i<display_length;i++){
-                if(i%4 == 0){
-                    print_table+= "<tr id='row"+row_count+"'><td>"+row_count+"</td><td>"+list_goal[i+1]+"</td>";
+                if(i%5 == 0){
+                    print_table+= "<tr id='row"+row_count+"'><td>"+row_count+"</td><td>"+list_goal[i]+"</td>";
                 }
-                else if(i%4 == 2){
-                    print_table+= "<td>"+list_goal[i+1]+"</td></tr>";
+                else if(i%5 == 1){
+                    print_table+= "<td>"+list_goal[i]+"</td>";
                     row_count++;
                 }
-                else if(i%4 == 3){
-                    //do nothing
+                else if(i%5 == 2){
+                    print_table+= "<td>"+list_goal[i]+" "+list_goal[i+1]+"</td></tr>";
+                }
 
-                }
-                else{
-                    print_table+= "<td>"+list_goal[i+1]+"</td>";
-                }
+       
             }
             document.getElementById("printtable1").innerHTML = print_table;
             document.getElementById("printtable2").innerHTML = print_table;
