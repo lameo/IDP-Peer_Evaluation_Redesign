@@ -1936,19 +1936,57 @@ ng\:form {
             },0)
 //<..................................Handling of rsvp buttons.................................................>
             //setting default workshop attendance
-
             sessionStorage.setItem("pres1", "false");
             sessionStorage.setItem("pres2", "false");
-            sessionStorage.setItem("res1", "true");
-            sessionStorage.setItem("res2", "true");
-            
-            //Hiding of the cancel and confirm buttons on page load
+            sessionStorage.setItem("res1", "false");
+            sessionStorage.setItem("res2", "false");
+            $('#presbut1').show();
             $('#prescancel1').hide();
             $('#presconfirm1').hide();
+
+            $('#presbut2').show();
             $('#prescancel2').hide();
             $('#presconfirm2').hide();
-            $('#resbut1').hide();
-            $('#resbut2').hide();  
+
+            $('#resbut1').show();
+            $('#rescancel1').hide();
+            $('#resconfirm1').hide();
+            
+            $('#resbut2').show();
+            $('#rescancel2').hide();
+            $('#resconfirm2').hide();
+
+            var list_of_workshop = localStorage.getItem("list_workshop");
+
+            if(list_of_workshop.indexOf("Presentation Workshop by TedTalks") != -1){
+                sessionStorage.setItem("pres1", "true");
+                $('#presbut1').hide();
+                $('#prescancel1').show();
+                $('#presconfirm1').show();
+            }
+            if(list_of_workshop.indexOf("ToastMasters' Crashcourse to Pitching")!=-1){
+                sessionStorage.setItem("pres2", "true");
+                $('#presbut2').hide();
+                $('#prescancel2').show();
+                $('#presconfirm2').show();
+            }
+            if(list_of_workshop.indexOf("Analytical Techniques 101")!=-1){
+                sessionStorage.setItem("res1", "true");
+                $('#resbut1').hide();
+                $('#rescancel1').show();
+                $('#resconfirm1').show();
+
+            }
+            if(list_of_workshop.indexOf("Elon Musk's Hacks to Googling for Research Purposes")!=-1){
+                sessionStorage.setItem("res2", "true");
+                $('#resbut2').hide();
+                $('#rescancel2').show();
+                $('#resconfirm2').show();
+            }
+
+            
+            //Hiding of the cancel and confirm buttons on page load
+  
             //RSVP buttons onclick
             function pres1(){
                 var pres1confirm = confirm("Are you sure you want to attend?");
@@ -1966,6 +2004,9 @@ ng\:form {
             		$('#presconfirm1').hide();
                	 	$('#presbut1').show();
                		sessionStorage.setItem("pres1", "false");
+                    var target = list_of_workshop.indexOf("Presentation Workshop by TedTalks");
+                    list_of_workshop.splice(target,3);
+                    localStorage.setItem("list_workshop",list_of_workshop);
                 }
                
             }
@@ -1976,6 +2017,7 @@ ng\:form {
                     $('#presbut2').hide();
                     $('#prescancel2').show();
                     $('#presconfirm2').show();  
+                    
                 }
             }
             function cancelpres2(){
@@ -1985,6 +2027,9 @@ ng\:form {
             		$('#presconfirm2').hide();
                	 	$('#presbut2').show();
                		sessionStorage.setItem("pres2", "false");
+                    var target = list_of_workshop.indexOf("ToastMasters' Crashcourse to Pitching");
+                    list_of_workshop.splice(target,3);
+                    localStorage.setItem("list_workshop",list_of_workshop);
                 }
                
             }
@@ -2004,6 +2049,10 @@ ng\:form {
             		$('#resconfirm1').hide();
                	 	$('#resbut1').show();
                		sessionStorage.setItem("res1", "false");
+                    var target = list_of_workshop.indexOf("Analytical Techniques 101");
+                    list_of_workshop.splice(target,3);
+                    localStorage.setItem("list_workshop",list_of_workshop);
+                    
                 }
                
             }
@@ -2023,6 +2072,9 @@ ng\:form {
             		$('#resconfirm2').hide();
                	 	$('#resbut2').show();
                		sessionStorage.setItem("res2", "false");
+                    var target = list_of_workshop.indexOf("Elon Musk's Hacks to Googling for Research Purposes");
+                    list_of_workshop.splice(target,3);
+                    localStorage.setItem("list_workshop",list_of_workshop);          
                 }
                
             }
