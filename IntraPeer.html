@@ -479,7 +479,8 @@
                               var isconfirm = confirm("Please fill up all questions");
                            } else {
                                sessionStorage.setItem("intraeval" , "submitted");
-                           	$(location).attr('href', 'FeedbackDone.html');
+                               window.location.replace("FeedbackDone.html");
+                           	window.location = "FeedbackDone.html";
                            }
                        });
 
