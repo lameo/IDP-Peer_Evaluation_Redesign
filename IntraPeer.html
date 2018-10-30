@@ -66,11 +66,9 @@
                         <div class="dropdown-menu"> 
                             <a class="dropdown-item" href="#">Create new report</a> 
                         </div>                         
-                    </li>      
-               
+                    </li>                     
                 </ul>                 
                 <form class="form-inline my-2 my-lg-0"> 
-                   
                     <a class="btn btn-outline-primary" href="index.html" style="margin-left: 16px; margin-top: -3px;">Logout</a> 
                 </form>                 
             </div>             
@@ -477,7 +475,7 @@
                            $('#text1').val();
                        });
                        $('#submit').on('click', function() {
-                           if($('[id^="prog"]').css("background-color")==="rgb(255, 0, 0)" || !$.trim($('[id^="q"]').val())){
+                           if($('[id^="prog"]').css("background-color")==="rgb(255, 0, 0)" || !$.trim($('textarea').val())){
                               var isconfirm = confirm("Please fill up all questions");
                            } else {
                                sessionStorage.setItem("intraeval" , "submitted");
