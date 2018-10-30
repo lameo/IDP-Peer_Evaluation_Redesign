@@ -37,8 +37,8 @@
                     <li class="nav-item dropdown"> 
                         <a class="nav-link dropdown-toggle" href="#" id="navbardrop10" data-toggle="dropdown">Workshop</a> 
                         <div class="dropdown-menu"> 
-                            <a class="dropdown-item" href="BookWorkshop.html">Book workshop</a> 
-                            <a class="dropdown-item" href="ManageWorkshop.html">Manage workshop</a> 
+                            <a class="dropdown-item" href="BookWorkshop.html">New booking</a> 
+                            <a class="dropdown-item" href="ManageWorkshop.html">Manage</a> 
                         </div>                         
                     </li>                     
                     <li class="nav-item dropdown"> 
@@ -46,7 +46,7 @@
                   Feedback </a> 
                         <div class="dropdown-menu"> 
                             <a class="dropdown-item" href="SelfAssessment.html">Self assessment</a> 
-                            <a class="dropdown-item" href="SelectModule.html">Module feedback</a> 
+                            <a class="dropdown-item" href="SelectModule.html">Module selection</a> 
                             <a class="dropdown-item" href="invitation.html">Send invitation</a> 
                         </div>                         
                     </li>                     
@@ -65,23 +65,15 @@
                         <div class="dropdown-menu"> 
                             <a class="dropdown-item" href="#">Create new report</a> 
                         </div>                         
-                    </li>                     
+                    </li>   
+                  
                 </ul>                 
-                <form class="form-inline my-2 my-lg-0"> 
-                    <ol class="breadcrumb float-right" style="margin-top: 11px;"> 
-                        <li class="breadcrumb-item"> 
-                            <a href="Home.html">Home</a> 
-                        </li>                         
-                        <li class="breadcrumb-item"> 
-                            <a href="feedback_home.html">Feedback</a> 
-                        </li>                         
-                        <li class="breadcrumb-item active">IS110</li>                         
-                    </ol>                     
+                <form class="form-inline my-2 my-lg-0">                 
                     <a class="btn btn-outline-primary" href="index.html" style="margin-left: 16px; margin-top: -3px;">Logout</a> 
                 </form>                 
             </div>             
         </nav>         
-        <div class="container"style='z-index:1;position:fixed;margin-left:70px;background: rgb(255, 255, 255);'> 
+        <div class="container"style='z-index:1;position:fixed;margin-left:70px;margin-top:-30px;background: rgb(255, 255, 255);'> 
             <div class="starter-template"> 
                 <h1 style="float: left;">Self assessment</h1> 
                 <p class="lead"></p> 
@@ -145,7 +137,7 @@
                 </tbody>                 
             </table>  
         </div>      
-        <div class="container" style="margin-top: 180px;" >      
+        <div class="container" style="margin-top: 160px;" >      
             <h1>Academic</h1> 
             <div class="card border-info mb-3"> 
                 <div class="card-header">Q1. How well would you rate yourself in writing reports? (grammar, language proficiency, vocabulary etc.)</div>                 
@@ -243,7 +235,6 @@
                     </li>                     
                 </ul>                 
                 <form class="form-inline my-2 my-lg-0"> 
-                    <button id="save" type="button" class="btn btn-primary">Save</button>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                &nbsp;
                     <button id="submit" type="button" class="btn btn-primary bg-success">Submit</button>                     
                 </form>                 
             </div>             
@@ -384,7 +375,7 @@
                     //Detect which question is the person currently on
                     $('#q1').on('click', function() {
  						$('#prog1').css({"border-color": "#C1E0FF", 
-            							 "border-width":"0px", 
+            							 "border-width":"5px", 
             							 "border-style":"solid"});
                         $('#prog2').css({"border-color": "#C1E0FF", 
             							 "border-width":"0px", 
@@ -425,7 +416,7 @@
             							 "border-width":"0px", 
             							 "border-style":"solid"});
                         $('#prog2').css({"border-color": "#C1E0FF", 
-            							 "border-width":"0px", 
+            							 "border-width":"5px", 
             							 "border-style":"solid"});
                         $('#prog3').css({"border-color": "#C1E0FF", 
             							 "border-width":"0px", 
@@ -466,7 +457,7 @@
             							 "border-width":"0px", 
             							 "border-style":"solid"});
                         $('#prog3').css({"border-color": "#C1E0FF", 
-            							 "border-width":"0px", 
+            							 "border-width":"5px", 
             							 "border-style":"solid"});
                         $('#prog4').css({"border-color": "#C1E0FF", 
             							 "border-width":"0px", 
@@ -507,7 +498,7 @@
             							 "border-width":"0px", 
             							 "border-style":"solid"});
                         $('#prog4').css({"border-color": "#C1E0FF", 
-            							 "border-width":"0px", 
+            							 "border-width":"5px", 
             							 "border-style":"solid"});
                         $('#prog5').css({"border-color": "#C1E0FF", 
                                         "border-width":"0px", 
@@ -548,7 +539,7 @@
             							 "border-width":"0px", 
             							 "border-style":"solid"});
                         $('#prog5').css({"border-color": "#C1E0FF", 
-                                        "border-width":"0px", 
+                                        "border-width":"5px", 
                                         "border-style":"solid"});
                         $('#prog6').css({"border-color": "#C1E0FF", 
                                         "border-width":"0px", 
@@ -589,7 +580,7 @@
                                         "border-width":"0px", 
                                         "border-style":"solid"});
                         $('#prog6').css({"border-color": "#C1E0FF", 
-                                        "border-width":"0px", 
+                                        "border-width":"5px", 
                                          "border-style":"solid"});
                         $('#prog7').css({"border-color": "#C1E0FF", 
             							 "border-width":"0px", 
@@ -630,7 +621,7 @@
                                         "border-width":"0px", 
                                          "border-style":"solid"});
                         $('#prog7').css({"border-color": "#C1E0FF", 
-            							 "border-width":"0px", 
+            							 "border-width":"5px", 
             							 "border-style":"solid"});
                         $('#prog8').css({"border-color": "#C1E0FF", 
             							 "border-width":"0px", 
@@ -671,7 +662,7 @@
             							 "border-width":"0px", 
             							 "border-style":"solid"});
                         $('#prog8').css({"border-color": "#C1E0FF", 
-            							 "border-width":"0px", 
+            							 "border-width":"5px", 
             							 "border-style":"solid"});
                         $('#prog9').css({"border-color": "#C1E0FF", 
             							 "border-width":"0px", 
@@ -712,7 +703,7 @@
             							 "border-width":"0px", 
             							 "border-style":"solid"});
                         $('#prog9').css({"border-color": "#C1E0FF", 
-            							 "border-width":"0px", 
+            							 "border-width":"5px", 
             							 "border-style":"solid"});
                         $('#prog10').css({"border-color": "#C1E0FF", 
             							 "border-width":"0px", 
@@ -753,7 +744,7 @@
             							 "border-width":"0px", 
             							 "border-style":"solid"});
                         $('#prog10').css({"border-color": "#C1E0FF", 
-            							 "border-width":"0px", 
+            							 "border-width":"5px", 
             							 "border-style":"solid"});
                         $('#prog11').css({"border-color": "#C1E0FF", 
                                         "border-width":"0px", 
@@ -794,7 +785,7 @@
             							 "border-width":"0px", 
             							 "border-style":"solid"});
                         $('#prog11').css({"border-color": "#C1E0FF", 
-                                        "border-width":"0px", 
+                                        "border-width":"5px", 
                                         "border-style":"solid"});
                         $('#prog12').css({"border-color": "#C1E0FF", 
                                         "border-width":"0px", 
@@ -835,7 +826,7 @@
                                         "border-width":"0px", 
                                         "border-style":"solid"});
                         $('#prog12').css({"border-color": "#C1E0FF", 
-                                        "border-width":"0px", 
+                                        "border-width":"5px", 
                                          "border-style":"solid"});
 					});
                     $('#save').on('click', function() {

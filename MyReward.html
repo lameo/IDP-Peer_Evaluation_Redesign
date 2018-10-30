@@ -44,8 +44,8 @@
                         <a class="nav-link dropdown-toggle" href="#" id="navbardrop1" data-toggle="dropdown">Workshop</a>
                         <div class="dropdown-menu">
 
-                            <a class="dropdown-item" href="BookWorkshop.html">Book workshop</a>
-                            <a class="dropdown-item" href="ManageWorkshop.html">Manage workshop</a>
+                            <a class="dropdown-item" href="BookWorkshop.html">New booking</a>
+                            <a class="dropdown-item" href="ManageWorkshop.html">Manage</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -53,7 +53,7 @@
             Feedback </a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="SelfAssessment.html">Self assessment</a>
-                            <a class="dropdown-item" href="SelectModule.html">Module feedback</a>
+                            <a class="dropdown-item" href="SelectModule.html">Module selection</a>
                             <a class="dropdown-item" href="invitation.html">Send invitation</a>
                         </div>
                     </li>
@@ -74,14 +74,10 @@
                             <a class="dropdown-item" href="#">Create new report</a>
                         </div>
                     </li>
+
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <ol class="breadcrumb float-right" style="margin-top: 11px;">
-                        <li class="breadcrumb-item">
-                            <a href="Home.html">Home</a>
-                        </li>
-                        <li class="breadcrumb-item active">My reward</li>
-                    </ol>
+
                     <a class="btn btn-outline-primary" href="index.html" style="margin-left: 16px; margin-top: -3px;">Logout</a>
                 </form>
             </div>
@@ -93,8 +89,8 @@
             <div class="container" style="margin-top: 0; margin-bottom: 41px;">
                 <h3 style="margin-top: 28px; margin-bottom: -26px; text-align: left;">Reward</h3>
             </div>
-            <div class="container text-center bg-warning ">
-                <h1 class="display-3 font-weight-normal">You have <strong class="text-danger">260</strong> points</h1>
+            <div class="container ">
+                <h3 id='rewardpoints'></h3>
             </div>
             <div class="container text-center">
                 <div class="card-group">
@@ -108,11 +104,13 @@
                                 <br><br><h6>240 Points</h6>
                                 <br>
                                 <a class="btn btn-info text-center" href="https://www.udemy.com/digital-marketing-masterclass/">More Info</a>
-                                <a class="btn btn-success text-center" href='#' data-toggle="modal" data-target="#pop">Redeem</a>
+                                <a  id="redeemcode1"></a>
+                                <!-- <button type='button' id='redeem1' class='btn btn-secondary pl-sm-null bg-success ml-1'>Redeem</button> -->
+                                <!-- <a class="btn btn-success text-center" id='redeem' data-toggle="modal" data-target="#pop">Redeem</a> -->
                             <!-- </a> -->
                         </div>
 
-                        <div class="modal pg-show-modal fade" id='pop' tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+                        <!-- <div class="modal pg-show-modal fade" id='pop' tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
                                 <div class="modal-dialog" role="document"> 
                                     <div class="modal-content"> 
                                         <div class="modal-header"> 
@@ -150,7 +148,7 @@
                                         </div>                         
                                     </div>                     
                                 </div>                 
-                            </div>    
+                            </div>-->    
                     </div>
                     <div class="card">
                         <img class="card-img-top p-5" src="media/photoshop.jpg" alt="Card image cap">
@@ -189,35 +187,17 @@
 </tr>                     
                 </thead>                 
                 <tbody> 
-                    <!-- <tr> 
-                        <th scope="row">
-                            <img src="media/Present.PNG">
-                        </th>                         
-                        <td>You redeemed 240 points for <strong>IoT (Internet of Things) Automation</strong>.<br><span class="event-date">Wed October 17 2018, 7:45 p.m. +08</span></td> 
-                    </tr>                      -->
-                    <!-- <tr> 
-                        <th scope="row">
-                            <img src="media/Points.PNG">
-                        </th>                         
-                        <td>You earned 180 points for <strong>LGST101 Inter-group evaluation</strong>.<br>Thu October 11 2018, 11:51 p.m. +08</td> 
-                    </tr>                      -->
-                    <!-- <tr> 
-                        <th scope="row">
-                            <img src="media/Points.PNG">
-                        </th>                         
-                        <td>You earned 180 points for <strong>FNCE101 Inter-group evaluation</strong>.<br>Thu October 08 2018, 4:09 p.m. +08</td> 
-                    </tr> -->
                     <tr> 
                         <th scope="row">
                             <img src="media/Points.PNG">
                         </th>                         
-                        <td>You earned 130 points for <strong>MGMT005 Intra-group evaluation</strong>.<br>Thu October 08 2018, 2:30 p.m. +08</td> 
+                        <td>You earned 130 points for <strong>MGMT005 Intra-group evaluation</strong>.<br>Thu October 08 2018, 2:30 p.m. </td> 
                     </tr>
                     <tr> 
                         <th scope="row">
                             <img src="media/Points.PNG">
                         </th>                         
-                        <td>You earned 130 points for <strong>LGST101 Inter-group evaluation</strong>.<br>Thu October 01 2018, 2:42 p.m. +08</td> 
+                        <td>You earned 130 points for <strong>LGST101 Inter-group evaluation</strong>.<br>Thu October 01 2018, 2:42 p.m. </td> 
                     </tr>
                 </tbody>                 
             </table>
@@ -225,5 +205,28 @@
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/popper.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script>
+            var reward_points = localStorage.getItem("rewardpoints");
+            var print_point = "Balance: " + reward_points.toString() + " points";
+            document.getElementById("rewardpoints").innerHTML = print_point;
+            var reward_1_claim = localStorage.getItem("reward_1_claim");
+            var print_reward1_redeem = "<button type='button' id='redeem1' class='btn btn-secondary pl-sm-null bg-success ml-1'>Redeem</button>";
+            if(reward_1_claim == "show"){
+                print_reward1_redeem = "<button type='button' class='btn btn-secondary pl-sm-null bg-secondary ml-1'>CODE:SCHLAJ11</button>";
+            } 
+            document.getElementById("redeemcode1").innerHTML = print_reward1_redeem;
+
+
+            $('#redeem1').click(function(){
+                reward_points -= 240;
+                localStorage.setItem("rewardpoints",reward_points)
+                reward_1_claim = "show";
+                localStorage.setItem("reward_1_claim",reward_1_claim);
+                window.location.reload(false);
+            });
+
+            
+
+        </script>
     </body>
 </html>

@@ -38,8 +38,8 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbardrop1" data-toggle="dropdown">Workshop</a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="BookWorkshop.html">Book workshop</a>
-                            <a class="dropdown-item" href="ManageWorkshop.html">Manage workshop</a>
+                            <a class="dropdown-item" href="BookWorkshop.html">New booking</a>
+                            <a class="dropdown-item" href="ManageWorkshop.html">Manage</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -47,7 +47,7 @@
                         Feedback </a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="SelfAssessment.html">Self assessment</a>
-                            <a class="dropdown-item" href="SelectModule.html">Module feedback</a>
+                            <a class="dropdown-item" href="SelectModule.html">Module selection</a>
                             <a class="dropdown-item" href="invitation.html">Send invitation</a>
                         </div>
                     </li>
@@ -67,17 +67,9 @@
                             <a class="dropdown-item" href="#">Create new report</a>
                         </div>
                     </li>
+
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <ol class="breadcrumb float-right" style="margin-top: 11px;">
-                        <li class="breadcrumb-item">
-                            <a href="Home.html">Home</a>
-                        </li>
-                        <li class="breadcrumb-item">
-                            <a href="feedback_home.html">Feedback</a>
-                        </li>
-                        <li class="breadcrumb-item active">New Invitation</li>
-                    </ol>
                     <a class="btn btn-outline-primary" href="index.html" style="margin-left: 16px; margin-top: -3px;">Logout</a>
                 </form>
             </div>
@@ -90,7 +82,7 @@
                 <h1 class="display-4" style="margin-top: 28px; margin-bottom: -26px; text-align: left;">New Invitation</h1>
                 <h1 style="margin-top: 28px; margin-bottom: -26px; text-align: left;">
                     <select class="form-control" id="form1" onchange="leaveChange()">
-                        <option selected="" disabled="">Please select one of the following area....</option>
+                        <option value='0' selected="" disabled="">Please select one of the following area....</option>
                         <option value="1">CCA</option>
                         <option value="2">Intern / Job</option>
                     </select>
@@ -108,7 +100,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <!-- <tr>
                                 <td>1</td>
                                 <td>Ang Qing Hui</td>
                                 <td>Completed</td>
@@ -147,7 +139,7 @@
                                         <button id="invite2" type="button" class="btn btn-secondary bg-success">Invite</button>
                                     </div>
                                 </td>
-                            </tr>
+                            </tr> -->
                         </tbody>
                     </table>
                 </div>

@@ -15,7 +15,7 @@
         <link href="pricing.css" rel="stylesheet"> 
     </head>     
     <body class="text-center"> 
-        <div class="d-flex flex-column flex-md-row align-items-center px-md-4 mb-3 bg-white border-bottom box-shadow position-fixed w-100 p-2"> 
+        <div class="d-flex flex-column flex-md-row align-items-center px-md-4 mb-3 bg-white border-bottom box-shadow position-fixed w-100 p-2" style = "position:fixed;z-index:1"> 
             <h5 class="my-0 mr-md-auto font-weight-normal"><a class="navbar-brand text-body" href="#">
                     <img class="d-inline-block align-top" src="media/leaf.png" alt="" width="30" height="30"/>&nbsp;GROWTH
                 </a></h5> 
@@ -32,6 +32,18 @@
                 <thead> 
                     <tr> 
                         <th>
+                                <a href="AnalysisDashboard.html" class="custom-card">
+                                    <div class="card mb-4 box-shadow"> 
+                                        <div class="card-header"> 
+                                            <h4 class="my-0 font-weight-normal">View personal analysis</h4> 
+                                        </div>                                     
+                                        <div class="card-body"> 
+                                            <img style="width: 250px; height: 300px;" src="media/analysis.jpg" alt=""/> 
+                                        </div>                                     
+                                    </div>                                 
+                                </a>
+                            </th>   
+                        <th>
                             <a href="ManageWorkshop.html" class="custom-card">
                                 <div class="card mb-4 box-shadow"> 
                                     <div class="card-header"> 
@@ -43,18 +55,7 @@
                                 </div>                                 
                             </a>
                         </th>                         
-                        <th>
-                            <a href="AnalysisDashboard.html" class="custom-card">
-                                <div class="card mb-4 box-shadow"> 
-                                    <div class="card-header"> 
-                                        <h4 class="my-0 font-weight-normal">View personal analysis</h4> 
-                                    </div>                                     
-                                    <div class="card-body"> 
-                                        <img style="width: 250px; height: 300px;" src="media/analysis.jpg" alt=""/> 
-                                    </div>                                     
-                                </div>                                 
-                            </a>
-                        </th>                         
+                      
                         <th>
                             <a href="feedback_home.html" class="custom-card">
                                 <div class="card mb-4 box-shadow"> 
@@ -78,8 +79,10 @@
                                     </div>                                     
                                 </div>                                 
                             </a>
-                        </th>                         
-                    </tr>                     
+                        </th>     
+                                            
+                    </tr>  
+                
                 </thead>                 
                 <tbody> 
                     <tr> 
