@@ -53,7 +53,7 @@
             Feedback </a>
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="SelfAssessment.html">Self assessment</a>
-                            <a class="dropdown-item" href="SelectModule.html">Module feedback</a>
+                            <a class="dropdown-item" href="SelectModule.html">Module selection</a>
                             <a class="dropdown-item" href="invitation.html">Send invitation</a>
                         </div>
                     </li>
@@ -77,12 +77,7 @@
 
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <ol class="breadcrumb float-right" style="margin-top: 11px;">
-                        <li class="breadcrumb-item">
-                            <a href="Home.html">Home</a>
-                        </li>
-                        <li class="breadcrumb-item active">My reward</li>
-                    </ol>
+
                     <a class="btn btn-outline-primary" href="index.html" style="margin-left: 16px; margin-top: -3px;">Logout</a>
                 </form>
             </div>
@@ -94,8 +89,8 @@
             <div class="container" style="margin-top: 0; margin-bottom: 41px;">
                 <h3 style="margin-top: 28px; margin-bottom: -26px; text-align: left;">Reward</h3>
             </div>
-            <div class="container text-center">
-                <h1 id='rewardpoints'></h1>
+            <div class="container ">
+                <h3 id='rewardpoints'></h3>
             </div>
             <div class="container text-center">
                 <div class="card-group">
@@ -212,7 +207,7 @@
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <script>
             var reward_points = localStorage.getItem("rewardpoints");
-            var print_point = reward_points.toString();
+            var print_point = "Balance: " + reward_points.toString() + " points";
             document.getElementById("rewardpoints").innerHTML = print_point;
             var reward_1_claim = localStorage.getItem("reward_1_claim");
             var print_reward1_redeem = "<button type='button' id='redeem1' class='btn btn-secondary pl-sm-null bg-success ml-1'>Redeem</button>";
