@@ -77,9 +77,8 @@
             </div>             
         </nav>         
         <div class="container" style='z-index:1;position:fixed;margin-left:70px;background: rgb(255, 255, 255);'> 
-            <h1 style="float: left;"><br><br>Intra-Peer Evaluation</h1> 
+            <h1 style="float: left;"><br><br>Intra-Peer Feedback</h1> 
             <div class="starter-template"> 
-                <!-- <h1 style="float: left;">Intra-Peer Evaluation</h1>  -->                 
                 <p class="lead"></p> 
             </div>             
             <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups"> 
@@ -217,33 +216,16 @@
                     </form>                     
                 </div>                 
             </div>             
-            <div class="card border-info mb-3"> 
-                <div class="card-header">Q2. For the group you rated the highest, describe 2 aspects where their case facilitation was useful to you</div>                 
-                <div class="card-body text-info"> 
-                    <textarea id="q2" class="form-control" rows="3"></textarea>                     
-                </div>                 
-            </div>             
-            <div class="card border-info mb-3"> 
-                <div class="card-header">Q3. For the group you rated the lowest, which aspect of their presentation do you think was not done well?</div>                 
-                <div class="card-body text-info"> 
-                    <textarea id="q3" class="form-control" rows="3"></textarea>                     
-                </div>                 
-            </div>             
-            <div class="card border-info mb-3"> 
-                <div class="card-header">Q4. Which student would u rate as the overall best presentator?</div>                 
-                <div class="card-body text-info"> 
-                    <textarea id="q4" class="form-control" rows="3"></textarea>                     
-                </div>                 
-            </div>             
-        </div>         
         <nav style="background-color:rgba(0, 0, 0, 0);" class="fixed-bottom navbar"> 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"> 
 </button>             
             <div class="collapse navbar-collapse" id="navbarsExampleDefault2"></div>             
-            <form class="form-inline my-2 my-lg-0 mt-4 mt-lg-0 mb-lg-5 mr-lg-5"> 
-                <button id="submit" class="btn btn-success float-right" type="submit" style="margin-right: 10px;">Submit</button>                 
-                <button id="save" type="button" class="btn btn-secondary bg-warning float-right">Save as draft</button>                 
-            </form>             
+                <!-- <button id="submit" class="btn btn-success float-right" type="submit" style="margin-right: 10px;">Submit</button>                 
+                <button id="save" type="button" class="btn btn-secondary bg-warning float-right">Save as draft</button>       -->
+                <form class="form-inline my-2 my-lg-0"> 
+                        <button id="save" type="button" class="btn btn-primary">Save</button>                                                                                                                                                                                                                                                                                                                                                                                                                                                                            &nbsp;
+                        <button id="submit" type="button" class="btn btn-primary bg-success">Submit</button>                     
+                </form>              
         </nav>         
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>         
         <script src='https://johnny.github.io/jquery-sortable/js/jquery-sortable-min.js'></script>         
@@ -473,17 +455,17 @@
                            localStorage.setItem('intraq2', intraq2);
                            localStorage.setItem('intraq3', intraq3);
                            localStorage.setItem('intraq4', intraq4);
-                           alert("your evaluation has been saved!");
+                           alert("your feedback has been saved!");
                            sessionStorage.setItem("intraeval" , "draft");
                            $('#text1').val();
                        });
                        $('#submit').on('click', function() {
                            if($('[id^="prog"]').css("background-color")==="rgb(255, 0, 0)" || !$.trim($('textarea').val())){
                               var isconfirm = confirm("Please fill up all questions");
-                           } else {
-                               sessionStorage.setItem("intraeval" , "submitted");
-                               window.location.replace("FeedbackDone.html");
-                           	window.location = "FeedbackDone.html";
+                           } 
+                           else{
+                                sessionStorage.setItem("intraeval" , "submitted");
+                                window.location.href = "FeedbackDone.html";
                            }
                        });
 

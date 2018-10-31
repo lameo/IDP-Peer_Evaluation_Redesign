@@ -139,7 +139,7 @@
                     </thead>                     
                     <tbody> 
                         <tr> 
-                            <td>Group Evaluation</td> 
+                            <td>Group Feedback</td> 
                             <td style="text-align: center;">9 Oct 18<br>10:00</td> 
                             <td>-</td> 
                             <td style="text-align: center;"> <p>9 Oct 18<br>23:59</p> </td> 
@@ -147,14 +147,14 @@
                             <td style="text-align: center;"> 
                                 <div class="btn-group" role="group" aria-label="Basic example"> 
                                     <a href="IntraPeer.html">
-                                        <button id="intraevalbutton" type="button" class="btn btn-secondary bg-warning">Start / Edit</button>
+                                        <button id="intraevalbutton" type="button" class="btn btn-secondary bg-success">Start / Edit</button>
                                     </a>                                     
                                 </div>                                 
                             </td>                             
                         </tr>                         
                         <tr></tr>                         
                         <tr> 
-                            <td>Peer Evaluation</td> 
+                            <td>Peer Feedback</td> 
                             <td style="text-align: center;">15 Nov 18<br>12:00</td> 
                             <td>-</td> 
                             <td style="text-align: center;"> <p>30 Nov 18<br>23:59</p> </td> 
@@ -162,7 +162,7 @@
                             <td style="text-align: center;"> 
                                 <div class="btn-group" role="group" aria-label="Basic example"> 
                                     <a href="InterPeerEvaluation.html"></a>
-                                    <button id="intraeval" type="button" class="btn btn-secondary bg-warning">Start / Edit</button>                                     
+                                    <button id="peerevalbutton" type="button" class="btn btn-secondary bg-success">Start / Edit</button>                                     
                                 </div>                                 
                             </td>                             
                         </tr>                         
@@ -176,7 +176,7 @@
         <script src="bootstrap/js/bootstrap.min.js"></script>         
         <script>
 			if (sessionStorage.getItem("peereval") == "submitted"){
-                $('#peerevalbutton').removeClass("bg-warning");
+                $('#peerevalbutton').removeClass("bg-success");
                 $('#peerevalbutton').addClass("bg-success");
                 $('#peerevalbutton').html("View");
                 $('#peerevalstatus').html("Submitted");
@@ -185,7 +185,7 @@
                 $('#peerevalstatus').html("Draft");
             }
             if (sessionStorage.getItem("intraeval") == "submitted"){
-                $('#intraevalbutton').removeClass("bg-warning");
+                $('#intraevalbutton').removeClass("bg-success");
                 $('#intraevalbutton').addClass("bg-success");
                 $('#intraevalbutton').html("View");
                 $('#intraevalstatus').html("Submitted");
