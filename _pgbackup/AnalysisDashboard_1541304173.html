@@ -1,368 +1,353 @@
-<!doctype html> 
-<html lang="en"> 
-    <head> 
-        <title>Select Module</title>         
-        <link href="media/favicon.ico" rel="icon" type="image/x-icon"/> 
-        <meta charset="utf-8"> 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
-        <meta name="description" content=""> 
-        <meta name="author" content=""> 
-        <title>Pricing example for Bootstrap</title>         
-        <!-- Bootstrap core CSS -->         
-        <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> 
-        <!-- Custom styles for this template -->         
-        <link href="pricing.css" rel="stylesheet"> 
-        <style>#customers {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Select Module</title>
+        <link href="media/favicon.ico" rel="icon" type="image/x-icon" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Pricing example for Bootstrap</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="pricing.css" rel="stylesheet">
+        <style>
+            #customers {
+                font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                /* width: 15%; */
+            }
+            
+            #customers td, #customers th {
+                border: 2px solid #ddd;
+                padding: 8px;
+            }
+            
+            #customers tr:nth-child(even){background-color: #f2f2f2;}
+            
+            #customers tr:hover {background-color: #ddd;}
+            
+            #customers th {
+                padding-top: 8px;
+                padding-bottom: 8px;
+                text-align: left;
+                background-color: rgb(38, 131, 218);
+                color: white;
+            }
+            </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+            <a class="navbar-brand" href="Home.html">
+                <img class="d-inline-block align-top" src="media/leaf.png" alt="" width="30" height="30" />&nbsp;GROWTH
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler16" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler16">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Home.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop9" data-toggle="dropdown">Analysis</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="AnalysisDashboard.html">Analysis dashboard</a>
+                            <a class="dropdown-item" href="GoalOverview.html">Goal</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop10" data-toggle="dropdown">Workshop</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="BookWorkshop.html">New booking</a>
+                            <a class="dropdown-item" href="ManageWorkshop.html">Manage</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop8" data-toggle="dropdown">
+                        Feedback </a>
+                        <div class="dropdown-menu">
 
-    /* width: 15%; */
-}
+                            <a class="dropdown-item" href="SelectModule.html">Module selection</a>
+                            <a class="dropdown-item" href="invitation.html">Send invitation</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active"> </li>
+                    <li class="nav-item"> </li>
+                    <li class="nav-item"> </li>
+                    <li class="nav-item dropdown">
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                            <a class="nav-link" href="SelfAssessment.html">Self Assessment</span></a>
 
-.customers td,
-.customers th {
-    border: 2px solid #ddd;
-    padding: 8px;
-}
+                        </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="MyReward.html">My reward<span class="sr-only">(current)</span></a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Create new report</a>
+                        </div>
+                    </li>
 
-.customers td:nth-child(even) {
-    background-color: #f2f2f2;
-}
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
 
-.customers tr:hover {
-    background-color: #ddd;
-}
-
-.customers th {
-    padding-top: 8px;
-    padding-bottom: 8px;
-    text-align: left;
-    background-color: rgb(38, 131, 218);
-    color: white;
-}</style>         
-    </head>     
-    <body> 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top "> 
-            <a class="navbar-brand" href="Home.html"> 
-                <img class="d-inline-block align-top" src="media/leaf.png" alt="" width="30" height="30"/>&nbsp;GROWTH
-            </a>             
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler16" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"> 
-                <span class="navbar-toggler-icon"></span> 
-            </button>             
-            <div class="collapse navbar-collapse" id="navbarToggler16"> 
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0"> 
-                    <li class="nav-item active"> 
-                        <a class="nav-link" href="Home.html">Home <span class="sr-only">(current)</span></a> 
-                    </li>                     
-                    <li class="nav-item dropdown"> 
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop9" data-toggle="dropdown">Analysis</a> 
-                        <div class="dropdown-menu"> 
-                            <a class="dropdown-item" href="AnalysisDashboard.html">Analysis dashboard</a> 
-                            <a class="dropdown-item" href="GoalOverview.html">Goal</a> 
-                        </div>                         
-                    </li>                     
-                    <li class="nav-item dropdown"> 
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop10" data-toggle="dropdown">Workshop</a> 
-                        <div class="dropdown-menu"> 
-                            <a class="dropdown-item" href="BookWorkshop.html">New booking</a> 
-                            <a class="dropdown-item" href="ManageWorkshop.html">Manage</a> 
-                        </div>                         
-                    </li>                     
-                    <li class="nav-item dropdown"> 
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop8" data-toggle="dropdown"> 
-                        Feedback </a> 
-                        <div class="dropdown-menu"> 
-                            <a class="dropdown-item" href="SelectModule.html">Module selection</a> 
-                            <a class="dropdown-item" href="invitation.html">Send invitation</a> 
-                        </div>                         
-                    </li>                     
-                    <li class="nav-item active"> </li>                     
-                    <li class="nav-item"> </li>                     
-                    <li class="nav-item"> </li>                     
-                    <li class="nav-item dropdown"> 
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
-                            <a class="dropdown-item" href="#">Action</a> 
-                            <a class="dropdown-item" href="#">Another action</a> 
-                            <a class="dropdown-item" href="#">Something else here</a> 
-                        </div>                         
-                    </li>                     
-                    <li class="nav-item dropdown"> 
-                        <a class="nav-link" href="SelfAssessment.html">Self Assessment </a> 
-                    </li>                     
-                    <li class="nav-item dropdown"> 
-                        <a class="nav-link" href="MyReward.html">My reward<span class="sr-only">(current)</span></a> 
-                        <div class="dropdown-menu"> 
-                            <a class="dropdown-item" href="#">Create new report</a> 
-                        </div>                         
-                    </li>                     
-                </ul>                 
-                <form class="form-inline my-2 my-lg-0"> 
-                    <a class="btn btn-outline-primary" href="index.html" style="margin-left: 16px; margin-top: -3px;">Logout</a> 
-                </form>                 
-            </div>             
-        </nav>         
-        <div class="container pg-empty-placeholder p-5 m-0"></div>         
-        <div class="container mb-3"> 
-            <button onclick="on()" style="left:90%" type="button" class="btn btn-light fixed-bottom">Rubrics</button>             
-            <h2>Overview</h2> 
-            <ul class="nav nav-tabs mr-3 ml-3" role="tablist"> 
-                <li class="nav-item"> 
-                    <a class="nav-link active" href="#tab1" data-toggle="tab" role="tab" aria-controls="tab1" aria-expanded="true">Overview</a> 
-                </li>                 
-                <li class="nav-item"> 
-                    <a class="nav-link" href="#tab2" data-toggle="tab" role="tab" aria-controls="tab2" aria-expanded="true">Academic</a> 
-                </li>                 
-                <li class="nav-item"> 
-                    <a class="nav-link" href="#tab3" data-toggle="tab" role="tab" aria-controls="tab3" aria-expanded="true">CCA</a> 
-                </li>                 
-                <li class="nav-item"> 
-                    <a class="nav-link" href="#tab4" data-toggle="tab" role="tab" aria-controls="tab4" aria-expanded="true">Intern/Job</a> 
-                </li>                 
-                <li class="nav-item"> 
-                    <a class="nav-link" href="#tab5" data-toggle="tab" role="tab" aria-controls="tab5" aria-expanded="true">Goal</a> 
-                </li>                 
+                    <a class="btn btn-outline-primary" href="index.html" style="margin-left: 16px; margin-top: -3px;">Logout</a>
+                </form>
+            </div>
+        </nav>
+        <div class="container pg-empty-placeholder p-5 m-0"></div>
+        <div class="container mb-3">
+            <button onclick="on()" style="left:90%" type="button" class="btn btn-light fixed-bottom">Rubrics</button>
+            <h2>Overview</h2>
+            <ul class="nav nav-tabs mr-3 ml-3" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#tab1" data-toggle="tab" role="tab" aria-controls="tab1" aria-expanded="true">Overview</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tab2" data-toggle="tab" role="tab" aria-controls="tab2" aria-expanded="true">Academic</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tab3" data-toggle="tab" role="tab" aria-controls="tab3" aria-expanded="true">CCA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#tab4" data-toggle="tab" role="tab" aria-controls="tab4" aria-expanded="true">Intern/Job</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="#tab5" data-toggle="tab" role="tab" aria-controls="tab5" aria-expanded="true">Goal</a>
+                </li>
             </ul>
-        </div>
-        <div class="tab-content"> 
-            <div class="tab-pane container active" id="tab1"> 
-                <div> 
-                    <div class='container' style="position:absolute;left:14%;top:57%;transform:scale(0.8, 0.8);">
-                        <h7>
-                            Rank
-</h7>
-                        <table class="customers"> 
-                            <tr> 
-                                <td><small>  1 </small></td>
-                                <td><small> Novice</small></td>
-                                <td><small> 2 </small></td>
-                                <td><small> Intermediate</small></td>
-                                <td><small> 3 </small></td>
-                                <td><small> Advanced</small></td> 
-                                <td><small> 4 </small></td>
-                                <td><small> Expert</small></td>
-                            </tr>                             
-                        </table>                         
-                    </div>                     
-                    <!-- <div style="position:absolute;left:65%;transform:scale(0.8, 0.8);" class="mb-3 mr-5 pr-5">
+            <div class="tab-content">
+                <div class="tab-pane container active" id="tab1">
+                    
+                    <div>
+                        <div class='container' style="position:absolute;left:20%;top:35%">
+                            <table id="customers">
+                                    <tr>
+                                        <td><small> # </small></td><td><small> Rank</small></td>
+                                    </tr>
+                                    <tr>
+                                        <td><small>  1 </small></td><td><small> Novice</small></td>
+                                    </tr>
+                                    <tr>
+                                        <td><small> 2 </small></td><td><small> Intermediate</small></td>
+                                    </tr>
+                                    <tr>
+                                        <td><small> 3 </small></td><td><small> Advanced</small></td>
+                                    </tr>
+                                    <tr>
+                                        <td><small> 4 </small></td><td><small> Expert</small></td>
+                                    </tr>
+                            </table>
+                        </div> 
+
+                        
+                        <!-- <div style="position:absolute;left:65%;transform:scale(0.8, 0.8);" class="mb-3 mr-5 pr-5">
                             <table class="table table-striped table-sm">
                             </table>
                         </div> -->
-                    <table width="100%">
-                        <tr>
-                            <th width="33%"> 
-                                <canvas id="1myChart0" width="32%" height="32%" class="float-none shadow-sm mb-5"></canvas>
-                            </th>
-                            <th width="33%">
-                                <canvas id="1myChart1" height="32%" width="32%" class="float-none shadow-sm mb-5"></canvas>
-                            </th>
-                            <th width="33%">
-                                <canvas id="1myChart2" height="32%" width="32%" class="float-none shadow-sm mb-5"></canvas>
-                            </th>
-                        </tr>
-                    </table>
-                </div>                 
-                <div id="beforeoverview" class="container text-center pl-0 pr-0"> 
-                    <table class="table table-striped table-sm" style="width:100%;"> 
-                        <thead> 
-                            <tr> 
-                                <th>Skill</th> 
-                                <th>Description</th> 
-                                <th>Tips</th> 
-                                <th>Recommendation</th> 
-                                <th>Rank</th> 
-                            </tr>                             
-                        </thead>                         
-                        <tbody> 
-                            <tr> 
-                                <td>Technical proficiency</td> 
-                                <td>You are very good in python but you should try
+                        <canvas style="padding-bottom:25px;left: 500 px" id="myChart" height="150" width="500" class="float-none shadow-sm mb-5"></canvas>
+                    </div>
+                    
+                    <div id="beforeoverview" class="container text-center pl-0 pr-0">
+                        <table class="table table-striped table-sm" style="width:100%;">
+                            <thead>
+                                <tr>
+                                    <th>Skill</th>
+                                    <th>Description</th>
+                                    <th>Tips</th>
+                                    <th>Recommendation</th>
+                                    <th>Rank</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Technical proficiency</td>
+                                    <td>You are very good in python but you should try
                             to learn how to google(eg google the right term) to get what you want.<br> </td> 
-                                <td class="text-left"> 
-                                    <div>Take the related courses.
-                                        <br> 
-                                    </div>                                     
-                                </td>                                 
-                                <td> 
-                                    <a href="BookWorkshop.html">link</a> 
-                                </td>                                 
-                                <td>Intermediate</td> 
-                            </tr>                             
-                            <tr> 
-                                <td> <p>Interpersonal skills and teamwork</p> </td> 
-                                <td>You are good in working in small team. However,
+                                    <td class="text-left"> 
+                                        <div>Take the related courses.
+                                            <br> 
+                                        </div>                                         
+                                    </td>                                     
+                                    <td> 
+                                        <a href="BookWorkshop.html">link</a> 
+                                    </td>                                     
+                                    <td>Intermediate</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <td> <p>Interpersonal skills and teamwork</p> </td> 
+                                    <td>You are good in working in small team. However,
                             when you work in a big size of team, you tend to be quite and seldom hang up
                             with them. </td> 
-                                <td class="text-left"> <p> <!--[if !supportLists]-->1.     <!--[endif]-->Control your emotions</p> <p><!--[if !supportLists]-->2.     <!--[endif]-->Practice active listening</p> <p><!--[if !supportLists]-->3.     <!--[endif]-->Practice empathy</p> <p><!--[if !supportLists]-->4.     <!--[endif]-->Maintain your relationship</p> <p><!--[if !supportLists]-->5.     <!--[endif]-->Acknowledge others’ expertise</p></td> 
-                                <td> 
-                                    <a href="BookWorkshop.html">link</a> 
-                                </td>                                 
-                                <td>Intermediate</td> 
-                            </tr>                             
-                            <tr> 
-                                <td>Adaptability</td> 
-                                <td>We change require you change the department and
+                                    <td class="text-left"> <p> <!--[if !supportLists]-->1.     <!--[endif]-->Control your emotions</p> <p><!--[if !supportLists]-->2.     <!--[endif]-->Practice active listening</p> <p><!--[if !supportLists]-->3.     <!--[endif]-->Practice empathy</p> <p><!--[if !supportLists]-->4.     <!--[endif]-->Maintain your relationship</p> <p><!--[if !supportLists]-->5.     <!--[endif]-->Acknowledge others’ expertise</p></td> 
+                                    <td> 
+                                        <a href="BookWorkshop.html">link</a> 
+                                    </td>                                     
+                                    <td>Intermediate</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <td>Adaptability</td> 
+                                    <td>We change require you change the department and
                                     work in there. You are able to learn faster and know what should you do.<br></td> 
-                                <td class="text-left"> 
-                                    <p><!--[if !supportLists]-->1.     <!--[endif]-->Think creatively</p> 
-                                    <p><!--[if !supportLists]-->2.     <!--[endif]-->Embrace ambiguity</p> 
-                                    <p><!--[if !supportLists]-->3.     <!--[endif]-->Exercise emotional intelligence</p> 
-                                    <p></p> 
-                                    <p><!--[if !supportLists]-->4.     <!--[endif]-->Shift focus</p> 
-                                    <ol></ol>                                     
-                                </td>                                 
-                                <td> 
-                                    <a href="BookWorkshop.html">link</a> 
-                                </td>                                 
-                                <td>Advanced</td> 
-                            </tr>                             
-                            <tr> 
-                                <td>Language and Expression</td> 
-                                <td>You are able to use simple language to explain
+                                    <td class="text-left"> 
+                                        <p><!--[if !supportLists]-->1.     <!--[endif]-->Think creatively</p> 
+                                        <p><!--[if !supportLists]-->2.     <!--[endif]-->Embrace ambiguity</p> 
+                                        <p><!--[if !supportLists]-->3.     <!--[endif]-->Exercise emotional intelligence</p> 
+                                        <p></p> 
+                                        <p><!--[if !supportLists]-->4.     <!--[endif]-->Shift focus</p> 
+                                        <ol></ol>                                         
+                                    </td>                                     
+                                    <td> 
+                                        <a href="BookWorkshop.html">link</a> 
+                                    </td>                                     
+                                    <td>Advanced</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <td>Language and Expression</td> 
+                                    <td>You are able to use simple language to explain
                                     complex concept in the text.</td> 
-                                <td class="text-left"><p><!--[if !supportLists]-->1.     <!--[endif]-->Pay attention to punctuation, especially to the correct use of commas and periods.</p><p><!--[if !supportLists]-->2.     <!--[endif]-->Try not to edit while you’re creating your first draft</p><p><!--[if !supportLists]-->3.     <!--[endif]-->Be a good reader.</p><p><!--[if !supportLists]-->4.     <!--[endif]-->Always read and review what you have written.</p><p><!--[if !supportLists]-->5.     <!--[endif]-->To be a good writer is to start writing everyday</p></td> 
-                                <td> 
-                                    <a href="BookWorkshop.html">link</a> 
-                                </td>                                 
-                                <td>Advanced</td> 
-                            </tr>                             
-                            <tr> 
-                                <td>Presentation &amp; Delivery</td> 
-                                <td>You asked clear
+                                    <td class="text-left"><p><!--[if !supportLists]-->1.     <!--[endif]-->Pay attention to punctuation, especially to the correct use of commas and periods.</p><p><!--[if !supportLists]-->2.     <!--[endif]-->Try not to edit while you’re creating your first draft</p><p><!--[if !supportLists]-->3.     <!--[endif]-->Be a good reader.</p><p><!--[if !supportLists]-->4.     <!--[endif]-->Always read and review what you have written.</p><p><!--[if !supportLists]-->5.     <!--[endif]-->To be a good writer is to start writing everyday</p></td> 
+                                    <td> 
+                                        <a href="BookWorkshop.html">link</a> 
+                                    </td>                                     
+                                    <td>Advanced</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <td>Presentation &amp; Delivery</td> 
+                                    <td>You asked clear
                                     questions and interacted with the audience. you could be a bit more relaxed and
                                     more energetic at times. you could also try to synthesize the comments more to
                                     guide the discussion.&nbsp;</td> 
-                                <td class="text-left"> 
-                                    <div> 
-                                        <p><!--[if !supportLists]-->1.     <!--[endif]-->Keep it simple concrete on your core message</p> 
-                                        <p><!--[if !supportLists]-->2.     <!--[endif]-->Start strongly</p> 
-                                        <p><!--[if !supportLists]-->3.     <!--[endif]-->Smile and make eye contact with the audience </p> 
-                                        <p><!--[if !supportLists]-->4.     <!--[endif]-->Tell stories</p> 
-                                        <p></p> 
-                                        <p><!--[if !supportLists]-->5.     <!--[endif]-->Show your passion and connect with the audience&nbsp;</p> 
-                                    </div>                                     
-                                </td>                                 
-                                <td> 
-                                    <a href="BookWorkshop.html">link</a> 
-                                </td>                                 
-                                <td>Novice</td> 
-                            </tr>                             
-                            <tr> 
-                                <td><p>Research Depth</p></td> 
-                                <td>The key information of
+                                    <td class="text-left"> 
+                                        <div> 
+                                            <p><!--[if !supportLists]-->1.     <!--[endif]-->Keep it simple concrete on your core message</p> 
+                                            <p><!--[if !supportLists]-->2.     <!--[endif]-->Start strongly</p> 
+                                            <p><!--[if !supportLists]-->3.     <!--[endif]-->Smile and make eye contact with the audience </p> 
+                                            <p><!--[if !supportLists]-->4.     <!--[endif]-->Tell stories</p> 
+                                            <p></p> 
+                                            <p><!--[if !supportLists]-->5.     <!--[endif]-->Show your passion and connect with the audience&nbsp;</p> 
+                                        </div>                                         
+                                    </td>                                     
+                                    <td> 
+                                        <a href="BookWorkshop.html">link</a> 
+                                    </td>                                     
+                                    <td>Novice</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <td><p>Research Depth</p></td> 
+                                    <td>The key information of
                                     the background was always covered. You show a very strong research skill to the
                                     team.</td> 
-                                <td class="text-left"><p><!--[if !supportLists]-->1.     <!--[endif]-->Clearly define your research needs </p><p><!--[if !supportLists]-->2.     <!--[endif]-->Carefully select your research terms </p><p><!--[if !supportLists]-->3.     <!--[endif]-->Carefully and accurately record your findings</p><p><!--[if !supportLists]-->4.     <!--[endif]-->Critically evaluate the information that you find</p></td> 
-                                <td> 
-                                    <a href="BookWorkshop.html">link</a> 
-                                </td>                                 
-                                <td>Expert</td> 
-                            </tr>                             
-                            <tr> 
-                                <td><p>Creativity &amp; Innovation</p></td> 
-                                <td>You sometime provide creative idea but should
+                                    <td class="text-left"><p><!--[if !supportLists]-->1.     <!--[endif]-->Clearly define your research needs </p><p><!--[if !supportLists]-->2.     <!--[endif]-->Carefully select your research terms </p><p><!--[if !supportLists]-->3.     <!--[endif]-->Carefully and accurately record your findings</p><p><!--[if !supportLists]-->4.     <!--[endif]-->Critically evaluate the information that you find</p></td> 
+                                    <td> 
+                                        <a href="BookWorkshop.html">link</a> 
+                                    </td>                                     
+                                    <td>Expert</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <td><p>Creativity &amp; Innovation</p></td> 
+                                    <td>You sometime provide creative idea but should
                                     practice to think out of box.</td> 
-                                <td class="text-left"> 
-                                    <p><!--[if !supportLists]-->1.     <!--[endif]-->Write down a list of ideas  </p> 
-                                    <p><!--[if !supportLists]-->2.     <!--[endif]-->Do something new</p> 
-                                    <p><!--[if !supportLists]-->3.     <!--[endif]-->Surround yourself with creative people</p> 
-                                    <p><!--[if !supportLists]-->4.     <!--[endif]-->Spend time with your children</p> 
-                                    <p><!--[if !supportLists]-->5.     <!--[endif]-->Meet new people</p> 
-                                    <ol></ol>                                     
-                                </td>                                 
-                                <td> 
-                                    <a href="BookWorkshop.html">link</a> 
-                                </td>                                 
-                                <td>Novice</td> 
-                            </tr>                             
-                            <tr> 
-                                <td><p>Analytical Skill</p></td> 
-                                <td>You are able to analyse the situation to the
+                                    <td class="text-left"> 
+                                        <p><!--[if !supportLists]-->1.     <!--[endif]-->Write down a list of ideas  </p> 
+                                        <p><!--[if !supportLists]-->2.     <!--[endif]-->Do something new</p> 
+                                        <p><!--[if !supportLists]-->3.     <!--[endif]-->Surround yourself with creative people</p> 
+                                        <p><!--[if !supportLists]-->4.     <!--[endif]-->Spend time with your children</p> 
+                                        <p><!--[if !supportLists]-->5.     <!--[endif]-->Meet new people</p> 
+                                        <ol></ol>                                         
+                                    </td>                                     
+                                    <td> 
+                                        <a href="BookWorkshop.html">link</a> 
+                                    </td>                                     
+                                    <td>Novice</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <td><p>Analytical Skill</p></td> 
+                                    <td>You are able to analyse the situation to the
                                     team such as list out the pro and cons to us.</td> 
-                                <td class="text-left"> 
-                                    <p><!--[if !supportLists]-->1.     <!--[endif]-->Active reading. Read more books. Can it be this simple?</p> 
-                                    <p><!--[if !supportLists]-->2.     <!--[endif]-->Take a walk outside</p> 
-                                    <p><!--[if !supportLists]-->3.     <!--[endif]-->Practise your mathematical skill</p> 
-                                    <p><!--[if !supportLists]-->4.     <!--[endif]-->Include brain games in your list of hobbies</p> 
-                                    <p><!--[if !supportLists]-->5.     <!--[endif]-->Make personal encounters count</p> 
-                                    <ol></ol>                                     
-                                </td>                                 
-                                <td> 
-                                    <a href="BookWorkshop.html">link</a> 
-                                </td>                                 
-                                <td>Advanced</td> 
-                            </tr>                             
-                            <tr> 
-                                <td><p>Time management</p></td> 
-                                <td>You always manage your time well. We will not
+                                    <td class="text-left"> 
+                                        <p><!--[if !supportLists]-->1.     <!--[endif]-->Active reading. Read more books. Can it be this simple?</p> 
+                                        <p><!--[if !supportLists]-->2.     <!--[endif]-->Take a walk outside</p> 
+                                        <p><!--[if !supportLists]-->3.     <!--[endif]-->Practise your mathematical skill</p> 
+                                        <p><!--[if !supportLists]-->4.     <!--[endif]-->Include brain games in your list of hobbies</p> 
+                                        <p><!--[if !supportLists]-->5.     <!--[endif]-->Make personal encounters count</p> 
+                                        <ol></ol>                                         
+                                    </td>                                     
+                                    <td> 
+                                        <a href="BookWorkshop.html">link</a> 
+                                    </td>                                     
+                                    <td>Advanced</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <td><p>Time management</p></td> 
+                                    <td>You always manage your time well. We will not
                                     worry about whether you cannot finish on time.</td> 
-                                <td class="text-left"> 
-                                    <div> 
-                                        <p><!--[if !supportLists]-->1.     <!--[endif]-->Know your goals</p> 
-                                        <p><!--[if !supportLists]-->2.     <!--[endif]-->Prioritize wisely</p> 
-                                        <p><!--[if !supportLists]-->3.     <!--[endif]-->Just say no</p> 
-                                        <p><!--[if !supportLists]-->4.     <!--[endif]-->Plan ahead</p> 
-                                        <p><!--[if !supportLists]-->5.     <!--[endif]-->Eliminate distractions</p> 
-                                        <p><!--[if !supportLists]-->6.     <!--[endif]-->Delegate more often</p> 
-                                        <p><!--[if !supportLists]-->7.     <!--[endif]-->Watch what you spend</p> 
-                                    </div>                                     
-                                </td>                                 
-                                <td> 
-                                    <a href="BookWorkshop.html">link</a> 
-                                </td>                                 
-                                <td>Intermediate</td> 
-                            </tr>                             
-                            <tr> 
-                                <td><p>Planning Skill</p></td> 
-                                <td>You know the priority task and plan out the
+                                    <td class="text-left"> 
+                                        <div> 
+                                            <p><!--[if !supportLists]-->1.     <!--[endif]-->Know your goals</p> 
+                                            <p><!--[if !supportLists]-->2.     <!--[endif]-->Prioritize wisely</p> 
+                                            <p><!--[if !supportLists]-->3.     <!--[endif]-->Just say no</p> 
+                                            <p><!--[if !supportLists]-->4.     <!--[endif]-->Plan ahead</p> 
+                                            <p><!--[if !supportLists]-->5.     <!--[endif]-->Eliminate distractions</p> 
+                                            <p><!--[if !supportLists]-->6.     <!--[endif]-->Delegate more often</p> 
+                                            <p><!--[if !supportLists]-->7.     <!--[endif]-->Watch what you spend</p> 
+                                        </div>                                         
+                                    </td>                                     
+                                    <td> 
+                                        <a href="BookWorkshop.html">link</a> 
+                                    </td>                                     
+                                    <td>Intermediate</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <td><p>Planning Skill</p></td> 
+                                    <td>You know the priority task and plan out the
                                     sequence to us.</td> 
-                                <td class="text-left"><p><!--[if !supportLists]-->1.     <!--[endif]-->Prepare a breakdown of all functional tasks</p><p><!--[if !supportLists]-->2.     <!--[endif]-->Analyze each component to detect areas of risk</p><p><!--[if !supportLists]-->3.     <!--[endif]-->Categories the potential problems into high and low risk areas</p><p><!--[if !supportLists]-->4.     <!--[endif]-->Prepare several possible approaches to overcoming such problems if they may occur</p> 
+                                    <td class="text-left"><p><!--[if !supportLists]-->1.     <!--[endif]-->Prepare a breakdown of all functional tasks</p><p><!--[if !supportLists]-->2.     <!--[endif]-->Analyze each component to detect areas of risk</p><p><!--[if !supportLists]-->3.     <!--[endif]-->Categories the potential problems into high and low risk areas</p><p><!--[if !supportLists]-->4.     <!--[endif]-->Prepare several possible approaches to overcoming such problems if they may occur</p> 
                                     Build a safety net into
                                     your planning high-risk areas</td> 
-                                <td> 
-                                    <a href="BookWorkshop.html">link</a> 
-                                </td>                                 
-                                <td>Advance</td> 
-                            </tr>                             
-                        </tbody>                         
-                    </table>                     
-                </div>
-            </div>
-            <div class="tab-pane container fade" id="tab2"> 
-                <div> 
-                    <div class='container' style="position:absolute;left:14%;top:58%;transform:scale(0.8, 0.8);">
-                        <h7>
-                            Rank
-</h7>
-                        <table class="customers"> 
-                            <tr> 
-                                <td><small>  1 </small></td>
-                                <td><small> Novice</small></td>
-                                <td><small> 2 </small></td>
-                                <td><small> Intermediate</small></td>
-                                <td><small> 3 </small></td>
-                                <td><small> Advanced</small></td> 
-                                <td><small> 4 </small></td>
-                                <td><small> Expert</small></td>
-                            </tr>                             
+                                    <td> 
+                                        <a href="BookWorkshop.html">link</a> 
+                                    </td>                                     
+                                    <td>Advance</td> 
+                                </tr>                                 
+                            </tbody>                             
                         </table>                         
                     </div>                     
-                    <!-- <div style="position:absolute;left:65%;transform:scale(0.8, 0.8);" class="mb-3 mr-5 pr-5">
-                            <table class="table table-striped table-sm">
-                            </table>
-                        </div> -->
-                    <table width="100%">
-                        <tr>
-                            <th width="33%"> 
-                                <canvas id="2myChart0" width="32%" height="32%" class="float-none shadow-sm mb-5"></canvas>
-                            </th>
-                            <th width="33%">
-                                <canvas id="2myChart1" height="32%" width="32%" class="float-none shadow-sm mb-5"></canvas>
-                            </th>
-                            <th width="33%">
-                                <canvas id="2myChart2" height="32%" width="32%" class="float-none shadow-sm mb-5"></canvas>
-                            </th>
-                        </tr>
-                    </table>                     
+                </div> 
+               
+                <div class="tab-pane container fade" id="tab2"> 
+                    <div>
+                        <div class='container' style="position:absolute;left:20%;top:35%">
+                                <table id="customers">
+                                        <tr>
+                                            <td><small> # </small></td><td><small> Rank</small></td>
+                                        </tr>
+                                        <tr>
+                                            <td><small>  1 </small></td><td><small> Novice</small></td>
+                                        </tr>
+                                        <tr>
+                                            <td><small> 2 </small></td><td><small> Intermediate</small></td>
+                                        </tr>
+                                        <tr>
+                                            <td><small> 3 </small></td><td><small> Advanced</small></td>
+                                        </tr>
+                                        <tr>
+                                            <td><small> 4 </small></td><td><small> Expert</small></td>
+                                        </tr>
+                                </table>
+                            </div> 
+
+                        <div style="position:absolute;left:65%;transform:scale(0.8, 0.8);" class="mb-3 mr-5"> 
+                        </div>                 
+                    </div>
+    
+                    <canvas style="padding-bottom:25px;" id="myChart2" height="150" width="500" class="float-none shadow-sm"></canvas>                     
                     <div class="container text-center"> 
                         <table class="table table-striped table-sm" style="width:100%;"> 
                             <thead> 
@@ -486,44 +471,33 @@
                             </tbody>                             
                         </table>                         
                     </div>                     
-                </div>
-            </div>
-            <div class="tab-pane container fade" id="tab3"> 
-                <div> 
-                    <div class='container' style="position:absolute;left:14%;top:58%;transform:scale(0.8, 0.8);">
-                        <h7>
-                            Rank
-</h7>
-                        <table class="customers"> 
-                            <tr> 
-                                <td><small>  1 </small></td>
-                                <td><small> Novice</small></td>
-                                <td><small> 2 </small></td>
-                                <td><small> Intermediate</small></td>
-                                <td><small> 3 </small></td>
-                                <td><small> Advanced</small></td> 
-                                <td><small> 4 </small></td>
-                                <td><small> Expert</small></td>
-                            </tr>                             
-                        </table>                         
-                    </div>                     
-                    <!-- <div style="position:absolute;left:65%;transform:scale(0.8, 0.8);" class="mb-3 mr-5 pr-5">
-                            <table class="table table-striped table-sm">
-                            </table>
-                        </div> -->
-                    <table width="100%">
-                        <tr>
-                            <th width="33%"> 
-                                <canvas id="3myChart0" width="32%" height="32%" class="float-none shadow-sm mb-5"></canvas>
-                            </th>
-                            <th width="33%">
-                                <canvas id="3myChart1" height="32%" width="32%" class="float-none shadow-sm mb-5"></canvas>
-                            </th>
-                            <th width="33%">
-                                <canvas id="3myChart2" height="32%" width="32%" class="float-none shadow-sm mb-5"></canvas>
-                            </th>
-                        </tr>
-                    </table>                     
+                </div>                 
+                <div class="tab-pane container fade" id="tab3"> 
+                        <div>
+                                <div class='container' style="position:absolute;left:20%;top:35%">
+                                        <table id="customers">
+                                                <tr>
+                                                    <td><small> # </small></td><td><small> Rank</small></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><small> 1 </small></td><td><small> Novice</small></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><small> 2 </small></td><td><small> Intermediate</small></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><small> 3 </small></td><td><small> Advanced</small></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><small> 4 </small></td><td><small> Expert</small></td>
+                                                </tr>
+                                        </table>
+                                    </div> 
+        
+                                <div style="position:absolute;left:65%;transform:scale(0.8, 0.8);" class="mb-3 mr-5"> 
+                                </div>                 
+                            </div> 
+                    <canvas style="padding-bottom:25px;" id="myChart3" height="150" width="500" class="float-none shadow-sm"></canvas>                     
                     <div id="aftercca" class="container text-center"> 
                         <table class="table table-striped table-sm" style="width:100%;"> 
                             <thead> 
@@ -565,152 +539,148 @@
                                 </tr>                                 
                                 <tr> 
                                     <td>Planning skill</td> 
-                                    <td class="text-left"><p><!--[if !supportLists]-->1.     <!--[endif]-->Prepare a breakdown of all functional tasks</p><p><!--[if !supportLists]-->2.     <!--[endif]-->Analyze each component to detect areas of risk</p><p><!--[if !supportLists]-->3.     <!--[endif]-->Categories the potential problems into high and low risk areas</p><p><!--[if !supportLists]-->4.     <!--[endif]-->Prepare several possible approaches to overcoming such problems if they may occur</p><p><!--[if !supportLists]-->5.     <!--[endif]-->Build a safety net into your planning high-risk areas</p></td> 
-                                    <td>link</td> 
-                                    <td>Advance</td> 
-                                </tr>                                 
-                            </tbody>                             
-                        </table>                         
-                    </div>                     
-                </div>
-            </div>
-            <div class="tab-pane container fade" id="tab4"> 
-                <div> 
-                    <div class='container' style="position:absolute;left:14%;top:58%;transform:scale(0.8, 0.8);">
-                        <h7>
-                            Rank
-</h7>
-                        <table class="customers"> 
-                            <tr> 
-                                <td><small>  1 </small></td>
-                                <td><small> Novice</small></td>
-                                <td><small> 2 </small></td>
-                                <td><small> Intermediate</small></td>
-                                <td><small> 3 </small></td>
-                                <td><small> Advanced</small></td> 
-                                <td><small> 4 </small></td>
-                                <td><small> Expert</small></td>
-                            </tr>                             
-                        </table>                         
-                    </div>                     
-                    <!-- <div style="position:absolute;left:65%;transform:scale(0.8, 0.8);" class="mb-3 mr-5 pr-5">
-                            <table class="table table-striped table-sm">
-                            </table>
-                        </div> -->
-                    <table width="100%">
-                        <tr>
-                            <th width="33%"> 
-                                <canvas id="4myChart0" width="32%" height="32%" class="float-none shadow-sm mb-5"></canvas>
-                            </th>
-                            <th width="33%">
-                                <canvas id="4myChart1" height="32%" width="32%" class="float-none shadow-sm mb-5"></canvas>
-                            </th>
-                            <th width="33%">
-                                <canvas id="4myChart2" height="32%" width="32%" class="float-none shadow-sm mb-5"></canvas>
-                            </th>
-                        </tr>
-                    </table>                     
-                    <div class="container text-center"> 
-                        <table class="table table-striped table-sm" style="width:100%;"> 
-                            <thead> 
-                                <tr> 
-                                    <th>Skill</th> 
-                                    <th>Description</th> 
-                                    <th>Tips</th> 
-                                    <th>Recommendation</th> 
-                                    <th>Rank</th> 
-                                </tr>                                 
-                            </thead>                             
-                            <tbody> 
-                                <tr> 
-                                    <td>Technical proficiency</td> 
-                                    <td>You are very good in python but you should try
-                                            to learn how to google(eg google the right term) to get what you want.<br></td> 
-                                    <td class="text-left"> 
-                                        <div>Take the related courses.
-                                            <br> 
-                                        </div>                                         
-                                    </td>                                     
-                                    <td>link</td> 
-                                    <td>Intermediate</td> 
-                                </tr>
-                                <tr>
-                                    <td>Adaptability</td> 
-                                    <td>We change require you change the department and
-                                            work in there. You are able to learn faster and know what should you do.<br></td> 
-                                    <td class="text-left"> 
-                                        <p><!--[if !supportLists]-->1.     <!--[endif]-->Think creatively</p> 
-                                        <p><!--[if !supportLists]-->2.     <!--[endif]-->Embrace ambiguity</p> 
-                                        <p><!--[if !supportLists]-->3.     <!--[endif]-->Exercise emotional intelligence</p> 
-                                        <p></p> 
-                                        <p><!--[if !supportLists]-->4.     <!--[endif]-->Shift focus</p> 
-                                        <ol></ol>                                         
-                                    </td>                                     
-                                    <td>link</td> 
-                                    <td>Advanced</td> 
-                                </tr>                                 
-                                <tr> 
-                                    <td><p>Time management</p></td> 
-                                    <td>You always manage your time well. We will not
-                                            worry about whether you cannot finish on time.</td> 
-                                    <td class="text-left"> 
-                                        <div> 
-                                            <p><!--[if !supportLists]-->1.     <!--[endif]-->Know your goals</p> 
-                                            <p><!--[if !supportLists]-->2.     <!--[endif]-->Prioritize wisely</p> 
-                                            <p><!--[if !supportLists]-->3.     <!--[endif]-->Just say no</p> 
-                                            <p><!--[if !supportLists]-->4.     <!--[endif]-->Plan ahead</p> 
-                                            <p><!--[if !supportLists]-->5.     <!--[endif]-->Eliminate distractions</p> 
-                                            <p><!--[if !supportLists]-->6.     <!--[endif]-->Delegate more often</p> 
-                                            <p><!--[if !supportLists]-->7.     <!--[endif]-->Watch what you spend</p> 
-                                        </div>                                         
-                                    </td>                                     
-                                    <td>link</td> 
-                                    <td>Intermediate</td> 
-                                </tr>                                 
-                                <tr> 
-                                    <td> <p>Interpersonal skills and teamwork</p> </td> 
-                                    <td>You are good in working in small team. However,
-                                        when you work in a big size of team, you tend to be quite and seldom hang up
-                                        with them. </td> 
-                                    <td class="text-left"> <p> <!--[if !supportLists]-->1.     <!--[endif]-->Control your emotions</p> <p><!--[if !supportLists]-->2.     <!--[endif]-->Practice active listening</p> <p><!--[if !supportLists]-->3.     <!--[endif]-->Practice empathy</p> <p><!--[if !supportLists]-->4.     <!--[endif]-->Maintain your relationship</p> <p><!--[if !supportLists]-->5.     <!--[endif]-->Acknowledge others’ expertise</p></td> 
-                                    <td> 
-                                        <a href="BookWorkshop.html">link</a> 
-                                    </td>                                     
-                                    <td>Intermediate</td> 
+  
+                                    <td class="text-left"><p><!--[if !supportLists]-->1.     <!--[endif]-->Prepare a breakdown of all functional tasks</p><p><!--[if !supportLists]-->2.     <!--[endif]-->Analyze each component to detect areas of risk</p><p><!--[if !supportLists]-->3.     <!--[endif]-->Categories the potential problems into high and low risk areas</p><p><!--[if !supportLists]-->4.     <!--[endif]-->Prepare several possible approaches to overcoming such problems if they may occur</p><p><!--[if !supportLists]-->5.     <!--[endif]-->Build a safety net into your planning high-risk areas</p></td>
+                                    <td>link</td>
+                                    <td>Advance</td>
                                 </tr>
                             </tbody>
-                        </table>                         
-                    </div>                     
+                        </table>
+                    </div>
                 </div>
-            </div>
-            <div class="tab-pane container fade" id="tab5"> 
-                <div style="transform:scale(0.8, 0.8);" class="mb-3 mr-5"> 
-                    <table class="table table-striped table-sm"> 
-                        <thead> 
-                            <tr> 
-                                <h3>Goals</h3> 
-                            </tr>                             
-                        </thead>                         
-                        <tr> 
-                            <th> 
+                <div class="tab-pane container fade" id="tab4">
+                        <div>
+                                <div class='container' style="position:absolute;left:20%;top:35%">
+                                        <table id="customers">
+                                                <tr>
+                                                    <td><small> # </small></td><td><small> Rank</small></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><small>  1 </small></td><td><small> Novice</small></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><small> 2 </small></td><td><small> Intermediate</small></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><small> 3 </small></td><td><small> Advanced</small></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><small> 4 </small></td><td><small> Expert</small></td>
+                                                </tr>
+                                        </table>
+                                    </div> 
+        
+                                <div style="position:absolute;left:65%;transform:scale(0.8, 0.8);" class="mb-3 mr-5"> 
+                                </div>                 
+                            </div>
+                    <canvas style="padding-bottom:25px;" id="myChart4" height="150" width="500" class="float-none shadow-sm"></canvas>
+                    <div class="container text-center">
+                        <table class="table table-striped table-sm" style="width:100%;">
+                            <thead>
+                                <tr>
+                                    <th>Skill</th>
+                                    <th>Description</th>
+                                    <th>Tips</th>
+                                    <th>Recommendation</th>
+                                    <th>Rank</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                    <tr> 
+                                            <th>Skill</th> 
+                                            <th>Description</th> 
+                                            <th>Tips</th> 
+                                            <th>Recommendation</th> 
+                                            <th>Rank</th> 
+                                        </tr>                                 
+                                    </thead>                             
+                                    <tbody> 
+                                        <tr> 
+                                            <td>Technical proficiency</td> 
+                                            <td>You are very good in python but you should try
+                                            to learn how to google(eg google the right term) to get what you want.<br></td> 
+                                            <td class="text-left"> 
+                                                <div>Take the related courses.
+                                                    <br> 
+                                                </div>                                         
+                                            </td>                                     
+                                            <td>link</td> 
+                                            <td>Intermediate</td> 
+                                        </tr>                                 
+                                            <td>Adaptability</td> 
+                                            <td>We change require you change the department and
+                                            work in there. You are able to learn faster and know what should you do.<br></td> 
+                                            <td class="text-left"> 
+                                                <p><!--[if !supportLists]-->1.     <!--[endif]-->Think creatively</p> 
+                                                <p><!--[if !supportLists]-->2.     <!--[endif]-->Embrace ambiguity</p> 
+                                                <p><!--[if !supportLists]-->3.     <!--[endif]-->Exercise emotional intelligence</p> 
+                                                <p></p> 
+                                                <p><!--[if !supportLists]-->4.     <!--[endif]-->Shift focus</p> 
+                                                <ol></ol>                                         
+                                            </td>                                     
+                                            <td>link</td> 
+                                            <td>Advanced</td> 
+                                        </tr>                                                                                   
+                                        <tr> 
+                                            <td><p>Time management</p></td> 
+                                            <td>You always manage your time well. We will not
+                                            worry about whether you cannot finish on time.</td> 
+                                            <td class="text-left"> 
+                                                <div> 
+                                                    <p><!--[if !supportLists]-->1.     <!--[endif]-->Know your goals</p> 
+                                                    <p><!--[if !supportLists]-->2.     <!--[endif]-->Prioritize wisely</p> 
+                                                    <p><!--[if !supportLists]-->3.     <!--[endif]-->Just say no</p> 
+                                                    <p><!--[if !supportLists]-->4.     <!--[endif]-->Plan ahead</p> 
+                                                    <p><!--[if !supportLists]-->5.     <!--[endif]-->Eliminate distractions</p> 
+                                                    <p><!--[if !supportLists]-->6.     <!--[endif]-->Delegate more often</p> 
+                                                    <p><!--[if !supportLists]-->7.     <!--[endif]-->Watch what you spend</p> 
+                                                </div>                                         
+                                            </td>                                     
+                                            <td>link</td> 
+                                            <td>Intermediate</td> 
+                                        </tr>  
+                                        <tr> 
+                                                <td> <p>Interpersonal skills and teamwork</p> </td> 
+                                                <td>You are good in working in small team. However,
+                                        when you work in a big size of team, you tend to be quite and seldom hang up
+                                        with them. </td> 
+                                                <td class="text-left"> <p> <!--[if !supportLists]-->1.     <!--[endif]-->Control your emotions</p> <p><!--[if !supportLists]-->2.     <!--[endif]-->Practice active listening</p> <p><!--[if !supportLists]-->3.     <!--[endif]-->Practice empathy</p> <p><!--[if !supportLists]-->4.     <!--[endif]-->Maintain your relationship</p> <p><!--[if !supportLists]-->5.     <!--[endif]-->Acknowledge others’ expertise</p></td> 
+                                                <td> 
+                                                    <a href="BookWorkshop.html">link</a> 
+                                                </td>                                     
+                                                <td>Intermediate</td> 
+                                        </tr>                                                                  
+                                        </thead>                             
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane container fade" id="tab5">
+                        <div style="transform:scale(0.8, 0.8);" class="mb-3 mr-5"> 
+                                <table class="table table-striped table-sm"> 
+                                    <thead> 
+                                        <tr> 
+                                            <h3>Goals</h3> 
+                                        </tr>                                 
+                                    </thead>                             
+                                    <tr> 
+                                        <th> 
                                             # </th> 
-                            <th> 
+                                        <th> 
                                             Skills </th> 
-                            <th> 
+                                        <th> 
                                             Targeted rank </th> 
-                            <th> 
+                                        <th> 
                                             Deadline </th> 
-                        </tr>                         
-                        <tbody id='printtable1'> 
-</tbody>                         
-                    </table>                     
-                    <a href="GoalOverview.html"> 
-                        <button type="button" class="btn btn-light float-right">Manage</button>                         
-                    </a>                     
-                </div>                 
-            </div>             
-        </div>
-        <div class="container">
+                                    </tr>                             
+                                    <tbody id='printtable1'> 
+        </tbody>                             
+                                </table>                         
+                                <a href="GoalOverview.html"> 
+                                    <button type="button" class="btn btn-light float-right">Manage</button>                             
+                                </a>                         
+                            </div>                     
+                        </div>  
+            </div>
             <p id="Rubrics" class="MsoNormal"><span style='font-size:24.0pt;line-height:107%;font-family:
                                     "Times New Roman",serif'>Rubrics<o:p></o:p></span></p> 
             <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0
@@ -1190,22 +1160,10 @@
             setTimeout(function(){
             //Creating Floating Menu
             if (!window.htmlsetup) {
-                
-               new Chart(document.getElementById("1myChart0"),{"type":"radar","data":{"labels":["Technical Proficiency","Interpersonal skills and teamwork","Adaptability","Language and Expression","Presentation & Delivery","Research Depth", "Creativity & Innovation", "Analytic Skill", "Time Management", "Planning skill"],"datasets":[{"label":"Feedback from peer","data":[3.0,1.0,3.0,3.0,1.0,3.0,3.0,3.0,3.0,4.0],"fill":true,"backgroundColor":"rgba(255, 99, 132, 0.2)","borderColor":"rgb(255, 99, 132)","pointBackgroundColor":"rgb(255, 99, 132)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(255, 99, 132)"}]},"options":{"elements":{"line":{"tension":0,"borderWidth":3}}}});
-                new Chart(document.getElementById("1myChart1"),{"type":"radar","data":{"labels":["Technical Proficiency","Interpersonal skills and teamwork","Adaptability","Language and Expression","Presentation & Delivery","Research Depth", "Creativity & Innovation", "Analytic Skill", "Time Management", "Planning skill"],"datasets":[ {"label":"Self-Assessment","data":[3.0,1.0,3.0,3.0,1.0,3.0,3.0,3.0,3.0,4.0],"fill":true,"backgroundColor":"rgba(0,64,255, 0.2)","borderColor":"rgb(0,64,255)","pointBackgroundColor":"rgb(0,64,255)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(0,64,255)"}, ]},"options":{"elements":{"line":{"tension":0,"borderWidth":3}}}});
-                new Chart(document.getElementById("1myChart2"),{"type":"radar","data":{"labels":["Technical Proficiency","Interpersonal skills and teamwork","Adaptability","Language and Expression","Presentation & Delivery","Research Depth", "Creativity & Innovation", "Analytic Skill", "Time Management", "Planning skill"],"datasets":[ {"label":"Goals","data":[1.0,3.0,3.0,3.0,2.0,3.0,3.0,3.0,3.0,4.0],"fill":true,"backgroundColor":"rgba(124,252,0, 0.2)","borderColor":"rgb(124,252,0)","pointBackgroundColor":"rgb(124,252,0)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(124,252,0)"}]},"options":{"elements":{"line":{"tension":0,"borderWidth":3}}}});
-                
-            new Chart(document.getElementById("2myChart0"),{"type":"radar","data":{"labels":["Language and Expression","Creativity & Innovation","Research Depth","Presentation & Delivery","Analytic Skill","Time Management"],"datasets":[{"label":"Feedback from peer","data":[4.0,3.0,4.0,1.0,2.0,2.0],"fill":true,"backgroundColor":"rgba(255,99,132,0.2)","borderColor":"rgb(255,99,132)","pointBackgroundColor":"rgb(255,99,132)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(255,99,132)"}]},"options":{"elements":{"line":{"tension":0,"borderWidth":3}}}});
-                 new Chart(document.getElementById("2myChart1"),{"type":"radar","data":{"labels":["Language and Expression","Creativity & Innovation","Research Depth","Presentation & Delivery","Analytic Skill","Time Management"],"datasets":[{"label":"Self-Assessment","data":[4.0,2.0,2.0,2.0,2.0,1.0],"fill":true,"backgroundColor":"rgba(0,64,255, 0.2)","borderColor":"rgb(0,64,255)","pointBackgroundColor":"rgb(0,64,255)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(0,64,255)"}, ]},"options":{"elements":{"line":{"tension":0,"borderWidth":3}}}});
-                 new Chart(document.getElementById("2myChart2"),{"type":"radar","data":{"labels":["Language and Expression","Creativity & Innovation","Research Depth","Presentation & Delivery","Analytic Skill","Time Management"],"datasets":[{"label":"Goals","data":[3.0,3.0,3.0,2.0,2.0,4.0,1.0],"fill":true,"backgroundColor":"rgba(124,252,0, 0.2)","borderColor":"rgb(124,252,0)","pointBackgroundColor":"rgb(124,252,0)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(124,252,0)"}]},"options":{"elements":{"line":{"tension":0,"borderWidth":3}}}});
-                
-            new Chart(document.getElementById("3myChart0"),{"type":"radar","data":{"labels":["Time management","Interpersonal skills and teamwork","Planning skill"],"datasets":[{"label":"Feedback from peer","data":[4.0,1.0,2.0],"fill":true,"backgroundColor":"rgba(255,99,132,0.2)","borderColor":"rgb(255,99,132)","pointBackgroundColor":"rgb(255,99,132)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(255,99,132)"}]},"options":{"elements":{"line":{"tension":0,"borderWidth":3}}}});
-                new Chart(document.getElementById("3myChart1"),{"type":"radar","data":{"labels":["Time management","Interpersonal skills and teamwork","Planning skill"],"datasets":[ {"label":"Self-Assessment","data":[2.0,1.0,4.0],"fill":true,"backgroundColor":"rgba(0,64,255, 0.2)","borderColor":"rgb(0,64,255)","pointBackgroundColor":"rgb(0,64,255)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(0,64,255)"}, ]},"options":{"elements":{"line":{"tension":0,"borderWidth":3}}}});
-                new Chart(document.getElementById("3myChart2"),{"type":"radar","data":{"labels":["Time management","Interpersonal skills and teamwork","Planning skill"],"datasets":[ {"label":"Goals","data":[4.0,2.0,1.0],"fill":true,"backgroundColor":"rgba(124,252,0, 0.2)","borderColor":"rgb(124,252,0)","pointBackgroundColor":"rgb(124,252,0)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(124,252,0)"}]},"options":{"elements":{"line":{"tension":0,"borderWidth":3}}}});
-                
-            new Chart(document.getElementById("4myChart0"),{"type":"radar","data":{"labels":["Technical Proficiency","Interpersonal skills and teamwork","Time management","Adaptability"],"datasets":[{"label":"Feedback from peer","data":[3.0,1.0,3.0,2.0,4.0],"fill":true,"backgroundColor":"rgba(255,99,132,0.2)","borderColor":"rgb(255,99,132)","pointBackgroundColor":"rgb(255,99,132)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(255,99,132)"}]},"options":{"elements":{"line":{"tension":0,"borderWidth":3}}}});
-                new Chart(document.getElementById("4myChart1"),{"type":"radar","data":{"labels":["Technical Proficiency","Interpersonal skills and teamwork","Time management","Adaptability"],"datasets":[ {"label":"Self-Assessment","data":[3.0,1.0,2.0,2.0,4.0],"fill":true,"backgroundColor":"rgba(0,64,255, 0.2)","borderColor":"rgb(0,64,255)","pointBackgroundColor":"rgb(0,64,255)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(0,64,255)"}, ]},"options":{"elements":{"line":{"tension":0,"borderWidth":3}}}});
-                new Chart(document.getElementById("4myChart2"),{"type":"radar","data":{"labels":["Technical Proficiency","Interpersonal skills and teamwork","Time management","Adaptability"],"datasets":[{"label":"Goals","data":[4.0,2.0,3.0,3.0,1.0],"fill":true,"backgroundColor":"rgba(124,252,0, 0.2)","borderColor":"rgb(124,252,0)","pointBackgroundColor":"rgb(124,252,0)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(124,252,0)"}]},"options":{"elements":{"line":{"tension":0,"borderWidth":3}}}});
+            new Chart(document.getElementById("myChart"),{"type":"radar","data":{"labels":["Technical Proficiency","Interpersonal skills and teamwork","Adaptability","Language and Expression","Presentation & Delivery","Research Depth", "Creativity & Innovation", "Analytic Skill", "Time Management", "Planning skill"],"datasets":[{"label":"Feedback from peer","data":[3.0,1.0,3.0,3.0,1.0,3.0,3.0,3.0,3.0,4.0],"fill":true,"backgroundColor":"rgba(255, 99, 132, 0.2)","borderColor":"rgb(255, 99, 132)","pointBackgroundColor":"rgb(255, 99, 132)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(255, 99, 132)"}, {"label":"Self-Assessment","data":[3.0,1.0,3.0,3.0,1.0,3.0,3.0,3.0,3.0,3.0],"fill":true,"backgroundColor":"rgba(238,130,238, 0.2)","borderColor":"rgb(238,130,238)","pointBackgroundColor":"rgb(238,130,238)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(238,130,238)"}, {"label":"Goals","data":[3.0,3.0,3.0,3.0,2.0,3.0,3.0,3.0,3.0,3.0,4.0],"fill":true,"backgroundColor":"rgba(124,252,0, 0.2)","borderColor":"rgb(124,252,0)","pointBackgroundColor":"rgb(124,252,0)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","hidden":true,"pointHoverBorderColor":"rgb(124,252,0)"}]},"options":{"elements":{"line":{"tension":0,"borderWidth":3}}}});
+            new Chart(document.getElementById("myChart2"),{"type":"radar","data":{"labels":["Language and Expression","Creativity & Innovation","Research Depth","Presentation & Delivery","Analytic Skill","Time Management"],"datasets":[{"label":"Feedback from peer","data":[4.0,3.0,4.0,1.0,2.0,2.0],"fill":true,"backgroundColor":"rgba(255,99,132,0.2)","borderColor":"rgb(255,99,132)","pointBackgroundColor":"rgb(255,99,132)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(255,99,132)"}, {"label":"Self-Assessment","data":[4.0,2.0,2.0,2.0,2.0,2.0],"fill":true,"backgroundColor":"rgba(238,130,238, 0.2)","borderColor":"rgb(238,130,238)","pointBackgroundColor":"rgb(238,130,238)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(238,130,238)"}, {"label":"Goals","data":[3.0,3.0,3.0,2.0,2.0,3.0],"fill":true,"backgroundColor":"rgba(124,252,0, 0.2)","borderColor":"rgb(124,252,0)","pointBackgroundColor":"rgb(124,252,0)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(124,252,0)"}]},"options":{"elements":{"line":{"tension":0,"borderWidth":3}}}});
+            new Chart(document.getElementById("myChart3"),{"type":"radar","data":{"labels":["Time management","Interpersonal skills and teamwork","Planning skill"],"datasets":[{"label":"Feedback from peer","data":[3.0,1.0,2.0],"fill":true,"backgroundColor":"rgba(255,99,132,0.2)","borderColor":"rgb(255,99,132)","pointBackgroundColor":"rgb(255,99,132)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(255,99,132)"}, {"label":"Self-Assessment","data":[2.0,1.0,2.0],"fill":true,"backgroundColor":"rgba(238,130,238, 0.2)","borderColor":"rgb(238,130,238)","pointBackgroundColor":"rgb(238,130,238)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(238,130,238)"}, {"label":"Goals","data":[4.0,2.0,3.0],"fill":true,"backgroundColor":"rgba(124,252,0, 0.2)","borderColor":"rgb(124,252,0)","pointBackgroundColor":"rgb(124,252,0)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(124,252,0)"}]},"options":{"elements":{"line":{"tension":0,"borderWidth":3}}}});
+            new Chart(document.getElementById("myChart4"),{"type":"radar","data":{"labels":["Technical Proficiency","Interpersonal skills and teamwork","Time management","Adaptability"],"datasets":[{"label":"Feedback from peer","data":[3.0,1.0,3.0,2.0],"fill":true,"backgroundColor":"rgba(255,99,132,0.2)","borderColor":"rgb(255,99,132)","pointBackgroundColor":"rgb(255,99,132)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(255,99,132)"}, {"label":"Self-Assessment","data":[3.0,1.0,2.0,2.0],"fill":true,"backgroundColor":"rgba(238,130,238, 0.2)","borderColor":"rgb(238,130,238)","pointBackgroundColor":"rgb(238,130,238)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(238,130,238)"}, {"label":"Goals","data":[4.0,2.0,3.0,3.0],"fill":true,"backgroundColor":"rgba(124,252,0, 0.2)","borderColor":"rgb(124,252,0)","pointBackgroundColor":"rgb(124,252,0)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(124,252,0)"}]},"options":{"elements":{"line":{"tension":0,"borderWidth":3}}}});
 
 
             window.htmlsetup = true;
@@ -1247,6 +1205,5 @@
             // document.getElementById("printtable4").innerHTML = print_table;
 
 
-        </script>
+        </script>         
     </body>
-</html>
