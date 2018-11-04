@@ -1,0 +1,1236 @@
+<!doctype html> 
+<html lang="en"> 
+    <head> 
+        <title>Select Module</title>         
+        <link href="media/favicon.ico" rel="icon" type="image/x-icon"/> 
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+        <meta name="description" content=""> 
+        <meta name="author" content=""> 
+        <title>Pricing example for Bootstrap</title>         
+        <!-- Bootstrap core CSS -->         
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> 
+        <!-- Custom styles for this template -->         
+        <link href="pricing.css" rel="stylesheet">
+    </head>     
+    <body> 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top "> 
+            <a class="navbar-brand" href="Home.html"> 
+                <img class="d-inline-block align-top" src="media/leaf.png" alt="" width="30" height="30"/>&nbsp;GROWTH
+            </a>             
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler16" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"> 
+                <span class="navbar-toggler-icon"></span> 
+            </button>             
+            <div class="collapse navbar-collapse" id="navbarToggler16"> 
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0"> 
+                    <li class="nav-item active"> 
+                        <a class="nav-link" href="Home.html">Home <span class="sr-only">(current)</span></a> 
+                    </li>                     
+                    <li class="nav-item dropdown"> 
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop9" data-toggle="dropdown">Analysis</a> 
+                        <div class="dropdown-menu"> 
+                            <a class="dropdown-item" href="AnalysisDashboard.html">Analysis dashboard</a> 
+                            <a class="dropdown-item" href="GoalOverview.html">Goal</a> 
+                        </div>                         
+                    </li>                     
+                    <li class="nav-item dropdown"> 
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop10" data-toggle="dropdown">Workshop</a> 
+                        <div class="dropdown-menu"> 
+                            <a class="dropdown-item" href="BookWorkshop.html">New booking</a> 
+                            <a class="dropdown-item" href="ManageWorkshop.html">Manage</a> 
+                        </div>                         
+                    </li>                     
+                    <li class="nav-item dropdown"> 
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop8" data-toggle="dropdown"> 
+                  Feedback </a> 
+                        <div class="dropdown-menu"> 
+                                <a class="dropdown-item" href="SelectModule.html">Module selection</a>
+                                <a class="dropdown-item" href="invitation.html">Send invitation</a>
+                        </div>                         
+                    </li>                     
+                    <li class="nav-item active"> </li>                     
+                    <li class="nav-item"> </li>                     
+                    <li class="nav-item"> </li>                     
+                    <li class="nav-item dropdown"> 
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
+                            <a class="dropdown-item" href="#">Action</a> 
+                            <a class="dropdown-item" href="#">Another action</a> 
+                            <a class="dropdown-item" href="#">Something else here</a> 
+                        </div>                         
+                    </li>      
+                    <li class="nav-item dropdown">
+                            <a class="nav-link" href="SelfAssessment.html">Self Assessment</span></a>
+
+                        </li>               
+                    <li class="nav-item dropdown"> 
+                        <a class="nav-link" href="MyReward.html">My reward<span class="sr-only">(current)</span></a> 
+                        <div class="dropdown-menu"> 
+                            <a class="dropdown-item" href="#">Create new report</a> 
+                        </div>                         
+                    </li>  
+                  
+                </ul>                 
+                <form class="form-inline my-2 my-lg-0"> 
+                   
+                    <a class="btn btn-outline-primary" href="index.html" style="margin-left: 16px; margin-top: -3px;">Logout</a> 
+                </form>                 
+            </div>             
+        </nav>         
+        <div class="container pg-empty-placeholder p-5 m-0"></div>         
+        <div class="container mb-3"> 
+            <button onclick="on()" style="left:90%" type="button" class="btn btn-light fixed-bottom">Rubrics</button>
+            <h2>Overview</h2> 
+            <ul class="nav nav-tabs" role="tablist"> 
+                <li class="nav-item"> 
+                    <a class="nav-link active" href="#tab1" data-toggle="tab" role="tab" aria-controls="tab1" aria-expanded="true">Overview</a> 
+                </li>                 
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#tab2" data-toggle="tab" role="tab" aria-controls="tab2" aria-expanded="true">Academic</a> 
+                </li>                 
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#tab3" data-toggle="tab" role="tab" aria-controls="tab3" aria-expanded="true">CCA</a> 
+                </li>                 
+                <li class="nav-item"> 
+                    <a class="nav-link" href="#tab4" data-toggle="tab" role="tab" aria-controls="tab4" aria-expanded="true">Intern/Job</a> 
+                </li>     
+                <li class="nav-item"> 
+                        <a class="nav-link" href="#tab5" data-toggle="tab" role="tab" aria-controls="tab5" aria-expanded="true">Goal</a> 
+                    </li>              
+            </ul>             
+            <div class="tab-content"> 
+                <div class="tab-pane container active" id="tab1"> 
+                    <div> 
+                        <div style="position:absolute;left:65%;transform:scale(0.8, 0.8);" class="mb-3 mr-5 pr-5"> 
+                            <!-- <table class="table table-striped table-sm"> 
+                                <thead> 
+                                    <tr>
+                                        <h3>Goals</h3>
+                                    </tr>                                     
+                                </thead>                                 
+                                <thead> 
+                                    <tr> 
+                                        <th>#</th> 
+                                        <th>Skill</th> 
+                                        <th>Targeted rank</th> 
+                                        <th>Deadline</th> 
+                                    </tr>                                     
+                                </thead>                                 
+                                <tbody> 
+                                    <tr> 
+                                        <td>1</td> 
+                                        <td>Research</td> 
+                                        <td>Intermediate</td> 
+                                        <td>Dec 2019</td> 
+                                    </tr>                                     
+                                    <tr></tr>                                     
+                                    <tr> 
+                                        <td>2</td> 
+                                        <td style="text-align: center;">Leadership</td> 
+                                        <td>Advance</td> 
+                                        <td>Dec 2019</td> 
+                                    </tr>                                     
+                                </tbody>                                 
+                            </table>                             
+                            <a href="GoalOverview.html"> 
+                                <button type="button" class="btn btn-light float-right">Manage</button>                                 
+                            </a>                              -->
+                        </div>
+                        <canvas style="padding-bottom:25px;" id="myChart" height="150" width="500" class="float-none shadow-sm"></canvas>                         
+                    </div>
+                    <div id="beforeoverview" class="container text-center"> 
+                        <table class="table table-striped table-sm" style="width:100%;"> 
+                            <thead> 
+                                <tr> 
+                                    <th>Skill</th> 
+                                    <th>Description</th> 
+                                    <th>Tips</th> 
+                                    <th>Recommendation</th> 
+                                    <th>Rank</th> 
+                                </tr>                                 
+                            </thead>                             
+                            <tbody> 
+                                <tr> 
+                                    <td>Technical proficiency</td> 
+                                    <td>You are very good in python but you should try
+to learn how to google(eg google the right term) to get what you want.<br></td> 
+                                    <td class="text-left">
+                                        <div>Take the related courses.
+                                            <br>
+                                        </div>
+                                    </td>                                     
+                                    <td>link</td> 
+                                    <td>Intermediate</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <td><p>Interpersonal skills and teamwork</p></td> 
+                                    <td>You are good in working in small team. However,
+when you work in a big size of team, you tend to be quite and seldom hang up
+with them.</td> 
+                                    <td class="text-left"> <p><!--[if !supportLists]-->1.     <!--[endif]-->Control your emotions</p> <p><!--[if !supportLists]-->2.     <!--[endif]-->Practice active listening</p> <p><!--[if !supportLists]-->3.     <!--[endif]-->Practice empathy</p> <p><!--[if !supportLists]-->4.     <!--[endif]-->Maintain your relationship</p> <p><!--[if !supportLists]-->5.     <!--[endif]-->Acknowledge others’ expertise</p></td> 
+                                    <td>link</td> 
+                                    <td>Intermediate</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <td>Adaptability</td> 
+                                    <td>You are good in working in small team. However,
+when you work in a big size of team, you tend to be quite and seldom hang up
+with them.<br></td> 
+                                    <td class="text-left">
+                                        <p><!--[if !supportLists]-->1.     <!--[endif]-->Think creatively</p>
+                                        <p><!--[if !supportLists]-->2.     <!--[endif]-->Embrace ambiguity</p>
+                                        <p><!--[if !supportLists]-->3.     <!--[endif]-->Exercise emotional intelligence</p>
+                                        <p></p>
+                                        <p><!--[if !supportLists]-->4.     <!--[endif]-->Shift focus</p> 
+                                        <ol></ol>
+                                    </td>                                     
+                                    <td>link</td> 
+                                    <td>Advanced</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <td>Language and Expression</td> 
+                                    <td>You are able to use simple language to explain
+complex concept in the text.</td> 
+                                    <td class="text-left"><p><!--[if !supportLists]-->1.     <!--[endif]-->Pay attention to punctuation, especially to the correct use of commas and periods.</p><p><!--[if !supportLists]-->2.     <!--[endif]-->Try not to edit while you’re creating your first draft</p><p><!--[if !supportLists]-->3.     <!--[endif]-->Be a good reader.</p><p><!--[if !supportLists]-->4.     <!--[endif]-->Always read and review what you have written.</p><p><!--[if !supportLists]-->5.     <!--[endif]-->To be a good writer is to start writing everyday</p></td> 
+                                    <td>link</td> 
+                                    <td>Advanced</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <td>Presentation &amp; Delivery</td> 
+                                    <td>YYou asked clear
+questions and interacted with the audience. you could be a bit more relaxed and
+more energetic at times. you could also try to synthesize the comments more to
+guide the discussion.&nbsp;</td> 
+                                    <td class="text-left">
+                                        <div>
+                                            <p><!--[if !supportLists]-->1.     <!--[endif]-->Keep it simple concrete on your core message</p>
+                                            <p><!--[if !supportLists]-->2.     <!--[endif]-->Start strongly</p>
+                                            <p><!--[if !supportLists]-->3.     <!--[endif]-->Smile and make eye contact with the audience </p>
+                                            <p><!--[if !supportLists]-->4.     <!--[endif]-->Tell stories</p>
+                                            <p></p>
+                                            <p><!--[if !supportLists]-->5.     <!--[endif]-->Show your passion and connect with the audience&nbsp;</p>
+                                        </div>
+                                    </td>                                     
+                                    <td>link</td> 
+                                    <td>Novice</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <td><p>Research Depth</p></td> 
+                                    <td>The key information of
+the background was always covered. You show a very strong research skill to the
+team.</td> 
+                                    <td class="text-left"><p><!--[if !supportLists]-->1.     <!--[endif]-->Clearly define your research needs </p><p><!--[if !supportLists]-->2.     <!--[endif]-->Carefully select your research terms </p><p><!--[if !supportLists]-->3.     <!--[endif]-->Carefully and accurately record your findings</p><p><!--[if !supportLists]-->4.     <!--[endif]-->Critically evaluate the information that you find</p></td> 
+                                    <td>link</td> 
+                                    <td>Expert</td> 
+                                </tr>
+                                <tr> 
+                                    <td><p>Creativity &amp; Innovation</p></td> 
+                                    <td>No demonstration of ideas generation; ideas generated are complete
+imitation of what is already available or ideas are too general to see actual
+value</td> 
+                                    <td class="text-left">
+                                        <p><!--[if !supportLists]-->1.     <!--[endif]-->Write down a list of ideas  </p>
+                                        <p><!--[if !supportLists]-->2.     <!--[endif]-->Do something new</p>
+                                        <p><!--[if !supportLists]-->3.     <!--[endif]-->Surround yourself with creative people</p>
+                                        <p><!--[if !supportLists]-->4.     <!--[endif]-->Spend time with your children</p>
+                                        <p><!--[if !supportLists]-->5.     <!--[endif]-->Meet new people</p> 
+                                        <ol></ol>
+                                    </td>                                     
+                                    <td>link</td> 
+                                    <td>Expert</td> 
+                                </tr>
+                                <tr> 
+                                    <td><p>Analytical Skill</p></td> 
+                                    <td>You are able to analyse the situation to the
+team such as list out the pro and cons to us.</td> 
+                                    <td class="text-left">
+                                        <p><!--[if !supportLists]-->1.     <!--[endif]-->Active reading. Read more books. Can it be this simple?</p>
+                                        <p><!--[if !supportLists]-->2.     <!--[endif]-->Take a walk outside</p>
+                                        <p><!--[if !supportLists]-->3.     <!--[endif]-->Practise your mathematical skill</p>
+                                        <p><!--[if !supportLists]-->4.     <!--[endif]-->Include brain games in your list of hobbies</p>
+                                        <p><!--[if !supportLists]-->5.     <!--[endif]-->Make personal encounters count</p> 
+                                        <ol></ol>
+                                    </td>                                     
+                                    <td>link</td> 
+                                    <td>Expert</td> 
+                                </tr>
+                                <tr> 
+                                    <td><p>Time management</p></td> 
+                                    <td>You always manage your time well. We will not
+worry about whether you cannot finish on time.</td> 
+                                    <td class="text-left">
+                                        <div>
+                                            <p><!--[if !supportLists]-->1.     <!--[endif]-->Know your goals</p>
+                                            <p><!--[if !supportLists]-->2.     <!--[endif]-->Prioritize wisely</p>
+                                            <p><!--[if !supportLists]-->3.     <!--[endif]-->Just say no</p>
+                                            <p><!--[if !supportLists]-->4.     <!--[endif]-->Plan ahead</p>
+                                            <p><!--[if !supportLists]-->5.     <!--[endif]-->Eliminate distractions</p>
+                                            <p><!--[if !supportLists]-->6.     <!--[endif]-->Delegate more often</p>
+                                            <p><!--[if !supportLists]-->7.     <!--[endif]-->Watch what you spend</p>
+                                        </div>
+                                    </td>                                     
+                                    <td>link</td> 
+                                    <td>Expert</td> 
+                                </tr>
+                                <tr> 
+                                    <td><p>Planning Skill</p></td> 
+                                    <td>You know the priority task and plan out the
+sequence to us.</td> 
+                                    <td class="text-left"><p><!--[if !supportLists]-->1.     <!--[endif]-->Prepare a breakdown of all functional tasks</p><p><!--[if !supportLists]-->2.     <!--[endif]-->Analyze each component to detect areas of risk</p><p><!--[if !supportLists]-->3.     <!--[endif]-->Categories the potential problems into high and low risk areas</p><p><!--[if !supportLists]-->4.     <!--[endif]-->Prepare several possible approaches to overcoming such problems if they may occur</p>
+Build a safety net into
+your planning high-risk areas</td> 
+                                    <td>link</td> 
+                                    <td>Advance</td> 
+                                </tr>
+                            </tbody>                             
+                        </table>                         
+                    </div>
+                </div>                 
+                <div class="tab-pane container fade" id="tab2"> 
+                    <div style="position:absolute;left:65%;transform:scale(0.8, 0.8);" class="mb-3 mr-5"> 
+                        <!-- <table class="table table-striped table-sm"> 
+                            <thead> 
+                                <tr>
+                                    <h3>Goals</h3>
+                                </tr>                                 
+                            </thead>                             
+                            <thead> 
+                                <tr> 
+                                    <th>#</th> 
+                                    <th>Skill</th> 
+                                    <th>Targeted rank</th> 
+                                    <th>Deadline</th> 
+                                </tr>                                 
+                            </thead>                             
+                            <tbody> 
+                                <tr> 
+                                    <td>1</td> 
+                                    <td>Research</td> 
+                                    <td>Intermediate</td> 
+                                    <td>Dec 2019</td> 
+                                </tr>                                 
+                                <tr></tr>                                 
+                                <tr> 
+                                    <td>2</td> 
+                                    <td style="text-align: center;">Leadership</td> 
+                                    <td>Advance</td> 
+                                    <td>Dec 2019</td> 
+                                </tr>                                 
+                            </tbody>                             
+                        </table>                         
+                        <a href="GoalOverview.html"> 
+                            <button type="button" class="btn btn-light float-right">Manage</button>                             
+                        </a>                          -->
+                    </div>                     
+                    <canvas style="padding-bottom:25px;" id="myChart2" height="150" width="500" class="float-none shadow-sm"></canvas>
+                    <div class="container text-center"> 
+                        <table class="table table-striped table-sm" style="width:100%;"> 
+                            <thead> 
+                                <tr> 
+                                    <th>Skill</th> 
+                                    <th>Description</th> 
+                                    <th>Tips</th> 
+                                    <th>Recommendation</th> 
+                                    <th>Rank</th> 
+                                </tr>                                 
+                            </thead>                             
+                            <tbody> 
+                                <tr> 
+                                    <td>Technical proficiency</td> 
+                                    <td>You are very good in python but you should try
+to learn how to google to get what you want.<br></td> 
+                                    <td class="text-left">Take the related courses.</td> 
+                                    <td>link</td> 
+                                    <td>Intermediate</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <td><p><p>Interpersonal skills and teamwork</p></p></td> 
+                                    <td>You are good in working in small team. However,
+when you work in a big size of team, you tend to be quite and seldom hang up
+with them.</td> 
+                                    <td class="text-left"> 
+                                        <ol>
+                                            <li>
+                                                <p><!--[if !supportLists]-->1.     <!--[endif]-->Control your emotions</p>
+                                                <p><!--[if !supportLists]-->2.     <!--[endif]-->Practice active listening</p>
+                                                <p><!--[if !supportLists]-->3.     <!--[endif]-->Practice empathy</p>
+                                                <p><!--[if !supportLists]-->4.     <!--[endif]-->Maintain your relationship</p>
+                                                <p><!--[if !supportLists]-->5.     <!--[endif]-->Acknowledge others’ expertise</p>
+                                            </li>
+                                        </ol>                                         
+                                    </td>                                     
+                                    <td>link</td> 
+                                    <td>Intermediate</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <td>Communication</td> 
+                                    <td>Peers generally had a few difficulty <br>commmunicating with as they found it hard to&nbsp;<br>visualize what you were trying to bring across.<br>Members could only understand your ideas on <br>a surface level but never quite indepthly.<br></td> 
+                                    <td class="text-left"> 
+                                        <ol> 
+                                            <li>Learn 
+                                                <b>the</b> basics of nonverbal 
+                                                <b>communication</b>. ...
+                                            </li>                                             
+                                            <li>You have to over-
+                                                <b>communicate</b> just to 
+                                                <br> 
+                                                <b>communicate</b>. ...
+                                            </li>                                             
+                                            <li>Avoid relying on visual aids. ...</li>                                             
+                                            <li>Ask for honest feedback. ...</li>                                             
+                                            <li>Engage 
+                                                <b>the</b> audience in discussion. ...
+                                            </li>                                             
+                                            <li>Start and end with key points.</li>                                             
+                                        </ol>                                         
+                                    </td>                                     
+                                    <td>link</td> 
+                                    <td>Advanced</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <td>Adaptability</td> 
+                                    <td>We change require you change the department and
+work in there. You are able to learn faster and know what should you do.</td> 
+                                    <td class="text-left"> 
+                                        <ol>
+                                            <li>
+                                                <p><!--[if !supportLists]-->1.     <!--[endif]-->Think creatively</p>
+                                                <p><!--[if !supportLists]-->2.     <!--[endif]-->Embrace ambiguity</p>
+                                                <p><!--[if !supportLists]-->3.     <!--[endif]-->Exercise emotional intelligence</p>
+                                                <p><!--[if !supportLists]-->4.     <!--[endif]-->Shift focus</p>
+                                            </li>
+                                        </ol>                                         
+                                    </td>                                     
+                                    <td>link</td> 
+                                    <td>Advanced</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <td>Presentation &amp; Delivery</td> 
+                                    <td>YYou asked clear
+questions and interacted with the audience. you could be a bit more relaxed and
+more energetic at times. you could also try to synthesize the comments more to
+guide the discussion.&nbsp;</td> 
+                                    <td class="text-left">
+                                        <ol>
+                                            <li>
+                                                <p><!--[if !supportLists]-->1.     <!--[endif]-->Keep it simple concrete on your core message</p>
+                                                <p><!--[if !supportLists]-->2.     <!--[endif]-->Start strongly</p>
+                                                <p><!--[if !supportLists]-->3.     <!--[endif]-->Smile and make eye contact with the audience </p>
+                                                <p><!--[if !supportLists]-->4.     <!--[endif]-->Tell stories</p>
+                                                <p></p>
+                                                <p><!--[if !supportLists]-->5.     <!--[endif]-->Show your passion and connect with the audience&nbsp;</p>
+                                            </li>
+                                        </ol>
+                                    </td>                                     
+                                    <td>link</td> 
+                                    <td>Novice</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <td><p>Research Depth</p></td> 
+                                    <td>The key information of
+the background was always covered. You show a very strong research skill to the
+team.</td> 
+                                    <td class="text-left"> 
+                                        <ol>
+                                            <li>
+                                                <p><!--[if !supportLists]-->1.     <!--[endif]-->Clearly define your research needs </p>
+                                                <p><!--[if !supportLists]-->2.     <!--[endif]-->Carefully select your research terms </p>
+                                                <p><!--[if !supportLists]-->3.     <!--[endif]-->Carefully and accurately record your findings</p>
+                                                <p><!--[if !supportLists]-->4.     <!--[endif]-->Critically evaluate the information that you find</p>
+                                            </li>
+                                        </ol>                                         
+                                    </td>                                     
+                                    <td>link</td> 
+                                    <td>Expert</td> 
+                                </tr>                                 
+                            </tbody>                             
+                        </table>                         
+                    </div>
+                </div>                 
+                <div class="tab-pane container fade" id="tab3"> 
+                    <div style="position:absolute;left:65%;transform:scale(0.8, 0.8);" class="mb-3 mr-5"> 
+                        <!-- <table class="table table-striped table-sm"> 
+                            <thead> 
+                                <tr>
+                                    <h3>Goals</h3>
+                                </tr>                                 
+                            </thead>                             
+                            <thead> 
+                                <tr> 
+                                    <th>#</th> 
+                                    <th>Skill</th> 
+                                    <th>Targeted rank</th> 
+                                    <th>Deadline</th> 
+                                </tr>                                 
+                            </thead>                             
+                            <tbody> 
+                                <tr> 
+                                    <td>1</td> 
+                                    <td>Research</td> 
+                                    <td>Intermediate</td> 
+                                    <td>Dec 2019</td> 
+                                </tr>                                 
+                                <tr></tr>                                 
+                                <tr> 
+                                    <td>2</td> 
+                                    <td style="text-align: center;">Leadership</td> 
+                                    <td>Advance</td> 
+                                    <td>Dec 2019</td> 
+                                </tr>                                 
+                            </tbody>                             
+                        </table>                         
+                        <a href="GoalOverview.html"> 
+                            <button type="button" class="btn btn-light float-right">Manage</button>                             
+                        </a>                          -->
+                    </div>                     
+                    <canvas style="padding-bottom:25px;" id="myChart3" height="150" width="500" class="float-none shadow-sm"></canvas>                     
+                    <div id="beforecca" style="padding-bottom:150px" class="container text-center"> 
+                        <table class="table table-striped table-sm" style="width:100%;"> 
+                            <thead> 
+                                <tr> 
+                                    <th>Skill</th> 
+                                    <th>Description</th> 
+                                    <th>Tips</th> 
+                                    <th>Recommendation</th> 
+                                    <th>Rank</th> 
+                                </tr>                                 
+                            </thead>                             
+                            <tbody>
+                                <tr> 
+                                    <th> </th>
+                                    <th> </th>
+                                    <th> </th>
+                                    <th> </th>
+                                    <th> </th>
+                                </tr>
+                            </tbody>                             
+                        </table>                         
+                    </div>
+                </div>                 
+                <div class="tab-pane container fade" id="tab4"> 
+                    <div style="position:absolute;left:65%;transform:scale(0.8, 0.8);" class="mb-3 mr-5"> 
+                        <!-- <table class="table table-striped table-sm"> 
+                            <thead> 
+                                <tr>
+                                    <h3>Goals</h3>
+                                </tr>                                 
+                            </thead>                             
+                            <thead> 
+                                <tr> 
+                                    <th>#</th> 
+                                    <th>Skill</th> 
+                                    <th>Targeted rank</th> 
+                                    <th>Deadline</th> 
+                                </tr>                                 
+                            </thead>                             
+                            <tbody> 
+                                <tr> 
+                                    <td>1</td> 
+                                    <td>Research</td> 
+                                    <td>Intermediate</td> 
+                                    <td>Dec 2019</td> 
+                                </tr>                                 
+                                <tr></tr>                                 
+                                <tr> 
+                                    <td>2</td> 
+                                    <td style="text-align: center;">Leadership</td> 
+                                    <td>Advance</td> 
+                                    <td>Dec 2019</td> 
+                                </tr>                                 
+                            </tbody>                             
+                        </table>                         
+                        <a href="GoalOverview.html"> 
+                            <button type="button" class="btn btn-light float-right">Manage</button>                             
+                        </a>                          -->
+                    </div>                     
+                    <canvas style="padding-bottom:25px;" id="myChart4" height="150" width="500" class="float-none shadow-sm"></canvas>
+                    <div class="container text-center"> 
+                        <table class="table table-striped table-sm" style="width:100%;"> 
+                            <thead> 
+                                <tr> 
+                                    <th>Skill</th> 
+                                    <th>Description</th> 
+                                    <th>Tips</th> 
+                                    <th>Recommendation</th> 
+                                    <th>Rank</th> 
+                                </tr>                                 
+                            </thead>                             
+                            <tbody> 
+                                <tr> 
+                                    <td>Technical proficiency</td> 
+                                    <td>You are very good in python but you should try
+to learn how to google(eg google the right term) to get what you want.<br></td> 
+                                    <td class="text-left"> 
+                                        <ol>
+                                            <li>Take the related courses.
+                                                <br>
+                                            </li>
+                                        </ol>                                         
+                                    </td>                                     
+                                    <td>Link(below also)</td> 
+                                    <td>Intermediate</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <td><p>Interpersonal skills and teamwork</p></td> 
+                                    <td>You are good in working in small team. However,
+when you work in a big size of team, you tend to be quite and seldom hang up
+with them.</td> 
+                                    <td class="text-left"> 
+                                        <ol>
+                                            <li>
+                                                <p><!--[if !supportLists]-->1.     <!--[endif]-->Control your emotions</p>
+                                                <p><!--[if !supportLists]-->2.     <!--[endif]-->Practice active listening</p>
+                                                <p><!--[if !supportLists]-->3.     <!--[endif]-->Practice empathy</p>
+                                                <p><!--[if !supportLists]-->4.     <!--[endif]-->Maintain your relationship</p>
+                                                <p><!--[if !supportLists]-->5.     <!--[endif]-->Acknowledge others’ expertise</p>
+                                            </li>
+                                        </ol>                                         
+                                    </td>                                     
+                                    <td>link</td> 
+                                    <td>Intermediate</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <td>Communication</td> 
+                                    <td>Peers generally had a few difficulty <br>commmunicating with as they found it hard to&nbsp;<br>visualize what you were trying to bring across.<br>Members could only understand your ideas on <br>a surface level but never quite indepthly.<br></td> 
+                                    <td class="text-left"> 
+                                        <ol> 
+                                            <li>Learn 
+                                                <b>the</b> basics of nonverbal 
+                                                <b>communication</b>. ...
+                                            </li>                                             
+                                            <li>You have to over-
+                                                <b>communicate</b> just to 
+                                                <br> 
+                                                <b>communicate</b>. ...
+                                            </li>                                             
+                                            <li>Avoid relying on visual aids. ...</li>                                             
+                                            <li>Ask for honest feedback. ...</li>                                             
+                                            <li>Engage 
+                                                <b>the</b> audience in discussion. ...
+                                            </li>                                             
+                                            <li>Start and end with key points.</li>                                             
+                                        </ol>                                         
+                                    </td>                                     
+                                    <td>link</td> 
+                                    <td>Advanced</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <td>Adaptability</td> 
+                                    <td>We change require you change the department and
+work in there. You are able to learn faster and know what should you do.</td> 
+                                    <td class="text-left"> 
+                                        <ol>
+                                            <li>
+                                                <p><!--[if !supportLists]-->1.     <!--[endif]-->Think creatively</p>
+                                                <p><!--[if !supportLists]-->2.     <!--[endif]-->Embrace ambiguity</p>
+                                                <p><!--[if !supportLists]-->3.     <!--[endif]-->Exercise emotional intelligence</p>
+                                                <p><!--[if !supportLists]-->4.     <!--[endif]-->Shift focus</p>
+                                            </li>
+                                        </ol>                                         
+                                    </td>                                     
+                                    <td>link</td> 
+                                    <td>Advanced</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <td>Presentation &amp; Delivery</td> 
+                                    <td>YYou asked clear
+questions and interacted with the audience. you could be a bit more relaxed and
+more energetic at times. you could also try to synthesize the comments more to
+guide the discussion.&nbsp;</td> 
+                                    <td class="text-left">
+                                        <ol>
+                                            <li>
+                                                <p><!--[if !supportLists]-->1.     <!--[endif]-->Keep it simple concrete on your core message</p>
+                                                <p><!--[if !supportLists]-->2.     <!--[endif]-->Start strongly</p>
+                                                <p><!--[if !supportLists]-->3.     <!--[endif]-->Smile and make eye contact with the audience </p>
+                                                <p><!--[if !supportLists]-->4.     <!--[endif]-->Tell stories</p>
+                                                <p></p>
+                                                <p><!--[if !supportLists]-->5.     <!--[endif]-->Show your passion and connect with the audience&nbsp;</p>
+                                            </li>
+                                        </ol>
+                                    </td>                                     
+                                    <td>link</td> 
+                                    <td>Novice</td> 
+                                </tr>                                 
+                                <tr> 
+                                    <td><p>Research Depth</p></td> 
+                                    <td>The key information of
+the background was always covered. You show a very strong research skill to the
+team.</td> 
+                                    <td class="text-left"> 
+                                        <ol>
+                                            <li>
+                                                <p><!--[if !supportLists]-->1.     <!--[endif]-->Clearly define your research needs </p>
+                                                <p><!--[if !supportLists]-->2.     <!--[endif]-->Carefully select your research terms </p>
+                                                <p><!--[if !supportLists]-->3.     <!--[endif]-->Carefully and accurately record your findings</p>
+                                                <p><!--[if !supportLists]-->4.     <!--[endif]-->Critically evaluate the information that you find</p>
+                                            </li>
+                                        </ol>                                         
+                                    </td>                                     
+                                    <td>link</td> 
+                                    <td>Expert</td> 
+                                </tr>                                 
+                            </tbody>                             
+                        </table>                         
+                    </div>
+                </div>  
+                <div class="tab-pane container fade" id="tab5"> 
+                        <div style="transform:scale(0.8, 0.8);" class="mb-3 mr-5"> 
+                            <table class="table table-striped table-sm"> 
+                                <thead> 
+                                    <tr> 
+                                        <h3>Goals</h3> 
+                                    </tr>                                 
+                                </thead>                             
+                                <tr> 
+                                    <th> 
+                                        # </th> 
+                                    <th> 
+                                        Skills </th> 
+                                    <th> 
+                                        Targeted rank </th> 
+                                    <th> 
+                                        Deadline </th> 
+                                </tr>                             
+                                <tbody id='printtable1'> 
+    </tbody>                             
+                            </table>                         
+                            <a href="GoalOverview.html"> 
+                                <button type="button" class="btn btn-light float-right">Manage</button>                             
+                            </a>                         
+                        </div>                     
+                    </div>                             
+            </div>
+            <p id="Rubrics" class="MsoNormal"><span style='font-size:24.0pt;line-height:107%;font-family:
+"Times New Roman",serif'>Rubrics<o:p></o:p></span></p>
+            <table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0
+" style='border-collapse:collapse;mso-yfti-tbllook:1184'>
+                <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+                    <td valign="top" style='border:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'></td>
+                    <td valign="top" style='border:solid black 1.0pt;border-left:none;mso-border-left-alt:
+  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Novice</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+  "Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border:solid black 1.0pt;border-left:none;mso-border-left-alt:
+  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Intermediate</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+  "Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border:solid black 1.0pt;border-left:none;mso-border-left-alt:
+  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Advanced</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+  "Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border:solid black 1.0pt;border-left:none;mso-border-left-alt:
+  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Expert</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+  "Times New Roman"'><o:p></o:p></span></p> </td>
+                </tr>
+                <tr style='mso-yfti-irow:1'>
+                    <td valign="top" style='border:solid black 1.0pt;border-top:none;mso-border-top-alt:
+  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Technical proficiency</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+  "Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Demonstrates basic
+  technical skills, needs to improve on learning and comprehensive capabilities </span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Demonstrates technical
+  skills, demonstrates adequate learning and comprehensive capabilities </span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+  "Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Demonstrates good
+  technical skills, demonstrates fast learning and comprehensive capabilities </span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+  "Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Consistently
+  demonstrates outstanding technical skills, demonstrates strong learning and
+  comprehensive capabilities </span><span style='font-size:12.0pt;font-family:
+  "Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p> </td>
+                </tr>
+                <tr style='mso-yfti-irow:2'>
+                    <td valign="top" style='border-top:none;border-left:solid black 1.0pt;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black;background:white'>Interpersonal
+  skills and teamwork</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:solid black 1.0pt;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-top:0cm;margin-right:7.0pt;margin-bottom:
+  0cm;margin-left:7.0pt;margin-bottom:.0001pt;line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+  "Times New Roman";color:black'>Displays &nbsp;complete lack of communication
+  skills.</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid #A3A3A3 1.0pt;
+  mso-border-left-alt:solid #A3A3A3 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt'> <p class="MsoNormal" style='margin-top:0cm;margin-right:7.0pt;margin-bottom:
+  0cm;margin-left:7.0pt;margin-bottom:.0001pt;line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+  "Times New Roman";color:black'>Demonstrates limited use of effective
+  communication skills.</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid #A3A3A3 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Uses effective
+  communication skills.</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Consistently
+  demonstrates outstanding teamwork skills.</span><span style='font-size:12.0pt;
+  font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p> </td>
+                </tr>
+                <tr style='mso-yfti-irow:3'>
+                    <td valign="top" style='border:solid black 1.0pt;border-top:none;mso-border-top-alt:
+  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Adaptability</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+  "Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid #A3A3A3 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Rigid, displays
+  inability to cope with changes, takes a lot of time and effort to adapt to
+  new environment. </span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid #A3A3A3 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Displays ability to
+  deal with changes, takes time to adapt to new environment.</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+  "Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Flexible, possesses
+  fast learning skills and can cope with changes in situations within an
+  average amount of time.</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Highly flexible,
+  possesses exceptional learning skills and can cope with a multitude of
+  situations within a short amount of time.</span><span style='font-size:12.0pt;
+  font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p> </td>
+                </tr>
+                <tr style='mso-yfti-irow:4'>
+                    <td valign="top" style='border:solid black 1.0pt;border-top:none;mso-border-top-alt:
+  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Language and
+  Expression</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Vague and ambiguous
+  writing with awkward sentence structure. Many grammatical errors that
+  affected meaning in many parts with poor word choice. </span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+  "Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Vague and ambiguous
+  writing with simple sentence structure. Many grammatical errors that affected
+  meaning in some parts with some inaccurate word choice. </span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+  "Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Mostly clear and
+  readable with some varied sentence structure. Some grammatical errors that do
+  not impede meaning of the sentence with good word choice. </span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+  "Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Clear and readable
+  with varied sentence structure. A few minor grammatical errors that do not
+  impede meaning of the sentence with very effective word choice.</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+  "Times New Roman"'><o:p></o:p></span></p> </td>
+                </tr>
+                <tr style='mso-yfti-irow:5'>
+                    <td valign="top" style='border:solid black 1.0pt;border-top:none;mso-border-top-alt:
+  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Presentation &amp;
+  Delivery </span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Explained concepts
+  moderately well but with some inaccuracies. </span><span style='font-size:
+  12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Language was
+  moderately easy to understand with poor audience engagement. The slides were
+  adequately designed and formatted. Presentation style and flow can be quite
+  awkward with a few transition errors. </span><span style='font-size:12.0pt;
+  font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Explained concepts
+  moderately well &nbsp;but with some inaccuracies.<span style='mso-spacerun:yes'> </span></span><span style='font-size:12.0pt;
+  font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Language was generally
+  easy to understand and able to engage audience sufficiently. The slides were
+  adequately designed and formatted. Presentation flow and structure were
+  moderately clear but with a few transition errors. </span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+  "Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Explained concepts
+  adequately well with sufficient accuracy. </span><span style='font-size:12.0pt;
+  font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Spoke with confidence,
+  used easy-to-understand language with minor pauses and fillers. Able to
+  engage audience sufficiently. The slides were well designed and nicely
+  formatted. Presentation flow and structure were sufficiently clear with some
+  transition awkwardness. &nbsp;&nbsp;</span><span style='font-size:12.0pt;
+  font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Explained concepts
+  clearly and accurately</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p> <p class="MsoNormal" style='margin-bottom:12.0pt;line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+  "Times New Roman"'><br style='mso-special-character:line-break'> <![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'> <![endif]><o:p></o:p></span></p> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Spoke with confidence,
+  used easy-to-understand language, and were able to fully engage the audience.
+  The slides were well designed and nicely formatted. Presentation flow and
+  structure were also clear with smooth transition. </span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+  "Times New Roman"'><o:p></o:p></span></p> </td>
+                </tr>
+                <tr style='mso-yfti-irow:6'>
+                    <td valign="top" style='border:solid black 1.0pt;border-top:none;mso-border-top-alt:
+  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Research Depth</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+  "Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Research is of
+  insufficient depth with very few credible sources used</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+  "Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Research is of
+  moderate depth with few credible sources used</span><span style='font-size:
+  12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Adequate research was
+  carried out with a few diverse range of credible sources used</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+  "Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Thorough background
+  research was carried out. Used a wide range of diverse and credible sources
+  to support argument</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p> </td>
+                </tr>
+                <tr style='mso-yfti-irow:7'>
+                    <td valign="top" style='border:solid black 1.0pt;border-top:none;mso-border-top-alt:
+  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Creativity &amp;
+  Innovation</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>No demonstration of
+  ideas generation; ideas generated are complete imitation of what is already
+  available or ideas are too general to see actual value</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+  "Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Ideas generated
+  demonstrate moderate creativity but may be what is already in the market.
+  Ideas may also be too general without details or refinement</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+  "Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Uses idea-generating
+  techniques to develop ideas that demonstrate adequate creativity by pushing
+  conventional boundaries. Ideas may use some common ideas in a relatively new
+  way</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Uses idea-generating
+  techniques to develop ideas. </span><span style='font-size:12.0pt;font-family:
+  "Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Ideas demonstrate
+  creativity and ingenuity by going outside of conventional boundaries or use
+  common ideas in a new or surprising way</span><span style='font-size:12.0pt;
+  font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p> </td>
+                </tr>
+                <tr style='mso-yfti-irow:8'>
+                    <td valign="top" style='border:solid black 1.0pt;border-top:none;mso-border-top-alt:
+  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Analytical Skill</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+  "Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Merely copies off
+  information either incompletely or with major inaccuracies </span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+  "Times New Roman"'><o:p></o:p></span></p> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Conclusion is also
+  lacking in depth and insights are inconsistent with evidence presented,
+  presented in a fragmented manner without clear order</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+  "Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Interprets information
+  inaccurately, incompletely or with major omissions. </span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+  "Times New Roman"'><o:p></o:p></span></p> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Analysis given also
+  lack depth and insights/conclusion may be illogical or inconsistent with the
+  evidence presented</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Interprets information
+  accurately and appropriately with only minor inconsistencies, irrelevancies
+  or omissions</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Analysis given are
+  also adequately insightful with good logic and insights consistent with
+  evidence</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Interprets information
+  accurately and appropriately in given context. </span><span style='font-size:
+  12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Analysis given are
+  also exceptionally insightful, well-supported, logically consistent and
+  complete</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p> </td>
+                </tr>
+                <tr style='mso-yfti-irow:9'>
+                    <td valign="top" style='border:solid black 1.0pt;border-top:none;mso-border-top-alt:
+  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Time management</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+  "Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Student cannot finish
+  most of their tasks by the deadline. Student cannot attend most of the
+  meeting. </span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Student are able to
+  finish their assigned tasks near the deadline. Student is able to attend
+  meeting but late occasionally. </span><span style='font-size:12.0pt;
+  font-family:"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Student is able to
+  finish their time and able to attend most of the meeting.</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+  "Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Student is able to
+  finish their task in advance.Student are able to attend most of the meeting.</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+  "Times New Roman"'><o:p></o:p></span></p> </td>
+                </tr>
+                <tr style='mso-yfti-irow:10;mso-yfti-lastrow:yes'>
+                    <td valign="top" style='border:solid black 1.0pt;border-top:none;mso-border-top-alt:
+  solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Planning Skill</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+  "Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Student fails to
+  prioritizes the task.</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Student is able to
+  identify which is the important task and prioritize them.</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+  "Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Student is
+  &nbsp;flexible and able to prioritize, co-ordinate, and organized resources.</span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+  "Times New Roman"'><o:p></o:p></span></p> </td>
+                    <td valign="top" style='border-top:none;border-left:none;border-bottom:solid black 1.0pt;
+  border-right:solid black 1.0pt;mso-border-top-alt:solid black 1.0pt;
+  mso-border-left-alt:solid black 1.0pt;padding:5.0pt 5.0pt 5.0pt 5.0pt'> <p class="MsoNormal" style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+  mso-fareast-font-family:"Times New Roman";color:black'>Student is highly
+  flexible and able to prioritize, co-ordinate, and organized resources to
+  maximize all opportunities</span><span style='font-size:12.0pt;font-family:
+  "Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></p> </td>
+                </tr>
+            </table>
+        </div>         
+        <script src="assets/js/jquery.min.js"></script>         
+        <script src="assets/js/popper.js"></script>         
+        <script src="bootstrap/js/bootstrap.min.js"></script>         
+        <!-- Icons -->         
+        <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>         
+        <script>feather.replace()</script>         
+        <!-- Graphs -->         
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>         
+        <script src="path/to/chartjs/dist/Chart.js"></script>         
+        <script>
+            setTimeout(function(){
+//Creating Floating Menu
+if (!window.htmlsetup) {
+            new Chart(document.getElementById("myChart"),{"type":"radar","data":{"labels":["Technical Proficiency","Interpersonal skills and teamwork","Adaptability","Language and Expression","Presentation & Delivery","Research Depth", "Creativity & Innovation", "Analytic Skill", "Analytic Skill", "Planning skill"],"datasets":[{"label":"Individual Strengths","data":[2.0, 1.0, 3.0, 3.0, 1.0, 4.0, 2.0, 3.0, 2.0, 3.0],"fill":true,"backgroundColor":"rgba(255, 99, 132, 0.2)","borderColor":"rgb(255, 99, 132)","pointBackgroundColor":"rgb(255, 99, 132)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(255, 99, 132)"}, {"label":"Self-Assessment","data":[10.0,5.6,1.0,3.1,4.5,6.0,3.3,3.3,4.5,4.6],"fill":true,"backgroundColor":"rgba(238,130,238, 0.2)","borderColor":"rgb(238,130,238)","pointBackgroundColor":"rgb(238,130,238)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(238,130,238)"}, {"label":"Goals","data":[0.0,7.5,0.0,0.0,5.0,0.0,5.5,5.5,5.6,5.9],"fill":true,"backgroundColor":"rgba(124,252,0, 0.2)","borderColor":"rgb(124,252,0)","pointBackgroundColor":"rgb(124,252,0)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(124,252,0)"}]},"options":{"elements":{"line":{"tension":0,"borderWidth":3}}}});
+    		new Chart(document.getElementById("myChart2"),{"type":"radar","data":{"labels":["Language and Expression","Creativity & Innovation","Research Depth","Presentation & Delivery","Analytic Skill","Time Management"],"datasets":[{"label":"Individual Strengths","data":[2.0, 2.0, 3.0, 3.0, 1.0, 4.0],"fill":true,"backgroundColor":"rgba(255,99,132,0.2)","borderColor":"rgb(255,99,132)","pointBackgroundColor":"rgb(255,99,132)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(255,99,132)"}, {"label":"Self-Assessment","data":[10.0,5.6,1.0,3.1,4.5,6.0],"fill":true,"backgroundColor":"rgba(238,130,238, 0.2)","borderColor":"rgb(238,130,238)","pointBackgroundColor":"rgb(238,130,238)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(238,130,238)"}, {"label":"Goals","data":[0.0,7.5,0.0,0.0,5.0,0.0],"fill":true,"backgroundColor":"rgba(124,252,0, 0.2)","borderColor":"rgb(124,252,0)","pointBackgroundColor":"rgb(124,252,0)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(124,252,0)"}]},"options":{"elements":{"line":{"tension":0,"borderWidth":3}}}});
+    		new Chart(document.getElementById("myChart3"),{"type":"radar","data":{"labels":["Time management","Interpersonal skills and teamwork","Planning skill"],"datasets":[]},"options":{"elements":{"line":{"tension":0,"borderWidth":3}}}});
+    		new Chart(document.getElementById("myChart4"),{"type":"radar","data":{"labels":["Technical Proficiency","Interpersonal skills and teamwork","Time management","Adaptability"],"datasets":[{"label":"Individual Strengths","data":[2.0, 3.0, 2.0, 2.0],"fill":true,"backgroundColor":"rgba(255,99,132,0.2)","borderColor":"rgb(255,99,132)","pointBackgroundColor":"rgb(255,99,132)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(255,99,132)"}, {"label":"Self-Assessment","data":[10.0,5.6,1.0,3.1],"fill":true,"backgroundColor":"rgba(238,130,238, 0.2)","borderColor":"rgb(238,130,238)","pointBackgroundColor":"rgb(238,130,238)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(238,130,238)"}, {"label":"Goals","data":[0.0,7.5,0.0,0.0],"fill":true,"backgroundColor":"rgba(124,252,0, 0.2)","borderColor":"rgb(124,252,0)","pointBackgroundColor":"rgb(124,252,0)","pointBorderColor":"#fff","pointHoverBackgroundColor":"#fff","pointHoverBorderColor":"rgb(124,252,0)"}]},"options":{"elements":{"line":{"tension":0,"borderWidth":3}}}});
+    
+
+                // new Chart(document.getElementById("myChart"), { "type": "radar", "data": { "labels": ["Technical Proficiency", "Interpersonal skills and teamwork", "Adaptability", "Language and Expression", "Presentation & Delivery", "Research Depth", "Creativity & Innovation", "Analytic Skill", "Time Management", "Planning skill"], "datasets": [{ "label": "Feedback from peer", "data": [2.0, 1.0, 3.0, 3.0, 1.0, 4.0, 2.0, 3.0, 2.0, 3.0], "fill": true, "backgroundColor": "rgba(255, 99, 132, 0.2)", "borderColor": "rgb(255, 99, 132)", "pointBackgroundColor": "rgb(255, 99, 132)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "rgb(255, 99, 132)" }, { "label": "Self-Assessment", "data": [3.0, 1.0, 3.0, 3.0, 1.0, 3.0, 3.0, 3.0, 3.0, 3.0], "fill": true, "backgroundColor": "rgba(238,130,238, 0.2)", "borderColor": "rgb(238,130,238)", "pointBackgroundColor": "rgb(238,130,238)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "rgb(238,130,238)" }, { "label": "Goals", "data": [3.0, 3.0, 3.0, 3.0, 2.0, 3.0, 3.0, 3.0, 3.0, 3.0, 4.0], "fill": true, "backgroundColor": "rgba(124,252,0, 0.2)", "borderColor": "rgb(124,252,0)", "pointBackgroundColor": "rgb(124,252,0)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "hidden": true, "pointHoverBorderColor": "rgb(124,252,0)" }] }, "options": { "elements": { "line": { "tension": 0, "borderWidth": 3 } } } });
+                // new Chart(document.getElementById("myChart2"), { "type": "radar", "data": { "labels": ["Language and Expression", "Creativity & Innovation", "Research Depth", "Presentation & Delivery", "Analytic Skill", "Time Management"], "datasets": [{ "label": "Feedback from peer", "data": [2.0, 2.0, 3.0, 3.0, 1.0, 4.0], "fill": true, "backgroundColor": "rgba(255,99,132,0.2)", "borderColor": "rgb(255,99,132)", "pointBackgroundColor": "rgb(255,99,132)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "rgb(255,99,132)" }, { "label": "Self-Assessment", "data": [4.0, 2.0, 2.0, 2.0, 2.0, 2.0], "fill": true, "backgroundColor": "rgba(238,130,238, 0.2)", "borderColor": "rgb(238,130,238)", "pointBackgroundColor": "rgb(238,130,238)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "rgb(238,130,238)" }, { "label": "Goals", "data": [3.0, 3.0, 3.0, 2.0, 2.0, 3.0], "fill": true, "backgroundColor": "rgba(124,252,0, 0.2)", "borderColor": "rgb(124,252,0)", "pointBackgroundColor": "rgb(124,252,0)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "rgb(124,252,0)" }] }, "options": { "elements": { "line": { "tension": 0, "borderWidth": 3 } } } });
+                // new Chart(document.getElementById("myChart3"), { "type": "radar", "data": { "labels": ["Time management", "Interpersonal skills and teamwork", "Planning skill"], "datasets": [{ "label": "Feedback from peer", "data": [2.0, 2.0, 3.0], "fill": true, "backgroundColor": "rgba(255,99,132,0.2)", "borderColor": "rgb(255,99,132)", "pointBackgroundColor": "rgb(255,99,132)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "rgb(255,99,132)" }, { "label": "Self-Assessment", "data": [2.0, 1.0, 2.0], "fill": true, "backgroundColor": "rgba(238,130,238, 0.2)", "borderColor": "rgb(238,130,238)", "pointBackgroundColor": "rgb(238,130,238)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "rgb(238,130,238)" }, { "label": "Goals", "data": [4.0, 2.0, 3.0], "fill": true, "backgroundColor": "rgba(124,252,0, 0.2)", "borderColor": "rgb(124,252,0)", "pointBackgroundColor": "rgb(124,252,0)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "rgb(124,252,0)" }] }, "options": { "elements": { "line": { "tension": 0, "borderWidth": 3 } } } });
+                // new Chart(document.getElementById("myChart4"), { "type": "radar", "data": { "labels": ["Technical Proficiency", "Interpersonal skills and teamwork", "Time management", "Adaptability"], "datasets": [{ "label": "Feedback from peer", "data": [2.0, 3.0, 2.0, 2.0], "fill": true, "backgroundColor": "rgba(255,99,132,0.2)", "borderColor": "rgb(255,99,132)", "pointBackgroundColor": "rgb(255,99,132)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "rgb(255,99,132)" }, { "label": "Self-Assessment", "data": [3.0, 1.0, 2.0, 2.0], "fill": true, "backgroundColor": "rgba(238,130,238, 0.2)", "borderColor": "rgb(238,130,238)", "pointBackgroundColor": "rgb(238,130,238)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "rgb(238,130,238)" }, { "label": "Goals", "data": [4.0, 2.0, 3.0, 3.0], "fill": true, "backgroundColor": "rgba(124,252,0, 0.2)", "borderColor": "rgb(124,252,0)", "pointBackgroundColor": "rgb(124,252,0)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "rgb(124,252,0)" }] }, "options": { "elements": { "line": { "tension": 0, "borderWidth": 3 } } } });
+
+
+    window.htmlsetup = true;
+}
+},100)
+            function on() {
+    document.getElementById("Rubrics").scrollIntoView();
+                var y = $(window).scrollTop();  //your current y position on the page
+$(window).scrollTop(y-120);
+}
+
+        </script>    
+                <script>
+                        var session_list_goal = localStorage['session_list_goal'];
+                        var list_goal = session_list_goal.split(',');
+                        var print_table = "";
+                        var row_count = 1;
+                        var display_length = list_goal.length;
+                        if(display_length>10){
+                            display_length = 10;
+                        }
+                        for(var i = 0;i<display_length;i++){
+                            if(i%5 == 0){
+                                print_table+= "<tr id='row"+row_count+"'><td>"+row_count+"</td><td>"+list_goal[i]+"</td>";
+                            }
+                            else if(i%5 == 1){
+                                print_table+= "<td>"+list_goal[i]+"</td>";
+                                row_count++;
+                            }
+                            else if(i%5 == 2){
+                                print_table+= "<td>"+list_goal[i]+" "+list_goal[i+1]+"</td></tr>";
+                            }
+            
+                   
+                        }
+                        document.getElementById("printtable1").innerHTML = print_table;
+                        // document.getElementById("printtable2").innerHTML = print_table;
+                        // document.getElementById("printtable3").innerHTML = print_table;
+                        // document.getElementById("printtable4").innerHTML = print_table;
+            
+            
+                    </script>       
+     </body>     
+</html>
