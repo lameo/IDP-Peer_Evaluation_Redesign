@@ -145,7 +145,7 @@
                         </div> -->
 
                     <canvas style="padding-bottom:25px;" id="myChart" height="150" width="500" class="float-none shadow-sm"></canvas>
-                    
+
                     <div class="container" style="position:absolute;margin-top:-100px;z-index:2">
                         <img src="media/legend.png" width="250" height="40">
                     </div>
@@ -204,7 +204,7 @@
                                 <td>
                                     <a href="BookWorkshop.html">link</a>
                                 </td>
-                                <td>Intermediate</td>
+                                <td>Novice</td>
                             </tr>
                             <tr>
                                 <td>Adaptability</td>
@@ -340,7 +340,7 @@
                                 <td>
                                     <a href="BookWorkshop.html">link</a>
                                 </td>
-                                <td>Novice</td>
+                                <td>Intermediate</td>
                             </tr>
                             <tr>
                                 <td>
@@ -525,7 +525,7 @@
                                     </ol>
                                 </td>
                                 <td>link</td>
-                                <td>Competent</td>
+                                <td>Advanced</td>
                             </tr>
                             <tr>
                                 <td>Adaptability</td>
@@ -683,8 +683,10 @@
                                 <td>Intermediate</td>
                             </tr>
                             <tr>
-                                <td>Planning skill</td>
-
+                                <td>
+                                    <p>Planning Skill</p>
+                                </td>
+                                <td>You know the priority task and plan out the sequence to us.</td>
                                 <td class="text-left">
                                     <p>
                                         <!--[if !supportLists]-->1.
@@ -698,11 +700,10 @@
                                     <p>
                                         <!--[if !supportLists]-->4.
                                         <!--[endif]-->Prepare several possible approaches to overcoming such problems if they may occur</p>
-                                    <p>
-                                        <!--[if !supportLists]-->5.
-                                        <!--[endif]-->Build a safety net into your planning high-risk areas</p>
+                                    Build a safety net into your planning high-risk areas</td>
+                                <td>
+                                    <a href="BookWorkshop.html">link</a>
                                 </td>
-                                <td>link</td>
                                 <td>Advance</td>
                             </tr>
                         </tbody>
@@ -1774,10 +1775,10 @@
         setTimeout(function () {
             //Creating Floating Menu
             if (!window.htmlsetup) {
-                new Chart(document.getElementById("myChart"), { "type": "radar", "data": { "labels": ["Technical Proficiency", "Interpersonal skills and teamwork", "Adaptability", "Language and Expression", "Presentation & Delivery", "Research Depth", "Creativity & Innovation", "Analytic Skill", "Time Management", "Planning skill"], "datasets": [{ "label": "Feedback from peer", "data": [3.0, 1.0, 3.0, 3.0, 1.0, 3.0, 3.0, 3.0, 3.0, 4.0], "fill": true, "backgroundColor": "rgba(255, 99, 132, 0.2)", "borderColor": "rgb(255, 99, 132)", "pointBackgroundColor": "rgb(255, 99, 132)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "rgb(255, 99, 132)" }, { "label": "Self-Assessment", "data": [3.0, 1.0, 3.0, 3.0, 1.0, 3.0, 3.0, 3.0, 3.0, 3.0], "fill": true, "backgroundColor": "rgba(238,130,238, 0.2)", "borderColor": "rgb(238,130,238)", "pointBackgroundColor": "rgb(238,130,238)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "rgb(238,130,238)" }, { "label": "Goals", "data": [3.0, 3.0, 3.0, 3.0, 2.0, 3.0, 3.0, 3.0, 3.0, 3.0, 4.0], "fill": true, "backgroundColor": "rgba(124,252,0, 0.2)", "borderColor": "rgb(124,252,0)", "pointBackgroundColor": "rgb(124,252,0)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "hidden": true, "pointHoverBorderColor": "rgb(124,252,0)" }] }, "options": { "elements": { "line": { "tension": 0, "borderWidth": 3 } } } });
-                new Chart(document.getElementById("myChart2"), { "type": "radar", "data": { "labels": ["Language and Expression", "Creativity & Innovation", "Research Depth", "Presentation & Delivery", "Analytic Skill", "Time Management"], "datasets": [{ "label": "Feedback from peer", "data": [4.0, 3.0, 4.0, 1.0, 2.0, 2.0], "fill": true, "backgroundColor": "rgba(255,99,132,0.2)", "borderColor": "rgb(255,99,132)", "pointBackgroundColor": "rgb(255,99,132)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "rgb(255,99,132)" }, { "label": "Self-Assessment", "data": [4.0, 2.0, 2.0, 2.0, 2.0, 2.0], "fill": true, "backgroundColor": "rgba(238,130,238, 0.2)", "borderColor": "rgb(238,130,238)", "pointBackgroundColor": "rgb(238,130,238)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "rgb(238,130,238)" }, { "label": "Goals", "data": [3.0, 3.0, 3.0, 2.0, 2.0, 3.0], "fill": true, "backgroundColor": "rgba(124,252,0, 0.2)", "borderColor": "rgb(124,252,0)", "pointBackgroundColor": "rgb(124,252,0)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "rgb(124,252,0)" }] }, "options": { "elements": { "line": { "tension": 0, "borderWidth": 3 } } } });
-                new Chart(document.getElementById("myChart3"), { "type": "radar", "data": { "labels": ["Time management", "Interpersonal skills and teamwork", "Planning skill"], "datasets": [{ "label": "Feedback from peer", "data": [3.0, 1.0, 2.0], "fill": true, "backgroundColor": "rgba(255,99,132,0.2)", "borderColor": "rgb(255,99,132)", "pointBackgroundColor": "rgb(255,99,132)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "rgb(255,99,132)" }, { "label": "Self-Assessment", "data": [2.0, 1.0, 2.0], "fill": true, "backgroundColor": "rgba(238,130,238, 0.2)", "borderColor": "rgb(238,130,238)", "pointBackgroundColor": "rgb(238,130,238)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "rgb(238,130,238)" }, { "label": "Goals", "data": [4.0, 2.0, 3.0], "fill": true, "backgroundColor": "rgba(124,252,0, 0.2)", "borderColor": "rgb(124,252,0)", "pointBackgroundColor": "rgb(124,252,0)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "rgb(124,252,0)" }] }, "options": { "elements": { "line": { "tension": 0, "borderWidth": 3 } } } });
-                new Chart(document.getElementById("myChart4"), { "type": "radar", "data": { "labels": ["Technical Proficiency", "Interpersonal skills and teamwork", "Time management", "Adaptability"], "datasets": [{ "label": "Feedback from peer", "data": [3.0, 1.0, 3.0, 2.0], "fill": true, "backgroundColor": "rgba(255,99,132,0.2)", "borderColor": "rgb(255,99,132)", "pointBackgroundColor": "rgb(255,99,132)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "rgb(255,99,132)" }, { "label": "Self-Assessment", "data": [3.0, 1.0, 2.0, 2.0], "fill": true, "backgroundColor": "rgba(238,130,238, 0.2)", "borderColor": "rgb(238,130,238)", "pointBackgroundColor": "rgb(238,130,238)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "rgb(238,130,238)" }, { "label": "Goals", "data": [4.0, 2.0, 3.0, 3.0], "fill": true, "backgroundColor": "rgba(124,252,0, 0.2)", "borderColor": "rgb(124,252,0)", "pointBackgroundColor": "rgb(124,252,0)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "rgb(124,252,0)" }] }, "options": { "elements": { "line": { "tension": 0, "borderWidth": 3 } } } });
+                new Chart(document.getElementById("myChart"), { "type": "radar", "data": { "labels": ["Technical Proficiency", "Interpersonal skills and teamwork", "Adaptability", "Language and Expression", "Presentation & Delivery", "Research Depth", "Creativity & Innovation", "Analytic Skill", "Time Management", "Planning skill"], "datasets": [{ "label": "Feedback from peer", "data": [2.0, 1.0, 3.0, 3.0, 1.0, 4.0, 2.0, 3.0, 2.0, 3.0], "fill": true, "backgroundColor": "rgba(255, 99, 132, 0.2)", "borderColor": "rgb(255, 99, 132)", "pointBackgroundColor": "rgb(255, 99, 132)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "rgb(255, 99, 132)" }, { "label": "Self-Assessment", "data": [3.0, 1.0, 3.0, 3.0, 1.0, 3.0, 3.0, 3.0, 3.0, 3.0], "fill": true, "backgroundColor": "rgba(238,130,238, 0.2)", "borderColor": "rgb(238,130,238)", "pointBackgroundColor": "rgb(238,130,238)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "rgb(238,130,238)" }, { "label": "Goals", "data": [3.0, 3.0, 3.0, 3.0, 2.0, 3.0, 3.0, 3.0, 3.0, 3.0, 4.0], "fill": true, "backgroundColor": "rgba(124,252,0, 0.2)", "borderColor": "rgb(124,252,0)", "pointBackgroundColor": "rgb(124,252,0)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "hidden": true, "pointHoverBorderColor": "rgb(124,252,0)" }] }, "options": { "elements": { "line": { "tension": 0, "borderWidth": 3 } } } });
+                new Chart(document.getElementById("myChart2"), { "type": "radar", "data": { "labels": ["Language and Expression", "Creativity & Innovation", "Research Depth", "Presentation & Delivery", "Analytic Skill", "Time Management"], "datasets": [{ "label": "Feedback from peer", "data": [2.0, 2.0, 3.0, 3.0, 1.0, 4.0], "fill": true, "backgroundColor": "rgba(255,99,132,0.2)", "borderColor": "rgb(255,99,132)", "pointBackgroundColor": "rgb(255,99,132)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "rgb(255,99,132)" }, { "label": "Self-Assessment", "data": [4.0, 2.0, 2.0, 2.0, 2.0, 2.0], "fill": true, "backgroundColor": "rgba(238,130,238, 0.2)", "borderColor": "rgb(238,130,238)", "pointBackgroundColor": "rgb(238,130,238)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "rgb(238,130,238)" }, { "label": "Goals", "data": [3.0, 3.0, 3.0, 2.0, 2.0, 3.0], "fill": true, "backgroundColor": "rgba(124,252,0, 0.2)", "borderColor": "rgb(124,252,0)", "pointBackgroundColor": "rgb(124,252,0)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "rgb(124,252,0)" }] }, "options": { "elements": { "line": { "tension": 0, "borderWidth": 3 } } } });
+                new Chart(document.getElementById("myChart3"), { "type": "radar", "data": { "labels": ["Time management", "Interpersonal skills and teamwork", "Planning skill"], "datasets": [{ "label": "Feedback from peer", "data": [2.0, 2.0, 3.0], "fill": true, "backgroundColor": "rgba(255,99,132,0.2)", "borderColor": "rgb(255,99,132)", "pointBackgroundColor": "rgb(255,99,132)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "rgb(255,99,132)" }, { "label": "Self-Assessment", "data": [2.0, 1.0, 2.0], "fill": true, "backgroundColor": "rgba(238,130,238, 0.2)", "borderColor": "rgb(238,130,238)", "pointBackgroundColor": "rgb(238,130,238)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "rgb(238,130,238)" }, { "label": "Goals", "data": [4.0, 2.0, 3.0], "fill": true, "backgroundColor": "rgba(124,252,0, 0.2)", "borderColor": "rgb(124,252,0)", "pointBackgroundColor": "rgb(124,252,0)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "rgb(124,252,0)" }] }, "options": { "elements": { "line": { "tension": 0, "borderWidth": 3 } } } });
+                new Chart(document.getElementById("myChart4"), { "type": "radar", "data": { "labels": ["Technical Proficiency", "Interpersonal skills and teamwork", "Time management", "Adaptability"], "datasets": [{ "label": "Feedback from peer", "data": [2.0, 3.0, 2.0, 2.0], "fill": true, "backgroundColor": "rgba(255,99,132,0.2)", "borderColor": "rgb(255,99,132)", "pointBackgroundColor": "rgb(255,99,132)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "rgb(255,99,132)" }, { "label": "Self-Assessment", "data": [3.0, 1.0, 2.0, 2.0], "fill": true, "backgroundColor": "rgba(238,130,238, 0.2)", "borderColor": "rgb(238,130,238)", "pointBackgroundColor": "rgb(238,130,238)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "rgb(238,130,238)" }, { "label": "Goals", "data": [4.0, 2.0, 3.0, 3.0], "fill": true, "backgroundColor": "rgba(124,252,0, 0.2)", "borderColor": "rgb(124,252,0)", "pointBackgroundColor": "rgb(124,252,0)", "pointBorderColor": "#fff", "pointHoverBackgroundColor": "#fff", "pointHoverBorderColor": "rgb(124,252,0)" }] }, "options": { "elements": { "line": { "tension": 0, "borderWidth": 3 } } } });
 
 
                 window.htmlsetup = true;
