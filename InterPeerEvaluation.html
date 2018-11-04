@@ -1,305 +1,347 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-    <head> 
-        <title>Peer Feedback</title>         
-        <link href="media/favicon.ico" rel="icon" type="image/x-icon"/> 
-        <meta charset="utf-8"> 
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
-        <meta name="description" content=""> 
-        <meta name="author" content=""> 
-        <title>Starter Template for Bootstrap</title>         
-        <!-- Bootstrap core CSS -->         
-        <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> 
-        <!-- Custom styles for this template -->         
-        <link href="starter-template.css" rel="stylesheet"> 
-    </head>     
-    <body> 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top "> 
-            <a class="navbar-brand" href="Home.html"> 
-                <img class="d-inline-block align-top" src="media/leaf.png" alt="" width="30" height="30"/>&nbsp;GROWTH
-            </a>             
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler16" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"> 
-                <span class="navbar-toggler-icon"></span> 
-            </button>             
-            <div class="collapse navbar-collapse" id="navbarToggler16"> 
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0"> 
-                    <li class="nav-item active"> 
-                        <a class="nav-link" href="Home.html">Home <span class="sr-only">(current)</span></a> 
-                    </li>                     
-                    <li class="nav-item dropdown"> 
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop9" data-toggle="dropdown">Analysis</a> 
-                        <div class="dropdown-menu"> 
-                            <a class="dropdown-item" href="AnalysisDashboard.html">Analysis dashboard</a> 
-                            <a class="dropdown-item" href="GoalOverview.html">Goal</a> 
-                        </div>                         
-                    </li>                     
-                    <li class="nav-item dropdown"> 
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop10" data-toggle="dropdown">Workshop</a> 
-                        <div class="dropdown-menu"> 
-                            <a class="dropdown-item" href="BookWorkshop.html">New booking</a> 
-                            <a class="dropdown-item" href="ManageWorkshop.html">Manage</a> 
-                        </div>                         
-                    </li>                     
-                    <li class="nav-item dropdown"> 
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop8" data-toggle="dropdown"> 
-                        Feedback </a> 
-                        <div class="dropdown-menu"> 
-                            <a class="dropdown-item" href="SelectModule.html">Module selection</a> 
-                            <a class="dropdown-item" href="invitation.html">Send invitation</a> 
-                        </div>                         
-                    </li>                     
-                    <li class="nav-item active"> </li>                     
-                    <li class="nav-item"> </li>                     
-                    <li class="nav-item"> </li>                     
-                    <li class="nav-item dropdown"> 
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> 
-                            <a class="dropdown-item" href="#">Action</a> 
-                            <a class="dropdown-item" href="#">Another action</a> 
-                            <a class="dropdown-item" href="#">Something else here</a> 
-                        </div>                         
-                    </li>       
-                    <li class="nav-item dropdown">
-                            <a class="nav-link" href="SelfAssessment.html">Self Assessment</span></a>
+<!DOCTYPE html>
+<html lang="en">
 
-                        </li>              
-                    <li class="nav-item dropdown"> 
-                        <a class="nav-link" href="MyReward.html">My reward<span class="sr-only">(current)</span></a> 
-                        <div class="dropdown-menu"> 
-                            <a class="dropdown-item" href="#">Create new report</a> 
-                        </div>                         
-                    </li> 
-                  
-                </ul>                 
-                <form class="form-inline my-2 my-lg-0">                    
-                    <a class="btn btn-outline-primary" href="index.html" style="margin-left: 16px; margin-top: -3px;">Logout</a> 
-                </form>                 
-            </div>             
-        </nav>         
-        <div class="container" style='z-index:1;position:fixed;margin-left:70px;margin-top:-30px;background: rgb(255, 255, 255);' > 
-            <div class="starter-template"> 
-                <h1 style="float: left;">Peer Feedback</h1> 
-                <p class="lead"></p> 
-            </div>             
-            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups"> 
-                <div class="btn-group mr-2" role="group" aria-label="First group"> </div>                 
-                <div class="btn-group mr-2" role="group" aria-label="Second group"> </div>                 
-                <div class="btn-group" role="group" aria-label="Third group"> </div>                 
-            </div>    
-            <div class="container" >
-            <table class="table" > 
-                <thead> 
-                    <tr> 
-                        <th id="prog1" width="25%" style="text-align: center;"> 
-                            <a href="#q1">Q1</a> 
-                        </th>                         
-                        <th id="prog2" width="25%" style="text-align: center;"> 
-                            <a href="#q2">Q2</a> 
-                        </th>                         
-                        <th id="prog3" width="25%" style="text-align: center;"> 
-                            <a href="#q3">Q3</a> 
-                        </th>                         
-                        <th id="prog4" width="25%" style="text-align: center;"> 
-                            <a href="#q4">Q4</a> 
-                        </th>                         
-                    </tr>                     
-                </thead>                 
-                <tbody> 
-                    <tr> </tr>                     
-                    <tr> </tr>                     
-                    <tr> </tr>                     
-                </tbody>                 
-            </table> 
-            </div>    
-        </div>       
-        <div class="container" style="margin-top: 180px;" > 
- 
-            <div class="card border-info mb-3"> 
-                <div class="card-header">Q1. How would you rate the student?</div>                 
-                <div class="card-body text-info"> 
-                    <textarea id="q1" class="form-control" rows="3"></textarea>                     
-                </div>                 
-            </div>             
-            <div class="card border-info mb-3"> 
-                <div class="card-header">Q2. How would you rate the student?</div>                 
-                <div class="card-body text-info"> 
-                    <textarea id="q2" class="form-control" rows="3"></textarea>                     
-                </div>                 
-            </div>             
-            <div class="card border-info mb-3"> 
-                <div class="card-header">Q3. How would you rate the student?</div>                 
-                <div class="card-body text-info"> 
-                    <textarea id="q3" class="form-control" rows="3"></textarea>                     
-                </div>                 
-            </div>             
-            <div class="card border-info mb-3"> 
-                <div class="card-header">Q4. How would you rate the student?</div>                 
-                <div class="card-body text-info"> 
-                    <textarea id="q4" class="form-control" rows="3"></textarea>                     
-                </div>                 
-            </div>             
-        </div>  
-          
-        <nav style="background-color:rgba(0, 0, 0, 0);" class="navbar navbar-expand-md fixed-bottom"> 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"> 
-                <span class="navbar-toggler-icon"></span> 
-            </button>             
-            <div class="collapse navbar-collapse" id="navbarsExampleDefault2"> 
-                <ul class="navbar-nav mr-auto"> 
-                    <li class="nav-item active"> </li>                     
-                    <li class="nav-item"> </li>                     
-                    <li class="nav-item"> </li>                     
-                    <li class="nav-item dropdown"> 
-                        <div class="dropdown-menu" aria-labelledby="dropdown01"> 
-                            <a class="dropdown-item" href="#">Action</a> 
-                            <a class="dropdown-item" href="#">Another action</a> 
-                            <a class="dropdown-item" href="#">Something else here</a> 
-                        </div>                         
-                    </li>                     
-                </ul>                 
-                <form class="form-inline my-2 my-lg-0"> 
-                    <button id="save" type="button" class="btn btn-primary">Save</button>                                                                                                                                                                                                                                                                                                                                                                                                                                                                            &nbsp;
-                    <button id="submit" type="button" class="btn btn-primary bg-success">Submit</button>                     
-                </form>                 
-            </div>             
-        </nav>         
-        <!-- /.container -->         
-        <!-- Bootstrap core JavaScript
-            ================================================== -->         
-        <!-- Placed at the end of the document so the pages load faster -->         
-        <script src="assets/js/jquery.min.js"></script>         
-        <script src="assets/js/popper.js"></script>         
-        <script src="bootstrap/js/bootstrap.min.js"></script>         
-        <script>
-            setTimeout(function(){
-                   //Question Progress button
-                   //Change Background if left undone
-                   if (!window.htmlsetup) {
-                    $('#q1').val(localStorage.getItem("q1"));
-                       $('#q2').val(localStorage.getItem("q2")); 
-                       $('#q3').val(localStorage.getItem("q3")); 
-                       $('#q4').val(localStorage.getItem("q4")); 
-                    
-                   	$('#q1').on('blur', function() {
-            if (!$.trim($("#q1").val())) {
-              // textarea is empty
-                                 $('#prog1').css("background-color", "red");
-            } else {
-                                $('#prog1').css("background-color", "white");
+<head>
+    <title>Peer Feedback</title>
+    <link href="media/favicon.ico" rel="icon" type="image/x-icon" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Starter Template for Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+</head>
 
-                            }
-            });
-                       $('#q2').on('blur', function() {
-            if (!$.trim($("#q2").val())) {
-              // textarea is empty
-                                 $('#prog2').css("background-color", "red");
-            } else {
-                                $('#prog2').css("background-color", "white");
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+        <a class="navbar-brand" href="Home.html">
+            <img class="d-inline-block align-top" src="media/leaf.png" alt="" width="30" height="30" />&nbsp;GROWTH
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler16" aria-controls="navbarTogglerDemo01"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler16">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="Home.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop9" data-toggle="dropdown">Analysis</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="AnalysisDashboard.html">Analysis dashboard</a>
+                        <a class="dropdown-item" href="GoalOverview.html">Goal</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop10" data-toggle="dropdown">Workshop</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="BookWorkshop.html">New booking</a>
+                        <a class="dropdown-item" href="ManageWorkshop.html">Manage</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop8" data-toggle="dropdown">
+                        Feedback </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="SelectModule.html">Module selection</a>
+                        <a class="dropdown-item" href="invitation.html">Send invitation</a>
+                    </div>
+                </li>
+                <li class="nav-item active"> </li>
+                <li class="nav-item"> </li>
+                <li class="nav-item"> </li>
+                <li class="nav-item dropdown">
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="SelfAssessment.html">Self Assessment</span>
+                    </a>
 
-                            }
-            });
-                       $('#q3').on('blur', function() {
-            if (!$.trim($("#q3").val())) {
-              // textarea is empty
-                                 $('#prog3').css("background-color", "red");
-            } else {
-                                $('#prog3').css("background-color", "white");
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="MyReward.html">My reward
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Create new report</a>
+                    </div>
+                </li>
 
-                            }
-            });
-                       $('#q4').on('blur', function() {
-            if (!$.trim($("#q4").val())) {
-              // textarea is empty
-                                 $('#prog4').css("background-color", "red");
-            } else {
-                                $('#prog4').css("background-color", "white");
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <a class="btn btn-outline-primary" href="index.html" style="margin-left: 16px; margin-top: -3px;">Logout</a>
+            </form>
+        </div>
+    </nav>
+    <div class="container" style='z-index:1;position:fixed;margin-left:70px;margin-top:-30px;background: rgb(255, 255, 255);'>
+        <div class="starter-template">
+            <h1 style="float: left;">Peer Feedback</h1>
+            <p class="lead"></p>
+        </div>
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group mr-2" role="group" aria-label="First group"> </div>
+            <div class="btn-group mr-2" role="group" aria-label="Second group"> </div>
+            <div class="btn-group" role="group" aria-label="Third group"> </div>
+        </div>
+        <div class="container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th id="prog1" width="25%" style="text-align: center;">
+                            <a href="#q1">Q1</a>
+                        </th>
+                        <th id="prog2" width="25%" style="text-align: center;">
+                            <a href="#q2">Q2</a>
+                        </th>
+                        <th id="prog3" width="25%" style="text-align: center;">
+                            <a href="#q3">Q3</a>
+                        </th>
+                        <th id="prog4" width="25%" style="text-align: center;">
+                            <a href="#q4">Q4</a>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr> </tr>
+                    <tr> </tr>
+                    <tr> </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="container" style="margin-top: 180px;">
 
-                            }
-            });
+        <div class="card border-info mb-3">
+            <div class="card-header">Q1. How would you rate the student?</div>
+            <div class="card-body text-info">
+                <textarea id="q1" class="form-control" rows="3"></textarea>
+            </div>
+        </div>
+        <div class="card border-info mb-3">
+            <div class="card-header">Q2. How would you rate the student?</div>
+            <div class="card-body text-info">
+                <textarea id="q2" class="form-control" rows="3"></textarea>
+            </div>
+        </div>
+        <div class="card border-info mb-3">
+            <div class="card-header">Q3. How would you rate the student?</div>
+            <div class="card-body text-info">
+                <textarea id="q3" class="form-control" rows="3"></textarea>
+            </div>
+        </div>
+        <div class="card border-info mb-3">
+            <div class="card-header">Q4. How would you rate the student?</div>
+            <div class="card-body text-info">
+                <textarea id="q4" class="form-control" rows="3"></textarea>
+            </div>
+        </div>
+    </div>
 
-                       //Detect which question is the person currently on
-                       $('#q1').on('click', function() {
-            $('#prog1').css({"border-color": "#C1E0FF",
-               							 "border-width":"5px",
-               							 "border-style":"solid"});
-                           $('#prog2').css({"border-color": "#C1E0FF",
-               							 "border-width":"0px",
-               							 "border-style":"solid"});
-                           $('#prog3').css({"border-color": "#C1E0FF",
-               							 "border-width":"0px",
-               							 "border-style":"solid"});
-                           $('#prog4').css({"border-color": "#C1E0FF",
-               							 "border-width":"0px",
-               							 "border-style":"solid"});
-            });
-                       $('#q2').on('click', function() {
-                           $('#prog1').css({"border-color": "#C1E0FF",
-               							 "border-width":"0px",
-               							 "border-style":"solid"});
-                           $('#prog3').css({"border-color": "#C1E0FF",
-               							 "border-width":"0px",
-               							 "border-style":"solid"});
-                            $('#prog4').css({"border-color": "#C1E0FF",
-               							 "border-width":"0px",
-               							 "border-style":"solid"});
-            $('#prog2').css({"border-color": "#C1E0FF",
-               							 "border-width":"5px",
-               							 "border-style":"solid"});
+    <nav style="background-color:rgba(0, 0, 0, 0);" class="navbar navbar-expand-md fixed-bottom">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault2">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"> </li>
+                <li class="nav-item"> </li>
+                <li class="nav-item"> </li>
+                <li class="nav-item dropdown">
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <button id="save" type="button" class="btn btn-primary">Save</button> &nbsp;
+                <button id="submit" type="button" class="btn btn-primary bg-success">Submit</button>
+            </form>
+        </div>
+    </nav>
+    <!-- /.container -->
+    <!-- Bootstrap core JavaScript
+            ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        setTimeout(function () {
+            //Question Progress button
+            //Change Background if left undone
+            if (!window.htmlsetup) {
+                $('#q1').val(localStorage.getItem("q1"));
+                $('#q2').val(localStorage.getItem("q2"));
+                $('#q3').val(localStorage.getItem("q3"));
+                $('#q4').val(localStorage.getItem("q4"));
 
-            });
-                       $('#q3').on('click', function() {
-                           $('#prog1').css({"border-color": "#C1E0FF",
-               							 "border-width":"0px",
-               							 "border-style":"solid"});
-                           $('#prog2').css({"border-color": "#C1E0FF",
-               							 "border-width":"0px",
-               							 "border-style":"solid"});
-                           $('#prog4').css({"border-color": "#C1E0FF",
-               							 "border-width":"0px",
-               							 "border-style":"solid"});
-                           $('#prog3').css({"border-color": "#C1E0FF",
-               							 "border-width":"5px",
-               							 "border-style":"solid"});
+                $('#q1').on('blur', function () {
+                    if (!$.trim($("#q1").val())) {
+                        // textarea is empty
+                        $('#prog1').css("background-color", "red");
+                    } else {
+                        $('#prog1').css("background-color", "white");
 
-            });
-                       $('#q4').on('click', function() {
-                            $('#prog1').css({"border-color": "#C1E0FF",
-               							 "border-width":"0px",
-               							 "border-style":"solid"});
-                            $('#prog2').css({"border-color": "#C1E0FF",
-               							 "border-width":"0px",
-               							 "border-style":"solid"});
-                            $('#prog3').css({"border-color": "#C1E0FF",
-               							 "border-width":"0px",
-               							 "border-style":"solid"});
-            $('#prog4').css({"border-color": "#C1E0FF",
-               							 "border-width":"5px",
-               							 "border-style":"solid"});
-            });
-                       $('#save').on('click', function() {
-                           alert("your evaluation has been saved!");
-                           var q1text = $('#q1').val();
-                           var q2text = $('#q2').val();
-                           var q3text = $('#q3').val();
-                           var q4text = $('#q4').val();
-                           localStorage.setItem("q1", q1text);
-                           localStorage.setItem("q2", q2text);
-                           localStorage.setItem("q3", q3text);
-                           localStorage.setItem("q4", q4text);
-                           sessionStorage.setItem("peereval" , "draft");
-                       });
-                       $('#submit').on('click', function() {
-                           if($('[id^="prog"]').css("background-color")==="rgb(255, 0, 0)" || !$.trim($('[id^="q"]').val())){
-                              var isconfirm = confirm("Please fill up all questions");
-                           } else {
-                               sessionStorage.setItem("peereval" , "submitted");
-                           	$(location).attr('href', 'FeedbackDone.html');
-                           }
-                       });
+                    }
+                });
+                $('#q2').on('blur', function () {
+                    if (!$.trim($("#q2").val())) {
+                        // textarea is empty
+                        $('#prog2').css("background-color", "red");
+                    } else {
+                        $('#prog2').css("background-color", "white");
 
-                       window.htmlsetup = true;
-               }
-               },100)
-        </script>         
-    </body>     
+                    }
+                });
+                $('#q3').on('blur', function () {
+                    if (!$.trim($("#q3").val())) {
+                        // textarea is empty
+                        $('#prog3').css("background-color", "red");
+                    } else {
+                        $('#prog3').css("background-color", "white");
+
+                    }
+                });
+                $('#q4').on('blur', function () {
+                    if (!$.trim($("#q4").val())) {
+                        // textarea is empty
+                        $('#prog4').css("background-color", "red");
+                    } else {
+                        $('#prog4').css("background-color", "white");
+
+                    }
+                });
+
+                //Detect which question is the person currently on
+                $('#q1').on('click', function () {
+                    $('#prog1').css({
+                        "border-color": "#C1E0FF",
+                        "border-width": "5px",
+                        "border-style": "solid"
+                    });
+                    $('#prog2').css({
+                        "border-color": "#C1E0FF",
+                        "border-width": "0px",
+                        "border-style": "solid"
+                    });
+                    $('#prog3').css({
+                        "border-color": "#C1E0FF",
+                        "border-width": "0px",
+                        "border-style": "solid"
+                    });
+                    $('#prog4').css({
+                        "border-color": "#C1E0FF",
+                        "border-width": "0px",
+                        "border-style": "solid"
+                    });
+                });
+                $('#q2').on('click', function () {
+                    $('#prog1').css({
+                        "border-color": "#C1E0FF",
+                        "border-width": "0px",
+                        "border-style": "solid"
+                    });
+                    $('#prog3').css({
+                        "border-color": "#C1E0FF",
+                        "border-width": "0px",
+                        "border-style": "solid"
+                    });
+                    $('#prog4').css({
+                        "border-color": "#C1E0FF",
+                        "border-width": "0px",
+                        "border-style": "solid"
+                    });
+                    $('#prog2').css({
+                        "border-color": "#C1E0FF",
+                        "border-width": "5px",
+                        "border-style": "solid"
+                    });
+
+                });
+                $('#q3').on('click', function () {
+                    $('#prog1').css({
+                        "border-color": "#C1E0FF",
+                        "border-width": "0px",
+                        "border-style": "solid"
+                    });
+                    $('#prog2').css({
+                        "border-color": "#C1E0FF",
+                        "border-width": "0px",
+                        "border-style": "solid"
+                    });
+                    $('#prog4').css({
+                        "border-color": "#C1E0FF",
+                        "border-width": "0px",
+                        "border-style": "solid"
+                    });
+                    $('#prog3').css({
+                        "border-color": "#C1E0FF",
+                        "border-width": "5px",
+                        "border-style": "solid"
+                    });
+
+                });
+                $('#q4').on('click', function () {
+                    $('#prog1').css({
+                        "border-color": "#C1E0FF",
+                        "border-width": "0px",
+                        "border-style": "solid"
+                    });
+                    $('#prog2').css({
+                        "border-color": "#C1E0FF",
+                        "border-width": "0px",
+                        "border-style": "solid"
+                    });
+                    $('#prog3').css({
+                        "border-color": "#C1E0FF",
+                        "border-width": "0px",
+                        "border-style": "solid"
+                    });
+                    $('#prog4').css({
+                        "border-color": "#C1E0FF",
+                        "border-width": "5px",
+                        "border-style": "solid"
+                    });
+                });
+                $('#save').on('click', function () {
+                    alert("your evaluation has been saved!");
+                    var q1text = $('#q1').val();
+                    var q2text = $('#q2').val();
+                    var q3text = $('#q3').val();
+                    var q4text = $('#q4').val();
+                    localStorage.setItem("q1", q1text);
+                    localStorage.setItem("q2", q2text);
+                    localStorage.setItem("q3", q3text);
+                    localStorage.setItem("q4", q4text);
+                    sessionStorage.setItem("peereval", "draft");
+                });
+                $('#submit').on('click', function () {
+                    if ($('[id^="prog"]').css("background-color") === "rgb(255, 0, 0)" || !$.trim($('[id^="q"]').val())) {
+                        var isconfirm = confirm("Please fill up all questions");
+                    } else {
+                        sessionStorage.setItem("peereval", "submitted");
+                        $(location).attr('href', 'FeedbackDone.html');
+                    }
+                });
+
+                window.htmlsetup = true;
+            }
+        }, 100)
+    </script>
+</body>
+
 </html>
