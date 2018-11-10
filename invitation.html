@@ -187,7 +187,7 @@
                     sn.innerHTML = "1";
                     name.innerHTML = "Edythe Keenan";
                     status.innerHTML = "Completed";
-                    action.innerHTML = '<button type="button" disabled="" class="btn btn-secondary pl-sm-null  ml-1">Invited</button>';
+                    action.innerHTML = '<button id="invite1"  type="button"  class="btn btn-secondary bg-success">Invite</button>';
 
                     row = table.insertRow(-1);
                     sn = row.insertCell(0);
@@ -197,7 +197,7 @@
                     sn.innerHTML = "2";
                     name.innerHTML = "Tracey Schlesinger";
                     status.innerHTML = "Completed";
-                    action.innerHTML = '<button type="button" disabled="" class="btn btn-secondary pl-sm-null  ml-1">Invited</button>';
+                    action.innerHTML = '<button id="invite2"  type="button"  class="btn btn-secondary bg-success">Invite</button>';
 
 
                     row = table.insertRow(-1);
@@ -218,7 +218,7 @@
                     sn.innerHTML = "4";
                     name.innerHTML = "Marta Mickelson";
                     status.innerHTML = "Completed";
-                    action.innerHTML = '<button type="button" disabled="" class="btn btn-secondary pl-sm-null  ml-1">Invited</button>';
+                    action.innerHTML = '<button id="invite4"  type="button"  class="btn btn-secondary bg-success">Invite</button>';
 
                     row = table.insertRow(-1);
                     sn = row.insertCell(0);
@@ -228,7 +228,7 @@
                     sn.innerHTML = "5";
                     name.innerHTML = "Douglas Maines";
                     status.innerHTML = "Incomplete";
-                    action.innerHTML = '<button id="invite4" type="button" class="btn btn-secondary bg-success">Invite</button>';
+                    action.innerHTML = '<button id="invite5" type="button" class="btn btn-secondary bg-success">Invite</button>';
 
                     row = table.insertRow(-1);
                     sn = row.insertCell(0);
@@ -238,7 +238,7 @@
                     sn.innerHTML = "6";
                     name.innerHTML = "Dannette Flippin";
                     status.innerHTML = "Incomplete";
-                    action.innerHTML = '<button id="invite5" type="button" class="btn btn-secondary bg-success">Invite</button>';
+                    action.innerHTML = '<button id="invite6" type="button" class="btn btn-secondary bg-success">Invite</button>';
 
                     row = table.insertRow(-1);
                     sn = row.insertCell(0);
@@ -248,7 +248,7 @@
                     sn.innerHTML = "7";
                     name.innerHTML = "Brenda Thill";
                     status.innerHTML = "Incomplete";
-                    action.innerHTML = '<button id="invite6" type="button" class="btn btn-secondary bg-success">Invite</button>';
+                    action.innerHTML = '<button id="invite7" type="button" class="btn btn-secondary bg-success">Invite</button>';
 
                     row = table.insertRow(-1);
                     sn = row.insertCell(0);
@@ -258,7 +258,7 @@
                     sn.innerHTML = "8";
                     name.innerHTML = "Connie Burr";
                     status.innerHTML = "Incomplete";
-                    action.innerHTML = '<button type="button" disabled="" class="btn btn-secondary pl-sm-null  ml-1">Invited</button>';
+                    action.innerHTML = '<button id="invite8"  type="button"  class="btn btn-secondary bg-success">Invite</button>';
                 }
 
                 if ( value1 == "2") {
@@ -351,6 +351,20 @@
                 $('#invite6').addClass("ml-1");
                 $('#invite6').html("Invited");
                 $('#invite6').attr("disabled", true);
+            });
+            $('#invite7').click(function(){
+                $('#invite7').removeClass("bg-success");
+                $('#invite7').addClass("pl-sm-null");
+                $('#invite7').addClass("ml-1");
+                $('#invite7').html("Invited");
+                $('#invite7').attr("disabled", true);
+            });
+            $('#invite8').click(function(){
+                $('#invite8').removeClass("bg-success");
+                $('#invite8').addClass("pl-sm-null");
+                $('#invite8').addClass("ml-1");
+                $('#invite8').html("Invited");
+                $('#invite8').attr("disabled", true);
             });
 
             }

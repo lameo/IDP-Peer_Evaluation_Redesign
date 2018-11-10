@@ -1766,7 +1766,7 @@ ng\:form {
                     <label for="presentation">Presentation & Delivery</label>                     
                     <br> 
                     <input class="form-check-input" type="checkbox" value="research" id="research1" name="research"> 
-                    <label for="research">Research Depth</label>                     
+                    <label for="research">Interpersonal skill and Teamwork</label>                     
                     <br> 
                 </ul>                 
                 <button id="searchbutton" type="button" class="btn active btn-secondary align-middle border float-right" style="margin-left: 556px; padding-left: 50px; padding-right: 50px;">Search</button>
@@ -1823,15 +1823,15 @@ ng\:form {
                 <div class="list-group"> 
                     <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active"> 
                         <div class="d-flex w-100 justify-content-between"> 
-                            <h3 class="mb-1">Research Depth Workshops</h3> 
+                            <h3 class="mb-1">Interpersonal skill and Teamwork Workshops</h3> 
                         </div>                         
                     </a>                     
                     <a class="list-group-item list-group-item-action flex-column align-items-start" target=”_blank”> 
                         <div class="d-flex w-100 justify-content-between"> 
-                            <h5 class="mb-1">Analytical Techniques 101</h5> 
+                            <h5 class="mb-1">Communication Techniques 101</h5> 
                             <small class="text-muted">2 days from now</small> 
                         </div>                         
-                        <p class="mb-1">How to be faster and more efficient in your Research?</p> 
+                        <p class="mb-1">How to be improve your communication skill?</p> 
                         <small class="text-muted">Prof Ho, Fri 3pm</small> 
                         <br> 
                         <small class="text-muted">School of Information Systems, L2 SR2-1</small> 
@@ -1848,10 +1848,10 @@ ng\:form {
                     </a>                     
                     <a class="list-group-item list-group-item-action flex-column align-items-start"  target=”_blank”> 
                         <div class="d-flex w-100 justify-content-between"> 
-                            <h5 class="mb-1">Elon Musk Hacks to Googling for Research Purposes</h5> 
+                            <h5 class="mb-1">Elon Musk for better teamwork</h5> 
                             <small class="text-muted">3 days from now</small> 
                         </div>                         
-                        <p class="mb-1">Conducted based on tips shared in a workshop by Elon Musk, we aim to impart hacks to the most popular search engine - Google</p> 
+                        <p class="mb-1">Conducted based on tips shared in a workshop by Elon Musk, we aim to transform you into a better team member</p> 
                         <small class="text-muted">Prof Tang.</small> 
                         <br> 
                         <small class="text-muted">School of Law, L1, SR1.01</small> 
@@ -1973,14 +1973,14 @@ ng\:form {
                 $('#prescancel2').show();
                 $('#presconfirm2').show();
             }
-            if(list_of_workshop.indexOf("Analytical Techniques 101")!=-1){
+            if(list_of_workshop.indexOf("Communication Techniques 101")!=-1){
                 sessionStorage.setItem("res1", "true");
                 $('#resbut1').hide();
                 $('#rescancel1').show();
                 $('#resconfirm1').show();
 
             }
-            if(list_of_workshop.indexOf("Elon Musk's Hacks to Googling for Research Purposes")!=-1){
+            if(list_of_workshop.indexOf("Elon Musk for better teamwork")!=-1){
                 sessionStorage.setItem("res2", "true");
                 $('#resbut2').hide();
                 $('#rescancel2').show();
@@ -2052,7 +2052,7 @@ ng\:form {
             		$('#resconfirm1').hide();
                	 	$('#resbut1').show();
                		sessionStorage.setItem("res1", "false");
-                    var target = list_of_workshop.indexOf("Analytical Techniques 101");
+                    var target = list_of_workshop.indexOf("Communication Techniques 101");
                     list_of_workshop.splice(target,3);
                     localStorage.setItem("list_workshop",list_of_workshop);
                     
@@ -2075,7 +2075,7 @@ ng\:form {
             		$('#resconfirm2').hide();
                	 	$('#resbut2').show();
                		sessionStorage.setItem("res2", "false");
-                    var target = list_of_workshop.indexOf("Elon Musk's Hacks to Googling for Research Purposes");
+                    var target = list_of_workshop.indexOf("Elon Musk for better teamwork");
                     list_of_workshop.splice(target,3);
                     localStorage.setItem("list_workshop",list_of_workshop);          
                 }
@@ -2104,7 +2104,7 @@ ng\:form {
             
             });
             $('#resbut1').click(function(){
-                list_of_workshop.push("Analytical Techniques 101");
+                list_of_workshop.push("Communication Techniques 101");
                 list_of_workshop.push("5 Nov 2018	");
                 list_of_workshop.push("SOE/SOSS L4 SR 4.01");
                 localStorage.setItem("list_workshop",list_of_workshop);
@@ -2112,7 +2112,7 @@ ng\:form {
             });
 
             $('#resbut2').click(function(){
-                list_of_workshop.push("Elon Musk's Hacks to Googling for Research Purposes");
+                list_of_workshop.push("Elon Musk for better teamwork");
                 list_of_workshop.push("5 Nov 2018");
                 list_of_workshop.push("SOL L1 SR 1.01");
                 localStorage.setItem("list_workshop",list_of_workshop);
